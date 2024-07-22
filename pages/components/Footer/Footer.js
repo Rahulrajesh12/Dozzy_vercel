@@ -6,7 +6,7 @@ import gplay from '../../images/googleplay.png'
 import appstore from '../../images/applestore.png'
 const Footer = () => {
     return (
-        <div className='... bg-[url("/footer.png")] bg-blend-saturation bg-cover'>
+        <div className='... bg-[url("/rectangle.jpg")] bg-blend-saturation bg-cover opacity-90'>
             <div className='flex items-center text-white lg:py-20 lg:pl-40'>
                 <Image
                     src={phone}
@@ -15,12 +15,12 @@ const Footer = () => {
                     className='pb-2 lg:w-48 lg'
                 />
                 <div>
-                    <ul className='text-xs lg:text-lg z-50 text-white font-semibold lg:pl-44'>
+                    <ul className='text-[10px] lg:text-lg z-50 text-white font- lg:pl-44'>
                         <li className='text-base lg:text-4xl'>Your All-In-One App  Dozzy</li>
                         <li>Head Office:</li>
                         <li className='w-[70%]'>Dozzy Private Limited 5th Floor, Sigma Tech Park Whitefield, Bangalore</li>
                         <li>9111-9111-62</li> 
-                        <li className='text-blue-700 font-semibold'>App Launching Soon</li>
+                        <li className='text-blue-700 font-semibold py-1'><span className='bg-white p-[2px] rounded-sm'>App Launching Soon</span></li>
                         <li className='flex gap-2 pt-2'>
                             <Image
                                 src={gplay}

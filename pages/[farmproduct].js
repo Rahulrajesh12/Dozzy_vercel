@@ -18,6 +18,8 @@ import farm1 from './images/farmhouse/shan.jpg'
 import farm2 from './images/farmhouse/cheritanfarmhouse.jpg'
 import farm3 from './images/farmhouse/Sakethvanam.jpg'
 import farm4 from './images/farmhouse/Urban.jpg'
+import farm5 from './images/farmhouse/zozo.jpeg'
+import farm6 from './images/farmhouse/shan.jpeg'
 import { FaSwimmingPool } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
 import { IoWifi } from "react-icons/io5";
@@ -28,127 +30,81 @@ import { BiCameraMovie } from "react-icons/bi";
 const CarDetails = () => {
 
   const router = useRouter();
-  const [caritem ,setCarItem] = useState('')
+  const [caritem, setCarItem] = useState('')
   const { farmproduct } = router.query;
-  
-//   const filteredData = [
-//     {
-//         maker_model: 'Cheritan',
-//         car_owner_id: 5,
-//         car_number: 'TS28Q1467',
-//         price_24_hours: 1500,
-//         car_image_car_right_view: farm1, // Use imported image directly
-//         fuel_type: 'Petrol',
-//         transmission_type: 'Manual',
-//         seater: '5',
-//         vehicle_color: 'Blue',
-//     },
-//     {
-//         maker_model: 'Saketh Vanam',
-//         car_owner_id: 9,
-//         car_number: 'TS05FC6005',
-//         price_24_hours: 1500,
-//         car_image_car_right_view: farm2,
-//         fuel_type: 'Diesel',
-//         transmission_type: 'Manual',
-//         seater: '5',
-//         vehicle_color: 'Grey',
-//     },
-//     {
-//         maker_model: 'Srinivasa',
-//         car_owner_id: 10,
-//         car_number: 'AP40F8748',
-//         price_24_hours: 1500,
-//         car_image_car_right_view: farm3,
-//         fuel_type: 'Petrol',
-//         transmission_type: 'Manual',
-//         seater: '5',
-//         vehicle_color: 'Grey',
-//     },
-//     {
-//         maker_model: 'Urban',
-//         car_owner_id: 11,
-//         car_number: 'AP39SZ5981',
-//         price_24_hours: 1500,
-//         car_image_car_right_view: farm4,
-//         fuel_type: 'Petrol',
-//         transmission_type: 'Manual',
-//         seater: '5',
-//         vehicle_color: 'Blue',
-//     },
-// ];
-const customData = {
-  "cheritan": {
-      maker_model: 'Cheritan',
-      car_owner_id: 5,
-      car_number: 'TS28Q1467',
-      price_24_hours: 1500,
-      car_image_car_right_view: farm1, 
-      fuel_type: 'Petrol',
-      transmission_type: 'Manual',
-      seater: '5',
-      vehicle_color: 'Blue',
-      desc : "Cheritan Farmhouse, tucked away in the peaceful middle of the forest, provides a dreamlike haven from the bustling city life. Our farmhouse is set up to provide a perfect balance of leisure and enjoyment, guaranteeing you and your loved ones a memorable stay. Special features of Cheritan Farmhouse include a wonderful garden area, a cool swimming pool, a fully stocked kitchen with dishes and bowls, and a barbeque area for delicious meals. A 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5 provide plenty of entertainment options. Play games like chess, carroms, shuttle, cricket, and shuttle to make sure everyone has a good time.",
 
-   },
-  "saketh vanam": {
-    maker_model: 'saketh vanam',
-    car_owner_id: 5,
-    car_number: 'TS28Q1467',
-    price_24_hours: 1500,
-    car_image_car_right_view: farm2, 
-    fuel_type: 'Petrol',
-    transmission_type: 'Manual',
-    seater: '5',
-    vehicle_color: 'Blue',
-    desc: "Traditionally Farmhouses are simply homes built on agricultural lands to house and protect who owned or worked the land. The term Farmhouse isn't necessarily connected to a particular style identified by a fixed set of features, but a setting for a way of life. This is most likely why its appeal seems to be timeless."
-   },
-  "srinivasa": {
-    maker_model: 'srinivasa',
-    car_owner_id: 5,
-    car_number: 'TS28Q1467',
-    price_24_hours: 1500,
-    car_image_car_right_view: farm3,
-    fuel_type: 'Petrol',
-    transmission_type: 'Manual',
-    seater: '5',
-    vehicle_color: 'Blue',
-    desc : "SRINIVASA Farmhouse, nestled amidst the natural beauty, provides a serene escape from the city's hustle and bustle. Tailored for both relaxation and fun, our farmhouse guarantees a memorable experience for you and your loved ones. It features a refreshing swimming pool/baby pool, 12 acres of mango trees, a banyan tree, a fish pond, a fully equipped kitchen with bowls and plates, and a barbecue setup for delightful meals. For entertainment, there's a Bluetooth music system, a 100-inch big projector, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube. Game enthusiasts can indulge in cricket, shuttle, carroms, and chess, promising endless enjoyment for everyone. "
-   },
-  "urban": {
-    maker_model: 'urban',
-    car_owner_id: 5,
-    car_number: 'TS28Q1467',
-    price_24_hours: 1500,
-    car_image_car_right_view: farm4, 
-    fuel_type: 'Petrol',
-    transmission_type: 'Manual',
-    seater: '5',
-    vehicle_color: 'Blue',
-    desc: "A tranquil haven from the bustle of the city, URBAN Farmhouse is tucked away in the picturesque surroundings. Our farmhouse, designed for your enjoyment and relaxation, ensures that you and your loved ones will have an unforgettable experience. Along with a fish pond, 12 acres of mango and banyan trees, a fully stocked kitchen with dishes and bowls, and a grill area for delicious dinners, it has a refreshing swimming pool and baby pool. There is a 100-inch large projector, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube for entertainment. Chess, carroms, shuttle, cricket, and shuttle are available for game lovers to enjoy, with guaranteed fun for everybody."
-   }
- }
+  const customData = {
+    "cheritan": {
+      farm_name: 'Cheritan',
+      price_24_hours: 5900,
+      farm_image: farm1,
+      weekdays: { oneday: "5900", twoday: "6800" },
+      weekends: { oneday: "7900", twoday: "10800" },
+      desc: "Cheritan Farmhouse, tucked away in the peaceful middle of the forest, provides a dreamlike haven from the bustling city life. Our farmhouse is set up to provide a perfect balance of leisure and enjoyment, guaranteeing you and your loved ones a memorable stay. Special features of Cheritan Farmhouse include a wonderful garden area, a cool swimming pool, a fully stocked kitchen with dishes and bowls, and a barbeque area for delicious meals. A 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5 provide plenty of entertainment options. Play games like chess, carroms, shuttle, cricket, and shuttle to make sure everyone has a good time.",
 
- console.log(customData,"jjss");
- 
-return (
+    },
+    "saketh vanam": {
+      farm_name: 'Saketh Vanam',
+      price_24_hours: 13000,
+      farm_image: farm2,
+      weekdays: { oneday: "13000", twoday: "25000" },
+      weekends: { oneday: "18000", twoday: "35000" },
+      desc: "Traditionally Farmhouses are simply homes built on agricultural lands to house and protect who owned or worked the land. The term Farmhouse isn't necessarily connected to a particular style identified by a fixed set of features, but a setting for a way of life. This is most likely why its appeal seems to be timeless."
+    },
+    "srinivasa": {
+      farm_name: 'Srinivasa',
+      price_24_hours: 13000,
+      farm_image: farm3,
+      weekdays: { oneday: "13000", twoday: "25000" },
+      weekends: { oneday: "18000", twoday: "35000" },
+      desc: "SRINIVASA Farmhouse, nestled amidst the natural beauty, provides a serene escape from the city's hustle and bustle. Tailored for both relaxation and fun, our farmhouse guarantees a memorable experience for you and your loved ones. It features a refreshing swimming pool/baby pool, 12 acres of mango trees, a banyan tree, a fish pond, a fully equipped kitchen with bowls and plates, and a barbecue setup for delightful meals. For entertainment, there's a Bluetooth music system, a 100-inch big projector, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube. Game enthusiasts can indulge in cricket, shuttle, carroms, and chess, promising endless enjoyment for everyone. "
+    },
+    "urban": {
+      farm_name: 'Urban',
+      price_24_hours: 8000,
+      farm_image: farm4,
+      weekdays: { oneday: "8000", twoday: "15000" },
+      weekends: { oneday: "13000", twoday: "25000" },
+      desc: "A tranquil haven from the bustle of the city, URBAN Farmhouse is tucked away in the picturesque surroundings. Our farmhouse, designed for your enjoyment and relaxation, ensures that you and your loved ones will have an unforgettable experience. Along with a fish pond, 12 acres of mango and banyan trees, a fully stocked kitchen with dishes and bowls, and a grill area for delicious dinners, it has a refreshing swimming pool and baby pool. There is a 100-inch large projector, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube for entertainment. Chess, carroms, shuttle, cricket, and shuttle are available for game lovers to enjoy, with guaranteed fun for everybody."
+    },
+    "zoo zoo": {
+      farm_name: 'Zoo Zoo',
+      price_24_hours: 8000,
+      farm_image: farm5,
+      weekdays: { oneday: "8000", twoday: "15000" },
+      weekends: { oneday: "13000", twoday: "25000" },
+      desc: "The tranquil haven that Zoo Zoo Farmhouse provides from the bustle of the city is located deep inside the natural world. You and your loved ones are guaranteed a pleasant stay at our farmhouse, which is designed to offer the ideal balance of leisure and enjoyment.The Zoo Zoo Farmhouse has unique features such a cool pool, comfortable sit-out areas, a fully stocked kitchen with dishes and bowls, and a grill for delicious dinners. With a 55-inch TV, WiFi, Bluetooth audio system, Aha, ZEE5, YouTube, Netflix, and Prime, there are plenty of entertainment alternatives. Chess, carroms, shuttle, and cricket are available for those who enjoy playing games, so everyone will have a great time."
+    },
+    "shan": {
+      farm_name: 'Shan',
+      price_24_hours: 10000,
+      farm_image: farm6,
+      weekdays: { oneday: "10000", twoday: "19000" },
+      weekends: { oneday: "15000", twoday: "29000" },
+      desc: "SHAN Farmhouse provides a tranquil getaway from the bustle of the city because it is tucked away in a beautiful natural setting. Our farmhouse is designed to provide you and your loved ones with an unforgettable experience, combining leisure and enjoyment. It has unique features including a cool pool, five acres of mango trees, a fully functional kitchen with dishes and bowls, and a grill for delicious dinners. A 100-inch large projector, Bluetooth audio system, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube are available for amusement. Gamers can play chess, carroms, shuttle, cricket, and shuttle, all of which guarantee hours of fun for all players. "
+    }
+  }
+
+  // console.log(customData, "jjss");
+
+  return (
     <div className='bg-white text-black'>
       <div className=' lg:px-2 mx-auto lg:mx-36 xl:mx-16 md:p-28 lg:p-4 xs:px-5 sm:pt-44 px-2 py-2'>
         <div className='flex flex-col xs:mt-48 md:mt-20 lg:mt-2 md:flex-row p-2 border-2 border-[#556EE6] rounded-md'>
           <div className="relative md:w-2/3 w-full p-1 xl:pt-6 xs:pt-8 border-1 border-gray-300 h-[434px]">
-              <Image
-                src={customData[farmproduct?.toLowerCase()]?.car_image_car_right_view}
-                alt="Car"
-                style={{objectFit:"cover"}}
-                className="relative"
-                fill
-              />
-            </div>
+            <Image
+              src={customData[farmproduct?.toLowerCase()]?.farm_image}
+              alt="Car"
+              style={{ objectFit: "cover" }}
+              className="relative"
+              fill
+            />
+          </div>
           <div className='flex flex-col justify-evenly'>
             <div>
-              <h2 className='p-1 font-bold font-manrope text-lg lg:pl-20 pt-4'>{customData[farmproduct?.toLowerCase()]?.maker_model} from <span className='text-blue-400'> {customData[farmproduct?.toLowerCase()]?.price_24_hours}/day</span>
+              <h2 className='p-1 font-bold font-manrope text-lg lg:pl-20 pt-4 capitalize'>{customData[farmproduct?.toLowerCase()]?.farm_name} from <span className='text-blue-400'> {customData[farmproduct?.toLowerCase()]?.price_24_hours}/day</span>
               </h2>
-             
+
             </div>
           </div>
         </div>
@@ -171,12 +127,12 @@ return (
           <div className="grid grid-cols-2 gap-2 lg:pt-12 xl:pt-8 pt-4 text-xs
                      font-semibold lg:text-base xs: lg:w-full">
             <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
-              <HiCurrencyRupee className="bg-orange-200 rounded-md p-1" size={40} />
-              <p className="ml-2">Zero Deposit</p>
+              <HiCurrencyRupee className="bg-orange-200 rounded-md p-1 text-xs" size={20} />
+              <p className="ml-1">Zero Deposit</p>
             </div>
             <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
-              <FaPeopleLine className="bg-orange-200 rounded px-[4px]" size={40} />
-              <p className=" ml-2">Unlimited Persons</p>
+              <FaPeopleLine className="bg-orange-200 rounded px-[4px]" size={20} />
+              <p className="ml-1">Unlimited Persons</p>
             </div>
           </div>
         </div>
@@ -185,27 +141,27 @@ return (
           <ul className='my-2 flex flex-wrap pb-4 justify-center'>
             <li className='w-36 flex flex-col justify-center gap-2 items-center border-[1px] border-gray-100 py-2   '>
               <FaSwimmingPool size={30} className='text-green-700' />
-              <p className='font text-sm'>Swimming Pool</p>
+              <p className='font text-xs'>Swimming Pool</p>
             </li>
             <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
               <TbAirConditioning size={30} className={`text-${caritem?.vehicle_color}-400`} />
-              <p className='font text-sm'>Air Conditioner</p>
+              <p className='font text-xs'>Air Conditioner</p>
             </li>
             <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
               <IoWifi size={30} className='text-amber-900' />
-              <p className='font- text-sm'>Wifi Connection</p>
+              <p className='font- text-xs'>Wifi Connection</p>
             </li>
             <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
-              <GiBatteryPack size={30} className='text-yellow-500' />
-              <p className='font- text-sm'>Power Backup</p>
+              <GiBatteryPack size={30} className='text-orange-500' />
+              <p className='font- text-xs'>Power Backup</p>
             </li>
             <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
               <MdOutlineWaterDamage size={30} className='text-yellow-500' />
-              <p className='font- text-sm'>Water Purifier + Gycer</p>
+              <p className='font- text-xs'>Water Purifier + Gycer</p>
             </li>
             <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
-              <BiCameraMovie size={30} className='text-yellow-500' />
-              <p className='font- text-sm'>Tv / Projector</p>
+              <BiCameraMovie size={30} className='text-blue-500' />
+              <p className='font- text-xs'>Tv / Projector</p>
             </li>
           </ul>
         </div>
@@ -214,10 +170,6 @@ return (
           {customData[farmproduct?.toLowerCase()]?.desc}
         </p>
 
-        {/* <h2 className='font-semibold text-xl mt-4 font-dmsans py-3'>Why Choose {customData[farmproduct?.toLowerCase()]?.id} from Dozzy</h2>
-        <p className='font-light p-1 leading-6 text-[14px] font-jakarta pb-8'>
-          {customData[farmproduct?.toLowerCase()]?.subdesc}
-        </p> */}
       </div>
     </div>
   );
