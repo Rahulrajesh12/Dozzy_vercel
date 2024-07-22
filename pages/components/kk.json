@@ -1,0 +1,54 @@
+{
+ "cheritan farm house": {
+      "id": "Cheritan",
+      "car_owner_id": 5,
+      "car_number": "TS28Q1467",
+      "price_24_hours": 1500,
+      "car_image_car_right_view": "https://s3.ap-south-2.amazonaws.com/ld-prod-image-urls/9000222449/images/car_image_car_right_view_072c12e6d8544e419a0810ba0fb4bff6.jpeg",
+      "fuel_type": "Petrol",
+      "transmission_type": "Manual",
+      "seater": "5",
+      "vehicle_color": "Blue",
+      "desc" : "Cheritan Farmhouse, tucked away in the peaceful middle of the forest, provides a dreamlike haven from the bustling city life. Our farmhouse is set up to provide a perfect balance of leisure and enjoyment, guaranteeing you and your loved ones a memorable stay. Special features of Cheritan Farmhouse include a wonderful garden area, a cool swimming pool, a fully stocked kitchen with dishes and bowls, and a barbeque area for delicious meals. A 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5 provide plenty of entertainment options. Play games like chess, carroms, shuttle, cricket, and shuttle to make sure everyone has a good time.",
+      "subdesc" : "Over the last several decades, urban investors have developed an interest in purchasing rural acreage and converting it into holiday homes or lavish resorts with plenty of greenery and scenic views. Since the vertical rise of structures in urban centres leaves little room for greenery and open space, demand for such housing choices has surged. As a result, individuals have begun investing actively in property in distant places. A farmhouse is one of these housing types since it enables the investor to possess both property and privacy."
+  },
+ "saketh vanam": {
+      "id": "Saketh Vanam",
+      "car_owner_id": 5,
+      "car_number": "TS28Q1467",
+      "price_24_hours": 1500,
+      "car_image_car_right_view": "https://s3.ap-south-2.amazonaws.com/ld-prod-image-urls/9000222449/images/car_image_car_right_view_072c12e6d8544e419a0810ba0fb4bff6.jpeg",
+      "fuel_type": "Petrol",
+      "transmission_type": "Manual",
+      "seater": "5",
+      "vehicle_color": "Blue",
+      "desc" : "TRADITIONALLY FARMHOUSES are simply homes built on agricultural lands to house and protect who owned or worked the land. The term Farmhouse isn't necessarily connected to a particular style identified by a fixed set of features, but a setting for a way of life. This is most likely why its appeal seems to be timeless.",
+      "subdesc" : "Over the last several decades, urban investors have developed an interest in purchasing rural acreage and converting it into holiday homes or lavish resorts with plenty of greenery and scenic views. Since the vertical rise of structures in urban centres leaves little room for greenery and open space, demand for such housing choices has surged. As a result, individuals have begun investing actively in property in distant places. A farmhouse is one of these housing types since it enables the investor to possess both property and privacy."
+  },
+ "srinivasa farm house": {
+      "id": "Srinivasa",
+      "car_owner_id": 5,
+      "car_number": "TS28Q1467",
+      "price_24_hours": 1500,
+      "car_image_car_right_view": "https://s3.ap-south-2.amazonaws.com/ld-prod-image-urls/9000222449/images/car_image_car_right_view_072c12e6d8544e419a0810ba0fb4bff6.jpeg",
+      "fuel_type": "Petrol",
+      "transmission_type": "Manual",
+      "seater": "5",
+      "vehicle_color": "Blue",
+      "desc" : "SRINIVASA Farmhouse, nestled amidst the natural beauty, provides a serene escape from the city's hustle and bustle. Tailored for both relaxation and fun, our farmhouse guarantees a memorable experience for you and your loved ones. It features a refreshing swimming pool/baby pool, 12 acres of mango trees, a banyan tree, a fish pond, a fully equipped kitchen with bowls and plates, and a barbecue setup for delightful meals. For entertainment, there's a Bluetooth music system, a 100-inch big projector, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube. Game enthusiasts can indulge in cricket, shuttle, carroms, and chess, promising endless enjoyment for everyone. ",
+      "subdesc" : "Over the last several decades, urban investors have developed an interest in purchasing rural acreage and converting it into holiday homes or lavish resorts with plenty of greenery and scenic views. Since the vertical rise of structures in urban centres leaves little room for greenery and open space, demand for such housing choices has surged. As a result, individuals have begun investing actively in property in distant places. A farmhouse is one of these housing types since it enables the investor to possess both property and privacy."
+  },
+ "urban farm house": {
+      "id": "Urban",
+      "car_owner_id": 5,
+      "car_number": "TS28Q1467",
+      "price_24_hours": 1500,
+      "car_image_car_right_view": "https://s3.ap-south-2.amazonaws.com/ld-prod-image-urls/9000222449/images/car_image_car_right_view_072c12e6d8544e419a0810ba0fb4bff6.jpeg",
+      "fuel_type": "Petrol",
+      "transmission_type": "Manual",
+      "seater": "5",
+      "vehicle_color": "Blue",
+      "desc" : "A tranquil haven from the bustle of the city, URBAN Farmhouse is tucked away in the picturesque surroundings. Our farmhouse, designed for your enjoyment and relaxation, ensures that you and your loved ones will have an unforgettable experience. Along with a fish pond, 12 acres of mango and banyan trees, a fully stocked kitchen with dishes and bowls, and a grill area for delicious dinners, it has a refreshing swimming pool and baby pool. There is a 100-inch large projector, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube for entertainment. Chess, carroms, shuttle, cricket, and shuttle are available for game lovers to enjoy, with guaranteed fun for everybody.",
+      "subdesc" : "Over the last several decades, urban investors have developed an interest in purchasing rural acreage and converting it into holiday homes or lavish resorts with plenty of greenery and scenic views. Since the vertical rise of structures in urban centres leaves little room for greenery and open space, demand for such housing choices has surged. As a result, individuals have begun investing actively in property in distant places. A farmhouse is one of these housing types since it enables the investor to possess both property and privacy."
+  }
+}
