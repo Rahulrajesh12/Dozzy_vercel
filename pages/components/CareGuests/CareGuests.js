@@ -20,7 +20,7 @@ const CareGuests = () => {
                         <li className='w-[30%] lg:w-[22%] border-2 border-gray-200 rounded-md p-1 lg:p-3'><p className='font-semibold md:text-base text-[9px] text-[#556EE6] lg:text-2xl'>Unlimited Persons </p>
                             <p className='text-[8px] md:text-xs lg:text-xl'>Dozzy has no limit on no of persons. Enjoy Unlimited Entries </p>
                         </li>
-                        <li className='w-[30%] lg:w-[22%] border-2 border-gray-200 rounded-md p-1 lg:p-3'><p className='font-semibold md:text-base text-[9px] text-[#556EE6] lg:text-2xl'>Heavy Discounts </p>
+                        <li className='w-[30%] lg:w-[22%] border-2 border-gray-200 rounded-md p-1 lg:p-3'><p className='font-semibold md:text-base text-[9px] text-[#556EE6] lg:text-2xl'>Best-in-market Discounts </p>
                             <p className='text-[8px] md:text-xs lg:text-xl'>Dozzy applicable on weekdays and weekends.</p>
                         </li>
                     </ul>
