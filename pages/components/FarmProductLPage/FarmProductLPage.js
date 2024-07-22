@@ -91,18 +91,13 @@ const FarmProductLPage = () => {
                                 <div className="px-2 pt-4 flex flex-col gap-4 p-1">
                                     <div className='flex items-baseline justify-between px-2'>
                                         <Link href={`/${item.farm_name.toLowerCase()}`}><p className='text-[#556EE6] text-sm'>Dozzy Farm House</p></Link>
-                                        {/* <p className="text-black font-bold">₹ {item.price_24_hours}/day</p> */}
-                                        {/* <div className='flex gap-1 flex-col text-'>
-                                            <p className="text-black font-bold flex text-xs"><span className='text-[#556EE6]'>Mon-Fri</span><span className='pl-2'>₹ {item.weekdays.oneday} /Day</span></p>
-                                            <p className="text-black font-bold flex  text-xs"><span className=' text-[#556EE6]'>Fri-Sun</span><span className='pl-2'>₹ {item.weekends.oneday} /Day</span></p>
-                                        </div> */}
                                         <Link href={`/${item.farm_name.toLowerCase()}`}>
                                             <p className="text-gray-700 cursor-pointer font-semibold text-xl hover:text-red-600 w-fit">{item.farm_name}</p>
                                         </Link>
                                     </div>
                                     <div className=' px-2'>
                                         <div className='flex gap-1 flex-col justify-center items-center  text-'>
-                                            <p className="text-black font-bold flex text-base"><span className='text-[#556EE6]'>Mon-Fri</span><span className='pl-2'>₹ {item.weekdays.oneday} /Day</span></p>
+                                            <p className="text-black font-bold flex text-base"><span className='text-[#556EE6]'>Mon-Thu</span><span className='pl-2'>₹ {item.weekdays.oneday} /Day</span></p>
                                             <p className="text-black font-bold flex  text-base"><span className=' text-[#556EE6]'>Fri-Sun</span><span className='pl-2'>₹ {item.weekends.oneday} /Day</span></p>
                                         </div>
 
