@@ -90,7 +90,7 @@ const CarDetails = () => {
   return (
     <div className='bg-white text-black'>
       <div className=' lg:px-2 mx-auto lg:mx-36 xl:mx-16 md:p-28 lg:p-4 xs:px-5 sm:pt-44 px-2 py-2'>
-        <div className='flex flex-col xs:mt-48 md:mt-20 lg:mt-2 md:flex-row p-2 border-2 border-[#556EE6] rounded-md'>
+        <div className='flex flex-col md:mt-20 lg:mt-2 md:flex-row p-2 border-2 border-[#556EE6] rounded-md'>
           <div className="relative md:w-2/3 w-full p-1 xl:pt-6 xs:pt-8 border-1 border-gray-300 h-[434px]">
             <Image
               src={customData[farmproduct?.toLowerCase()]?.farm_image}
@@ -112,7 +112,7 @@ const CarDetails = () => {
           <h2 className='font-semibold text-xl font-manrope pb-2'>Contact Us By</h2>
           <div className='flex justify-start gap-2 lg:gap-5 xl:gap-8 xl:pt-4 pb-2 xs:gap-2 xs:pt-2 text-white'>
             <button className='bg-green-500 rounded-full p-2 lg:p-3'>
-              <Link href="https://api.whatsapp.com/send?phone=9666677405" target='_blank'>
+            <Link href="https://api.whatsapp.com/send?phone=+9111911162text=Hi%0AI%20am%20looking%20for%20a%farmhouse%20booking." target='_blank'>
                 <p className=' flex items-center gap-1 text-sm'><span><FaWhatsapp className='xl:size-6' /></span> <span>Whatsapp</span></p>
               </Link>
             </button>
@@ -137,36 +137,36 @@ const CarDetails = () => {
           </div>
         </div>
         <div className='overview pt-10'>
-          <h2 className='font-bold text-2xl border-l-2 border-red-900 mb-4 font-manrope'>Our Amenities</h2>
-          <ul className='my-2 flex flex-wrap pb-4 justify-center'>
-            <li className='w-36 flex flex-col justify-center gap-2 items-center border-[1px] border-gray-100 py-2   '>
-              <FaSwimmingPool size={30} className='text-green-700' />
-              <p className='font text-xs'>Swimming Pool</p>
+          <h2 className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-4 font-manrope'>Our Amenities</h2>
+          <ul className='my-2 flex-wrap pb-4 grid grid-cols-2 gap-y-3 lg:grid-cols-3  lg:gap-y-5 justify-center'>
+            <li className='w-36 lg:w-72 flex flex-col justify-center gap-2 items-center border-[1px] border-gray-100 py-2   '>
+              <FaSwimmingPool size={30} className='text-green-700 lg:size-16' />
+              <p className='font text-xs lg:text-lg '>Swimming Pool</p>
             </li>
-            <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
-              <TbAirConditioning size={30} className={`text-${caritem?.vehicle_color}-400`} />
-              <p className='font text-xs'>Air Conditioner</p>
+            <li className='w-36 lg:w-72 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
+              <TbAirConditioning size={30} className={`text-${caritem?.vehicle_color}-400 lg:size-16`} />
+              <p className='font text-xs lg:text-lg'>Air Conditioner</p>
             </li>
-            <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
-              <IoWifi size={30} className='text-amber-900' />
-              <p className='font- text-xs'>Wifi Connection</p>
+            <li className='w-36 lg:w-72 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
+              <IoWifi size={30} className='text-amber-900 lg:size-16' />
+              <p className='font text-xs lg:text-lg'>Wifi Connection</p>
             </li>
-            <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
-              <GiBatteryPack size={30} className='text-orange-500' />
-              <p className='font- text-xs'>Power Backup</p>
+            <li className='w-36 lg:w-72 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
+              <GiBatteryPack size={30} className='text-orange-500 lg:size-16' />
+              <p className='font text-xs lg:text-lg'>Power Backup</p>
             </li>
-            <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
-              <MdOutlineWaterDamage size={30} className='text-yellow-500' />
-              <p className='font- text-xs'>Water Purifier + Gycer</p>
+            <li className='w-36 lg:w-72 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
+              <MdOutlineWaterDamage size={30} className='text-yellow-500 lg:size-16' />
+              <p className='font text-xs lg:text-lg'>Water Purifier + Gyser</p>
             </li>
-            <li className='w-36 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
-              <BiCameraMovie size={30} className='text-blue-500' />
-              <p className='font- text-xs'>Tv / Projector</p>
+            <li className='w-36 lg:w-72 flex flex-col justify-center items-center gap-2 border-[1px] border-gray-100 py-2   '>
+              <BiCameraMovie size={30} className='text-blue-500 lg:size-16' />
+              <p className='font text-xs lg:text-lg'>Tv / Projector</p>
             </li>
           </ul>
         </div>
-        <h2 className='font-bold text-2xl border-l-2 border-red-900 mb-3 mt-4 font-manrope' >Description</h2>
-        <p className='font-light p-1 text-[14px] leading-6 font-jakarta pb-8'>
+        <h2 className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-3 mt-4 font-manrope' >Description</h2>
+        <p className='font-normal p-1 text-[14px] lg:text-xl leading-6 font-poppins pb-8'>
           {customData[farmproduct?.toLowerCase()]?.desc}
         </p>
 

@@ -1,3 +1,47 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/poppins.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/font/jakarta.woff2") format("woff2");
+  /* Add additional font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("/font/dmsans.woff2") format("woff2");
+  /* Add additional font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope", sans-serif;
+  src: url("/font/manrope2.woff2") format("woff2");
+  /* Add additional font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/font/opensans.woff2") format("woff2");
+  /* Add additional font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: 'ui-sans-serif', 'system-ui';
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,6 +64,25 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white
 }
+.carousel .slide {
+  background: white !important;
+}
+
+.selected > div {
+    /* border: 4px solid firebrick; */
+    /* scale: 1.; */
+    /* background-color: lightgoldenrodyellow; */
+
+}
+
+.carousel.carousel-slider .control-arrow {
+  /* background: #556ee6 !important;
+  z-index: 10 !important;
+  color: yellow !important; */
+}
+
+
+
 
 @layer utilities {
   .text-balance {

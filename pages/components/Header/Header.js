@@ -7,7 +7,7 @@ const  Header = () => {
       <div>
 
       <p className='lg:text-3xl text-sm  text-[#556EE6]'>For Booking help</p>
-      <p className='lg:text-3xl'>9111-9111-62</p>
+      <Link className='lg:text-3xl text-black' href="tel:9111911162" target='_blank'>9111-9111-62</Link>
       </div>
     </div>
   )
