@@ -15,11 +15,12 @@ const CareGuests = () => {
     <div className="lg:px-12 py-4">
       <div className="">
         <div className="">
-          <p className="font-bold pb-4 px-4 md:text-2xl lg:text-4xl lg:py-8 font-poppins">
+          <p className="font-semibold pb-4 px-4 md:text-2xl lg:text-4xl lg:py-8 font-poppins">
             How We Care About Our Guests
           </p>
           <div className="bg-white rounded-md">
             <Carousel
+              showThumbs={false}
               infiniteLoop={true}
               autoPlay={true}
               interval={2000}
@@ -32,19 +33,18 @@ const CareGuests = () => {
               partialVisible={false}
               itemsToShow={1}
             >
-              
-               <div className="bg-blue-100 flex gap-4 h-[90px] w-[280px] lg:h-full lg:w-full items-center justify-center lg:mx-24 mx-2 lg-w[70%] lg-w[70%] border-2 border-gray-200 rounded-lg p-1 px-3  lg:p-3">
-                <HiCurrencyRupee className="bg-[#556EE6] text-white p-1 w-16 h-12 rounded lg:w-16 lg:h-14" />
+              <div className="bg-blue-100 flex gap-4 h-[90px] lg:h-full   items-center justify-center lg:mx-24 mx-2 lg-w[70%] lg-w[50%] border-2 border-gray-200 rounded-lg p-1 px-3  lg:p-3">
+                <HiCurrencyRupee className="bg-[#556EE6] text-white p-1 w-12 h-10 rounded lg:w-16 lg:h-14" />
                 <div className="text-left">
                   <p className="font-semibold md:text-base text-[12px]  lg:text-2xl text-[#556ee6] underline">
-                  Zero Deposit
+                    Zero Deposit
                   </p>
                   <p className="text-[10px] md:text-xs lg:text-xl">
-                  We don't Collect Any Secutity Deposit
+                    We don't Collect Any Secutity Deposit
                   </p>
                 </div>
               </div>
-              <div className="bg-purple-100 flex gap-4 h-[90px] w-[280px] lg:h-full lg:w-full items-center justify-center lg:mx-24 mx-2 lg-w[70%] lg-w[70%] border-2 border-gray-200 rounded-lg p-1 px-3  lg:p-3">
+              <div className="bg-purple-100 flex gap-4 h-[90px] lg:h-full   items-center justify-center lg:mx-24 mx-2 lg-w[70%] lg-w[50%] border-2 border-gray-200 rounded-lg p-1 px-3  lg:p-3">
                 <PiInfinityBold className="bg-[#556EE6] text-white p-1 w-16 h-12 rounded lg:w-16 lg:h-14" />
                 <div className="text-left">
                   <p className="font-semibold md:text-base text-[12px]  lg:text-2xl text-[#556ee6] underline">
@@ -55,7 +55,7 @@ const CareGuests = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-yellow-50 flex gap-3 h-[90px] w-[280px] lg:h-full lg:w-full items-center justify-center lg:mx-24 mx-2 lg-w[70%] lg-w[70%] border-2 border-gray-200 rounded-lg p-1 px-3 lg:p-3">
+              <div className="bg-yellow-50 flex gap-3 h-[90px]  lg:h-full   items-center justify-center lg:mx-24 mx-2 lg-w[70%] lg-w[50%] border-2 border-gray-200 rounded-lg p-1 px-3 lg:p-3">
                 <BiSolidOffer className="bg-[#556EE6] text-white p-1 w-16 h-12 rounded lg:w-16 lg:h-14" />
                 <div className="text-left">
                   <p className="font-semibold md:text-base text-[12px]  lg:text-2xl text-[#556ee6] underline">
@@ -71,7 +71,7 @@ const CareGuests = () => {
         </div>
 
         <div className="py-6 px-4">
-          <p className="font-bold pb-3 lg:text-4xl lg:py-8">
+          <p className="font-semibold pb-3 lg:text-4xl lg:py-8">
             Book With Just 3 Easy Steps
           </p>
           <div className="flex items-center">
@@ -84,7 +84,6 @@ const CareGuests = () => {
                 fill
                 objectFit="cover"
                 className="rounded-lg "
-              
               />
             </div>
             <ul className="pl-2 lg:pl-10 flex flex-col lg:gap-5">
