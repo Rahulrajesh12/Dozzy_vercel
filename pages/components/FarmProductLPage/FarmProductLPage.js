@@ -5,29 +5,29 @@ import { useState } from "react";
 import { BsStarFill } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
-import cfarm1 from "../../images/cheritan/1.jpeg"
-import cfarm2 from "../../images/cheritan/2.jpeg"
-import cfarm3 from "../../images/cheritan/4.jpeg"
+import cfarm1 from "../../images/cheritan/1.webp"
+import cfarm2 from "../../images/cheritan/2.webp"
+import cfarm3 from "../../images/cheritan/4.webp"
 
-import skfarm1 from "../../images/saketh/1.jpeg"
-import skfarm2 from "../../images/saketh/2.jpeg"
-import skfarm3 from "../../images/saketh/3.jpeg"
+import skfarm1 from "../../images/saketh/1.webp"
+import skfarm2 from "../../images/saketh/2.webp"
+import skfarm3 from "../../images/saketh/3.webp"
 
-import shfarm1 from "../../images/shan/1.jpeg"
-import shfarm2 from "../../images/shan/2.jpeg"
-import shfarm3 from "../../images/shan/3.jpeg"
+import shfarm1 from "../../images/shan/1.webp"
+import shfarm2 from "../../images/shan/2.webp"
+import shfarm3 from "../../images/shan/3.webp"
 
-import srfarm1 from "../../images/srinivasa/1.jpeg"
-import srfarm2 from "../../images/srinivasa/2.jpeg"
-import srfarm3 from "../../images/srinivasa/3.jpeg"
+import srfarm1 from "../../images/srinivasa/1.webp"
+import srfarm2 from "../../images/srinivasa/2.webp"
+import srfarm3 from "../../images/srinivasa/3.webp"
 
-import ufarm1 from "../../images/urban/1.jpeg"
-import ufarm2 from "../../images/urban/2.jpeg"
-import ufarm3 from "../../images/urban/3.jpeg"
+import ufarm1 from "../../images/urban/1.webp"
+import ufarm2 from "../../images/urban/2.webp"
+import ufarm3 from "../../images/urban/3.webp"
 
-import zfarm1 from "../../images/zoozoo/1.jpeg"
-import zfarm2 from "../../images/zoozoo/2.jpeg"
-import zfarm3 from "../../images/zoozoo/3.jpeg"
+import zfarm1 from "../../images/zoozoo/1.webp"
+import zfarm2 from "../../images/zoozoo/2.webp"
+import zfarm3 from "../../images/zoozoo/3.webp"
 
 
 import { Carousel } from "react-responsive-carousel";
@@ -163,7 +163,7 @@ const FarmProductLPage = () => {
                                             </li>
                                             <li className="bg-blue-500 w-full p-2 rounded-br-md text-white border-[1px] border-black">
                                                 {" "}
-                                                <Link href="tel:9666677405" target="_blank">
+                                                <Link href="tel:9111911162" target="_blank">
                                                     <p className=" flex gap-1 text-sm justify-center">
                                                         <span>
                                                             <BiPhoneCall size={20} />

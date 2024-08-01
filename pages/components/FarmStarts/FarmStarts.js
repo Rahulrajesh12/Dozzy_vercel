@@ -14,7 +14,6 @@ const FarmStarts = () => {
                         src={grpfarm}
                         alt='farmhouse'
                         className=''
-                        layout='responsive'
                     />
                 </div>
                 <div className='w-3/5 lg:pl-10'>
@@ -28,7 +27,7 @@ const FarmStarts = () => {
                             </Link>
                         </button>
                         <button className='bg-blue-500 rounded-md py-1 px-1 w-16 lg:w-28'>
-                            <Link href="tel:9666677405" target='_blank'>
+                            <Link href="tel:9111911162" target='_blank'>
                                 <p className='flex gap-1 items-center text-[8px] lg:text-lg'><span><BiPhoneCall className='lg:size-6' size={10} /></span> <span>Call Us</span></p>
                             </Link>
                         </button>

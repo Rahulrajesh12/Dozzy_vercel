@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import steps from "../../images/steps.svg";
+import steps from "../../images/steps.webp";
 import { SlCalender } from "react-icons/sl";
 import { MdOutlineFindReplace } from "react-icons/md";
 import { GiConfirmed } from "react-icons/gi";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from "react-responsive-carousel";
 import { HiCurrencyRupee } from "react-icons/hi2";
 import { PiInfinityBold } from "react-icons/pi";
@@ -82,8 +82,7 @@ const CareGuests = () => {
                 // width={170}
                 // height={100}
                 fill
-                objectFit="cover"
-                className="rounded-lg "
+                className="rounded-lg bg-cover"
               />
             </div>
             <ul className="pl-2 lg:pl-10 flex flex-col lg:gap-5">

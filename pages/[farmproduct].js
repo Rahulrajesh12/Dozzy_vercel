@@ -28,29 +28,29 @@ import { MdSportsHandball } from "react-icons/md";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import cfarm1 from "./images/cheritan/1.jpeg"
-import cfarm2 from "./images/cheritan/2.jpeg"
-import cfarm3 from "./images/cheritan/4.jpeg"
+import cfarm1 from "./images/cheritan/1.webp"
+import cfarm2 from "./images/cheritan/2.webp"
+import cfarm3 from "./images/cheritan/4.webp"
 
-import skfarm1 from "./images/saketh/1.jpeg"
-import skfarm2 from "./images/saketh/2.jpeg"
-import skfarm3 from "./images/saketh/3.jpeg"
+import skfarm1 from "./images/saketh/1.webp"
+import skfarm2 from "./images/saketh/2.webp"
+import skfarm3 from "./images/saketh/3.webp"
 
-import shfarm1 from "./images/shan/1.jpeg"
-import shfarm2 from "./images/shan/2.jpeg"
-import shfarm3 from "./images/shan/3.jpeg"
+import shfarm1 from "./images/shan/1.webp"
+import shfarm2 from "./images/shan/2.webp"
+import shfarm3 from "./images/shan/3.webp"
 
-import srfarm1 from "./images/srinivasa/1.jpeg"
-import srfarm2 from "./images/srinivasa/2.jpeg"
-import srfarm3 from "./images/srinivasa/3.jpeg"
+import srfarm1 from "./images/srinivasa/1.webp"
+import srfarm2 from "./images/srinivasa/2.webp"
+import srfarm3 from "./images/srinivasa/3.webp"
 
-import ufarm1 from "./images/urban/1.jpeg"
-import ufarm2 from "./images/urban/2.jpeg"
-import ufarm3 from "./images/urban/3.jpeg"
+import ufarm1 from "./images/urban/1.webp"
+import ufarm2 from "./images/urban/2.webp"
+import ufarm3 from "./images/urban/3.webp"
 
-import zfarm1 from "./images/zoozoo/1.jpeg"
-import zfarm2 from "./images/zoozoo/2.jpeg"
-import zfarm3 from "./images/zoozoo/3.jpeg"
+import zfarm1 from "./images/zoozoo/1.webp"
+import zfarm2 from "./images/zoozoo/2.webp"
+import zfarm3 from "./images/zoozoo/3.webp"
 
 
 const CarDetails = () => {
@@ -113,32 +113,43 @@ const CarDetails = () => {
 
   return (
     <div className='bg-white text-black mont-text'>
-      <div className=' lg:px-2 mx-auto lg:mx-16 xl:mx-16 lg:p-4 xs:px-5 px-2 py-2'>
+      <div className=' lg:px-2 lg:mx-16 xl:mx-16 lg:p-4  px-2 py-2'>
         <div className='flex flex-col md:flex-row md:mt-2 lg:mt-2 lg:gap-16  p-2 border-2 border-[#556EE6] rounded-md'>
-          <div className="crsldetails rounded-lg overflow-hidden lg:w-[45%]">
+          <div className="crsldetails rounded-lg xl:w-[45%] lg:w-[70%]">
             <Carousel
               showThumbs={false}
               showArrows={true}
               showStatus={false}
               showIndicators={false}
               infiniteLoop={true}
-              // autoPlay={true}
+              autoPlay={true}
               interval={5000}
               stopOnHover={true}
               className=""
             >
-              {<Image src={customData[farmproduct?.toLowerCase()]?.farm_image.c1} alt={"1"} />}
-              {<Image src={customData[farmproduct?.toLowerCase()]?.farm_image.c2} alt={"2"} />}
-              {<Image src={customData[farmproduct?.toLowerCase()]?.farm_image.c3} alt={"3"} />}
+              {<Image className='rounded-md' src={customData[farmproduct?.toLowerCase()]?.farm_image.c1} alt={"1"} />}
+              {<Image className='rounded-md' src={customData[farmproduct?.toLowerCase()]?.farm_image.c2} alt={"2"} />}
+              {<Image className='rounded-md' src={customData[farmproduct?.toLowerCase()]?.farm_image.c3} alt={"3"} />}
             </Carousel>
           </div>
-          <div className='flex flex-col pt-4'>
+          <div className='flex flex-col lg:gap-20 gap-4 lg:pt-20 pt-2'>
             <div>
-              <h2 className='p-1 font-bold  text-lg lg:text-2xl lg: capitalize'>{customData[farmproduct?.toLowerCase()]?.farm_name} Farm House <p className='text-blue-400 pt-3'> {customData[farmproduct?.toLowerCase()]?.price_24_hours}/day</p>
+              <h2 className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[farmproduct?.toLowerCase()]?.farm_name} Farm House <p className='text-blue-600 pt-3'>₹ {customData[farmproduct?.toLowerCase()]?.price_24_hours}/day</p>
               </h2>
             </div>
+            <div className="grid grid-cols-2 gap-4  text-xs
+                     font-semibold lg:text-base xs: lg:w-full">
+                <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
+                  <HiCurrencyRupee className="bg-[#556ee6] rounded-md p-1 text-white text-xs" size={30} />
+                  <p className="ml-1">Zero Deposit</p>
+                </div>
+                <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
+                  <FaPeopleLine className="bg-[#556ee6] text-white rounded px-[4px]" size={30} />
+                  <p className="ml-1">Unlimited Persons</p>
+                </div>
+              </div>
             <div className=''>
-              <h2 className='font-semibold text-xl pb-2 xl:pt-8 lg:pt-3'>Contact Us By</h2>
+              <h2 className='font-semibold text-xl'>Contact Us By</h2>
               <div className='flex justify-start gap-2 lg:gap-5 xl:gap-8 xl:pt-4 pb-2 xs:gap-2 xs:pt-2 text-white'>
                 <button className='bg-green-500 rounded-md p-2 lg:p-3'>
                   <Link href="https://api.whatsapp.com/send?phone=+9111911162text=Hi%0AI%20am%20looking%20for%20a%farmhouse%20booking." target='_blank'>
@@ -151,21 +162,11 @@ const CarDetails = () => {
                   </Link>
                 </button>
               </div>
-              <div className="grid grid-cols-2 gap-2 xl:pt-12 pt-4 text-xs
-                     font-semibold lg:text-base xs: lg:w-full">
-                <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
-                  <HiCurrencyRupee className="bg-[#556ee6] rounded-md p-1 text-white text-xs" size={40} />
-                  <p className="ml-1">Zero Deposit</p>
-                </div>
-                <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
-                  <FaPeopleLine className="bg-[#556ee6] text-white rounded px-[4px]" size={40} />
-                  <p className="ml-1">Unlimited Persons</p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
-        <div className='overview pt-10'>
+        <div className='overview pt-10 px-5 lg:px-0'>
           <h2 className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-4  '>Our Amenities</h2>
           <ul className='my-2 flex-wrap pb-4 grid grid-cols-2 gap-y-3 lg:flex justify-center lg:justify-normal'>
             <li className='w-36 lg:w-36 flex flex-col justify-center gap-2 items-center border-[1px] border-gray-100 py-2   '>
@@ -188,7 +189,7 @@ const CarDetails = () => {
               <MdOutlineWaterDamage size={20} className='text-yellow-500 lg:size-10' />
               <p className='font text-xs lg:text-base text-center'>Water Purifier + Gyser</p>
             </li>
-            
+
           </ul>
           <ul className='my-2 flex-wrap pb-4 grid grid-cols-2 gap-y-3 lg:flex justify-center lg:justify-normal'>
             <li className='w-36 lg:w-36 flex flex-col justify-center gap-2 items-center border-[1px] border-gray-100 py-2   '>
@@ -211,30 +212,26 @@ const CarDetails = () => {
               <MdOutlineSportsVolleyball size={20} className='text-purple-500 lg:size-10' />
               <p className='font text-xs lg:text-base text-center'>In & Out-Door Games</p>
             </li>
-          
 
           </ul>
         </div>
-        <div>
-          <p className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-3 mt-4  '>Property Rules</p>
-          <div className='flex flex-wrap'>
+        <div className='px-5 lg:px-0'>
+          <p className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mt-4  '>Property Rules</p>
+          <div className='flex flex-wrap flex-col'>
             <ul className='p-4 text-sm font-normaltext-[14px] lg:text-lg leading-6 font-poppins'>
               <li className='list-disc'><p>Check in after 1pm | Check Out before 12pm </p></li>
               <li className='list-disc'><p>Alcohol Consumption Is Allowed</p></li>
               <li className='list-disc'><p>Pets are allowed </p></li>
               <li className='list-disc'><p>Guests are responsible for their safety and belongings</p></li>
               <li className='list-disc'><p>Cooking and Barbequee available on demand</p></li>
-              {/* <li className='list-disc'><p></p></li> */}
               <li className='list-disc'><p>Aadhar photo is compulsory for each & every person</p></li>
               <li className='list-disc'><p>No delay in Checkout We have Another Booking</p></li>
               <li className='list-disc'><p>Any Damage Customer has to Pay</p></li>
-              {/* <li className='list-disc'><p></p></li>
-              <li className='list-disc'><p></p></li>
-              <li className='list-disc'><p></p></li> */}
+              
             </ul>
             <ul className='p-4 text-sm font-normaltext-[14px] lg:text-lg leading-6 font-poppins capitalize'>
-            <p className='font-bold text-xl lg:text-xl   text-gray-500 underline pb-2'>Additional Charges</p>
-              <li className='list-disc'><p>Self Cooking Acess - 500</p></li>
+              <p className='font-bold text-xl lg:text-2xl  text-gray-500 underline pb-2'>Additional Charges</p>
+              <li className='list-disc'><p>Self Cooking Access - 500</p></li>
               <li className='list-disc'><p>barbecue Setup - 500</p></li>
               <li className='list-disc'>bonfire Setup - 500<p></p></li>
               <li className='list-disc'><p>Cleaning charges - 500</p></li>
@@ -244,10 +241,12 @@ const CarDetails = () => {
           </div>
 
         </div>
-        <h2 className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-3 mt-4  ' >Description</h2>
+        <div className='px-5 lg:px-0'>
+        <h2 className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-3 mt-4 ' >Description</h2>
         <p className='font-normal p-1 text-[14px] lg:text-lg leading-6 font-poppins pb-8 lg:w-[50%]'>
           {customData[farmproduct?.toLowerCase()]?.desc}
         </p>
+        </div>
 
       </div>
     </div>
