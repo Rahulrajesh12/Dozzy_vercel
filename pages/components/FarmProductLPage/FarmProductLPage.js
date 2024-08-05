@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import { BsStarFill } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
@@ -32,6 +33,7 @@ import zfarm3 from "../../images/zoozoo/3.webp"
 
 import { Carousel } from "react-responsive-carousel";
 const FarmProductLPage = () => {
+    const router = useRouter();
 
     const filteredData = [
         {
@@ -77,7 +79,10 @@ const FarmProductLPage = () => {
             weekends: { oneday: "15000", twoday: "29000" },
         },
     ];
+    const handleImageClick = (url) => {
 
+        router.push(`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)
+    };
     return (
         <div>
             <div className="text-sm pl-4 py-4 md:px-12 lg:py-16">
@@ -93,25 +98,37 @@ const FarmProductLPage = () => {
                     {filteredData?.map((item, index) => (
                         <React.Fragment key={index}>
                             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:w-[454px] w-[97%] md:w-80 h-full lg:hover:scale-105">
-                                <Link href={`/${item.farm_name.toLowerCase()}`}>
-                                    <div className="imgcrsl rounded-lg overflow-hidden">
-                                        <Carousel
-                                            showThumbs={false}
-                                            showArrows={true}
-                                            showStatus={false}
-                                            showIndicators={false}
-                                            infiniteLoop={true}
-                                            autoPlay={true}
-                                            interval={5000}
-                                            stopOnHover={true}
-                                            className="w-full"
-                                        >
-                                            {<Image src={item.farm_image.c1} alt={"1"} />}
-                                            {<Image src={item.farm_image.c2} alt={"2"} />}
-                                            {<Image src={item.farm_image.c3} alt={"3"} />}
-                                        </Carousel>
-                                    </div>
-                                </Link>
+                                {/* <Link href={`/${item.farm_name.toLowerCase()}`}> */}
+                                <div className="relative crsldetails rounded-lg overflow-hidden">
+                                    <Carousel
+                                        showThumbs={false}
+                                        showArrows={true}
+                                        showStatus={false}
+                                        showIndicators={false}
+                                        infiniteLoop={true}
+                                        autoPlay={true}
+                                        interval={5000}
+                                        stopOnHover={true}
+                                    >
+                                        <div onClick={() => {
+                                            router.push(`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)
+                                        }}>
+                                            <Image src={item.farm_image.c1}></Image>
+                                        </div>
+                                        <div onClick={() => {
+                                            router.push(`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)
+                                        }}>
+                                            <Image src={item.farm_image.c2}></Image>
+                                        </div>
+                                        <div onClick={() => {
+                                            router.push(`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)
+                                        }}>
+                                            <Image src={item.farm_image.c3}></Image>
+                                        </div>
+
+                                    </Carousel>
+
+                                </div>
 
                                 <div className="px-2 flex flex-col gap-4 p-1">
                                     <div className="flex items-baseline justify-between px-2">

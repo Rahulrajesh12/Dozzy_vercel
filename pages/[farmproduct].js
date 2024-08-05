@@ -19,11 +19,7 @@ import { BiCameraMovie } from "react-icons/bi";
 import { FaKitchenSet } from "react-icons/fa6";
 import { GiBarbecue } from "react-icons/gi";
 import { IoIosBonfire } from "react-icons/io";
-import { BiSolidSpeaker } from "react-icons/bi";
-import { MdSportsEsports } from "react-icons/md";
 import { MdOutlineSportsVolleyball } from "react-icons/md";
-
-import { MdSportsHandball } from "react-icons/md";
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -58,6 +54,7 @@ const CarDetails = () => {
   const router = useRouter();
   const [caritem, setCarItem] = useState('')
   const { farmproduct } = router.query;
+  const mdfyFarmProduct = farmproduct?.toLowerCase().replace(/-/g, " ");
 
   const customData = {
     "cheritan": {
@@ -127,14 +124,14 @@ const CarDetails = () => {
               stopOnHover={true}
               className=""
             >
-              {<Image className='rounded-md' src={customData[farmproduct?.toLowerCase()]?.farm_image.c1} alt={"1"} />}
-              {<Image className='rounded-md' src={customData[farmproduct?.toLowerCase()]?.farm_image.c2} alt={"2"} />}
-              {<Image className='rounded-md' src={customData[farmproduct?.toLowerCase()]?.farm_image.c3} alt={"3"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt={"1"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt={"2"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt={"3"} />}
             </Carousel>
           </div>
           <div className='flex flex-col lg:gap-20 gap-4 lg:pt-20 pt-2'>
             <div>
-              <h2 className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[farmproduct?.toLowerCase()]?.farm_name} Farm House <p className='text-blue-600 pt-3'>₹ {customData[farmproduct?.toLowerCase()]?.price_24_hours}/day</p>
+              <h2 className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[mdfyFarmProduct?.toLowerCase()]?.farm_name} Farm House <p className='text-blue-600 pt-3'>₹ {customData[mdfyFarmProduct?.toLowerCase()]?.price_24_hours}/day</p>
               </h2>
             </div>
             <div className="grid grid-cols-2 gap-4  text-xs
@@ -168,7 +165,7 @@ const CarDetails = () => {
         </div>
         <div className='overview pt-10 px-5 lg:px-0'>
           <h2 className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-4  '>Our Amenities</h2>
-          <ul className='my-2 flex-wrap pb-4 grid grid-cols-2 gap-y-3 lg:flex justify-center lg:justify-normal'>
+          <ul className='my-2 flex-wrap pb-4 grid grid-cols-2 gap-y-3 lg:flex lg:w-[83%] xl:w-[60%] justify-center lg:justify-normal'>
             <li className='w-36 lg:w-36 flex flex-col justify-center gap-2 items-center border-[1px] border-gray-100 py-2   '>
               <FaSwimmingPool size={20} className='text-green-700 lg:size-10' />
               <p className='font text-xs lg:text-base text-center '>Swimming Pool</p>
@@ -189,9 +186,6 @@ const CarDetails = () => {
               <MdOutlineWaterDamage size={20} className='text-yellow-500 lg:size-10' />
               <p className='font text-xs lg:text-base text-center'>Water Purifier + Gyser</p>
             </li>
-
-          </ul>
-          <ul className='my-2 flex-wrap pb-4 grid grid-cols-2 gap-y-3 lg:flex justify-center lg:justify-normal'>
             <li className='w-36 lg:w-36 flex flex-col justify-center gap-2 items-center border-[1px] border-gray-100 py-2   '>
               <FaKitchenSet size={20} className='text-gray-600 lg:size-10' />
               <p className='font text-xs lg:text-base text-center '>Private Kitchen</p>
@@ -212,7 +206,6 @@ const CarDetails = () => {
               <MdOutlineSportsVolleyball size={20} className='text-purple-500 lg:size-10' />
               <p className='font text-xs lg:text-base text-center'>In & Out-Door Games</p>
             </li>
-
           </ul>
         </div>
         <div className='px-5 lg:px-0'>
@@ -244,7 +237,7 @@ const CarDetails = () => {
         <div className='px-5 lg:px-0'>
         <h2 className='font-bold text-2xl lg:text-3xl border-l-2 border-red-900 mb-3 mt-4 ' >Description</h2>
         <p className='font-normal p-1 text-[14px] lg:text-lg leading-6 font-poppins pb-8 lg:w-[50%]'>
-          {customData[farmproduct?.toLowerCase()]?.desc}
+          {customData[mdfyFarmProduct?.toLowerCase()]?.desc}
         </p>
         </div>
 

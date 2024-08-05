@@ -20,14 +20,8 @@ module.exports = {
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Oswald'],
       'body': ['"Open Sans"'],
-      // 'newfont': ['Arial'],
-      'jakarta': ['Plus Jakarta Sans', 'sans-serif'],
-      'dmsans': ['DM Sans', 'sans-serif'],
-      'manrope': ['Manrope', 'sans-serif'],
-      'opensans': ['Open Sans', 'sans-serif'],  
       'poppins':["Poppins", 'sans-serif'],
       'Montserrat':["Montserrat",'sans-serif'],
-      'Quicksand':["Quicksand",'sans-serif']
     },
     extend: {
       animation: {

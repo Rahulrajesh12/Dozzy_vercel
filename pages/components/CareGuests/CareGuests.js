@@ -75,7 +75,7 @@ const CareGuests = () => {
             Book With Just 3 Easy Steps
           </p>
           <div className="flex items-center">
-            <div className="w-[50%] h-24 lg:w-[50%] lg:h-80 rounded-lg relative">
+            <div className="w-[60%] h-24 lg:w-[50%] lg:h-80 rounded-lg relative">
               <Image
                 src={steps}
                 alt="steps"
@@ -89,10 +89,9 @@ const CareGuests = () => {
               <li className="flex items-center text-xs gap-2 p-1">
                 <SlCalender className="bg-[#556EE6] text-white p-1 w-8 h-7 rounded lg:w-16 lg:h-14" />
                 <div>
-                  {" "}
                   <p className="font-bold text-[8px] lg:text-xl">
                     Pick Date
-                  </p>{" "}
+                  </p>
                   <p className="text-[8px] leading-3 lg:text-base">
                     Pick Your Plan Dates In With Our User Friendly Interface
                   </p>
@@ -101,24 +100,22 @@ const CareGuests = () => {
               <li className="flex items-center text-xs gap-2 p-1">
                 <MdOutlineFindReplace className="bg-[#556EE6] text-white p-1 w-8 h-7 rounded lg:w-16 lg:h-14" />
                 <div>
-                  {" "}
                   <p className="font-bold text-[8px] lg:text-xl">
-                    Choose Place & Pay
-                  </p>{" "}
+                  Choose Place & Pay
+                  </p>
                   <p className="text-[8px] leading-3 lg:text-base">
-                    Pick Your Place And Pay Its That Simple As It Its
+                  Pick Your Place And Pay Its That Simple As It Its
                   </p>
                 </div>
               </li>
               <li className="flex items-center text-xs gap-2 p-1">
-                <GiConfirmed className="bg-[#556EE6] text-white p-1 w-8 h-7 rounded lg:w-16 lg:h-14" />
+                <GiConfirmed className="bg-[#556EE6] size-2 text-white p-1 w-[27px] h-7 rounded lg:w-16 lg:h-14" />
                 <div>
-                  {" "}
                   <p className="font-bold text-[8px] lg:text-xl">
-                    Booking Confirmed
-                  </p>{" "}
+                  Booking Confirmed
+                  </p>
                   <p className="text-[8px] leading-3 lg:text-base">
-                    Congrats Your Booking Confirmed
+                   Congrats Your Booking Confirmed
                   </p>
                 </div>
               </li>
