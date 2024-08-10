@@ -12,7 +12,7 @@ import { BiSolidOffer } from "react-icons/bi";
 
 const CareGuests = () => {
   return (
-    <div className="lg:px-12 py-4">
+    <div className="lg:px-20 py-4">
       <div className="">
         <div className="">
           <p className="font-semibold pb-4 px-4 md:text-2xl lg:text-4xl lg:py-8 font-poppins">

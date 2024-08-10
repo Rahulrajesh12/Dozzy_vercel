@@ -45,6 +45,7 @@ const HomeBanner = () => {
             </div>
             <div>
                 <Image
+                    priority
                     src={bgfarm}
                     alt="farm house"
                     className=' w-screen lg:h-[700px] object-cover'
@@ -52,8 +53,8 @@ const HomeBanner = () => {
                     width={1000}
                 />
                 <div className=''>
-                    <ul className='text-white flex bg-black opacity-90 items-center justify-center text-[10px] lg:text-lg lg:font-bold text-center'>
-                        <li className='w-full p-1 border-r-2 border-white flex flex-col '><p>1000+</p><p>Total Dozzy Farmhouses</p></li>
+                    <ul className='text-gray-400 flex bg-black opacity-90 items-center justify-center text-[10px] lg:text-lg lg:font-bold text-center'>
+                        <li className='w-full p-1 lg:border-r-2 border-r-[1px] border-gray-500 flex flex-col '><p>1000+</p><p>Total Dozzy Farmhouses</p></li>
                         <li className='w-full p-1 flex flex-col '><p>30</p><p >Dozzy Available Cities</p></li>
                     </ul>
                 </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useRouter } from "next/router";
 import { BsStarFill } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
@@ -30,11 +30,28 @@ import zfarm1 from "../../images/zoozoo/1.webp"
 import zfarm2 from "../../images/zoozoo/2.webp"
 import zfarm3 from "../../images/zoozoo/3.webp"
 
+import srvf1 from '../../images/sravan/1.webp'
+import srvf2 from '../../images/sravan/2.webp'
+import srvf3 from '../../images/sravan/3.webp'
+
+import pf1 from '../../images/pandu/1.webp'
+import pf2 from '../../images/pandu/2.webp'
+import pf3 from '../../images/pandu/3.webp'
 
 import { Carousel } from "react-responsive-carousel";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 const FarmProductLPage = () => {
     const router = useRouter();
+    const [autoPlay, setAutoPlay] = useState(false);
 
+    const handleMouseEnter = useCallback(() => {
+        setAutoPlay(true);
+    }, []);
+
+    const handleMouseLeave = useCallback(() => {
+        setAutoPlay(false);
+    }, []);
     const filteredData = [
         {
             farm_name: "Cheritan",
@@ -58,13 +75,6 @@ const FarmProductLPage = () => {
             weekends: { oneday: "18000", twoday: "35000" },
         },
         {
-            farm_name: "Urban",
-            price_24_hours: 8000,
-            farm_image: { c1: ufarm1, c2: ufarm2, c3: ufarm3, },
-            weekdays: { oneday: "8000", twoday: "15000" },
-            weekends: { oneday: "13000", twoday: "25000" },
-        },
-        {
             farm_name: "Zoo Zoo",
             price_24_hours: 8000,
             farm_image: { c1: zfarm1, c2: zfarm2, c3: zfarm3, },
@@ -78,14 +88,24 @@ const FarmProductLPage = () => {
             weekdays: { oneday: "10000", twoday: "19000" },
             weekends: { oneday: "15000", twoday: "29000" },
         },
+        {
+            farm_name: "Sravan",
+            price_24_hours: 17000,
+            farm_image: { c1: srvf1, c2: srvf2, c3: srvf3, },
+            weekdays: { oneday: "17000", twoday: "34000" },
+            weekends: { oneday: "17000", twoday: "34000" },
+        },
+        {
+            farm_name: "Pandu",
+            price_24_hours: 10000,
+            farm_image: { c1: pf1, c2: pf2, c3: pf3, },
+            weekdays: { oneday: "10000", twoday: "20000" },
+            weekends: { oneday: "10000", twoday: "20000" },
+        },
     ];
-    const handleImageClick = (url) => {
-
-        router.push(`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)
-    };
     return (
         <div>
-            <div className="text-sm pl-4 py-4 md:px-12 lg:py-16">
+            <div className="text-sm pl-4 py-4 md:px-20 lg:py-16">
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">
                     Farm Houses In Hyderbad
                 </p>
@@ -94,21 +114,22 @@ const FarmProductLPage = () => {
                 </p>
             </div>
             <div>
-                <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 items-center xs:justify-center">
+                <div className="flex flex-wrap gap-x-8 gap-y-8 lg:items-start justify-center lg:pl-12 items-center">
                     {filteredData?.map((item, index) => (
                         <React.Fragment key={index}>
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:w-[454px] w-[97%] md:w-80 h-full lg:hover:scale-105">
-                                {/* <Link href={`/${item.farm_name.toLowerCase()}`}> */}
-                                <div className="relative crsldetails rounded-lg overflow-hidden">
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:w-[400px] w-[97%] md:w-80 h-full">
+                                <div
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                    className="relative crsldetails rounded-lg overflow-hidden cursor-pointer">
                                     <Carousel
-                                        showThumbs={false}
-                                        showArrows={true}
-                                        showStatus={false}
-                                        showIndicators={false}
+                                        autoPlay={autoPlay}
+                                        interval={2000}
                                         infiniteLoop={true}
-                                        autoPlay={true}
-                                        interval={5000}
-                                        stopOnHover={true}
+                                        showThumbs={false}
+                                        showStatus={false}
+                                        showArrows={true}
+                                        transitionTime={1000}
                                     >
                                         <div onClick={() => {
                                             router.push(`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)
@@ -125,7 +146,6 @@ const FarmProductLPage = () => {
                                         }}>
                                             <Image src={item.farm_image.c3}></Image>
                                         </div>
-
                                     </Carousel>
 
                                 </div>
@@ -137,7 +157,7 @@ const FarmProductLPage = () => {
                                                 <p className="text-gray-700 font-medium text-sm lg:text-md opacity-75 font-Montserrat">Dozzy Farm House</p>
                                             </Link>
                                             <Link href={`/${item.farm_name.toLowerCase()}`}>
-                                                <p className=" text-[#556EE6] cursor-pointer font-semibold text-2xl hover:text-red-600 w-fit">
+                                                <p className=" text-[#556EE6] font-semibold text-2xl hover:text-red-600 w-fit">
                                                     {item.farm_name}
                                                 </p>
                                             </Link>
@@ -163,7 +183,7 @@ const FarmProductLPage = () => {
                                         For Booking
                                     </div>
                                     <div className="flex justify-between gap-1 text-white ">
-                                        <ul className="text-black flex w-full justify-between gap-3">
+                                        <ul className="text-black flex w-full justify-between gap-5">
                                             <li className="bg-green-500 w-full p-2 rounded-bl-md text-center text-white border-[1px] border-black">
                                                 {" "}
                                                 <Link
