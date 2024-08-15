@@ -54,7 +54,9 @@ body {
 .mont-text {
   font-family: "Montserrat", sans-serif;
 }
-
+.grotesk-text {
+  font-family: "Space Grotesk", sans-serif;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -233,6 +233,7 @@ const CarDetails = () => {
               <li className='list-disc'><p>Aadhar photo is compulsory for each & every person</p></li>
               <li className='list-disc'><p>No delay in Checkout We have Another Booking</p></li>
               <li className='list-disc'><p>Any Damage Customer has to Pay</p></li>
+              <li className='list-disc'><p>Drugs/Hookah Not Allowed </p></li>
             </ul>
             <p className='font-bold text-2xl lg:text-3xl border-l-4 pl-2 border-red-900 md:my-6 my-2 '>Additional Charges</p>
             <ul className='p-4 text-sm font-normaltext-[14px] lg:text-lg leading-6 font-poppins capitalize'>

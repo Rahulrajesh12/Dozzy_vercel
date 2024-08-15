@@ -50,7 +50,8 @@ const Footer = () => {
                             </li>
                             <li>
                                 <div className='xl:pl-32 lg:pl-12 lg:pr-1 xl:pr-16 py-2'>
-                                    <p className='lg:pb-2'>Contact Us</p>
+                                    <div className='flex gap-2'><p className='lg:pb-2'>Contact Us</p><p className='lg:pb-2'><Link className='hover:text-blue-400' href={'/privacy-policy'}>Privacy Policy</Link></p></div>
+                                    
                                     <Link className='lg:text-3xl font-bold text-base flex items-center gap-1 lg:gap-2' href="tel:9111911162" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>9111-9111-62<span></span></Link>
                                 </div>
 
