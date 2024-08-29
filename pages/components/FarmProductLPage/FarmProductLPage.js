@@ -22,10 +22,6 @@ import srfarm1 from "../../images/srinivasa/1.webp"
 import srfarm2 from "../../images/srinivasa/2.webp"
 import srfarm3 from "../../images/srinivasa/3.webp"
 
-import ufarm1 from "../../images/urban/1.webp"
-import ufarm2 from "../../images/urban/2.webp"
-import ufarm3 from "../../images/urban/3.webp"
-
 import zfarm1 from "../../images/zoozoo/1.webp"
 import zfarm2 from "../../images/zoozoo/2.webp"
 import zfarm3 from "../../images/zoozoo/3.webp"
@@ -37,6 +33,10 @@ import srvf3 from '../../images/sravan/3.webp'
 import pf1 from '../../images/pandu/1.webp'
 import pf2 from '../../images/pandu/2.webp'
 import pf3 from '../../images/pandu/3.webp'
+
+import ty1 from '../../images/tyb/1.webp'
+import ty2 from '../../images/tyb/2.webp'
+import ty3 from '../../images/tyb/3.webp'
 
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -96,11 +96,11 @@ const FarmProductLPage = () => {
             weekends: { oneday: "17000", twoday: "34000" },
         },
         {
-            farm_name: "Pandu",
-            price_24_hours: 10000,
-            farm_image: { c1: pf1, c2: pf2, c3: pf3, },
+            farm_name: "TYB",
+            price_24_hours: 1000,
+            farm_image: { c1: ty1, c2: ty2, c3: ty3, },
             weekdays: { oneday: "10000", twoday: "20000" },
-            weekends: { oneday: "10000", twoday: "20000" },
+            weekends: { oneday: "12000", twoday: "24000" },
         },
     ];
     return (
@@ -154,7 +154,7 @@ const FarmProductLPage = () => {
                                     <div className="flex items-baseline justify-between px-2">
                                         <div>
                                             <Link href={`/${item.farm_name.toLowerCase()}`}>
-                                                <p className="text-gray-700 font-medium text-sm lg:text-md opacity-75 font-Montserrat">Dozzy Farm House</p>
+                                                <p className="text-gray-900 font-medium text-sm lg:text-md opacity-75 font-Montserrat">Dozzy Farm House</p>
                                             </Link>
                                             <Link href={`/${item.farm_name.toLowerCase()}`}>
                                                 <p className=" text-[#556EE6] font-semibold text-2xl hover:text-red-600 w-fit">
@@ -187,7 +187,7 @@ const FarmProductLPage = () => {
                                             <li className="bg-green-500 w-full p-2 rounded-bl-md text-center text-white border-[1px] border-black">
                                                 {" "}
                                                 <Link
-                                                    href="https://api.whatsapp.com/send?phone=+9111911162text=Hi%0AI%20am%20looking%20for%20a%farmhouse%20booking."
+                                                    href="https://api.whatsapp.com/send?phone=+9111911162&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking."
                                                     target="_blank"
                                                 >
                                                     <p className=" flex gap-1 text-sm justify-center">

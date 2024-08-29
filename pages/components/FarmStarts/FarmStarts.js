@@ -24,7 +24,7 @@ const FarmStarts = () => {
                     <p className='text-[11px] font-semibold pl-3  md:text-xl lg:text-3xl pt-1 lg:pt-8'>To View More</p>
                     <div className='flex gap-1 lg:gap-3 text-white pt-2  md:pt-6 pl-1'>
                         <button className='bg-green-500 rounded-md py-1 px-1 md:px-4 md:py-2'>
-                            <Link href="https://api.whatsapp.com/send?phone=+9111911162text=Hi%0AI%20am%20looking%20for%20a%farmhouse%20booking." target='_blank'>
+                            <Link href="https://api.whatsapp.com/send?phone=+9111911162&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking." target='_blank'>
                                 <p className=' flex gap-1 lg:gap-2 items-center text-[8px] lg:text-lg'><span><FaWhatsapp className='lg:size-6' size={10} /></span> <span>Whatsapp</span></p>
                             </Link>
                         </button>

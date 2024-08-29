@@ -163,7 +163,7 @@ const CarDetails = () => {
               <h2 className='font-semibold text-xl'>Contact Us By</h2>
               <div className='flex justify-start gap-4 lg:gap-5 xl:gap-8 xl:pt-4 pb-2 pt-2 text-white'>
                 <button className='bg-green-500 rounded-md p-2 lg:p-3'>
-                  <Link href="https://api.whatsapp.com/send?phone=+9111911162text=Hi%0AI%20am%20looking%20for%20a%farmhouse%20booking." target='_blank'>
+                  <Link href="https://api.whatsapp.com/send?phone=+9111911162&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking." target='_blank'>
                     <p className=' flex items-center gap-1 text-sm'><span><FaWhatsapp className='xl:size-6' /></span> <span>Whatsapp</span></p>
                   </Link>
                 </button>
