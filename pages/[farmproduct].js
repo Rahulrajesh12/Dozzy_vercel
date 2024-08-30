@@ -56,6 +56,10 @@ import pf1 from './images/pandu/1.webp'
 import pf2 from './images/pandu/2.webp'
 import pf3 from './images/pandu/3.webp'
 
+import ty1 from './images/tyb/1.webp'
+import ty2 from './images/tyb/2.webp'
+import ty3 from './images/tyb/3.webp'
+
 const CarDetails = () => {
 
   const router = useRouter();
@@ -64,15 +68,6 @@ const CarDetails = () => {
   const mdfyFarmProduct = farmproduct?.toLowerCase().replace(/-/g, " ");
 
   const customData = {
-    "cheritan": {
-      farm_name: 'Cheritan',
-      price_24_hours: 5900,
-      farm_image: { c1: cfarm1, c2: cfarm2, c3: cfarm3, },
-      weekdays: { oneday: "5900", twoday: "6800" },
-      weekends: { oneday: "7900", twoday: "10800" },
-      desc: "Cheritan Farmhouse, tucked away in the peaceful middle of the forest, provides a dreamlike haven from the bustling city life. Our farmhouse is set up to provide a perfect balance of leisure and enjoyment, guaranteeing you and your loved ones a memorable stay. Special features of Cheritan Farmhouse include a wonderful garden area, a cool swimming pool, a fully stocked kitchen with dishes and bowls, and a barbeque area for delicious meals. A 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5 provide plenty of entertainment options. Play games like chess, carroms, shuttle, cricket, and shuttle to make sure everyone has a good time.",
-
-    },
     "saketh vanam": {
       farm_name: 'Saketh Vanam',
       price_24_hours: 13000,
@@ -111,15 +106,16 @@ const CarDetails = () => {
       farm_image: { c1: srvf1, c2: srvf2, c3: srvf3, },
       weekdays: { oneday: "17000", twoday: "34000" },
       weekends: { oneday: "17000", twoday: "34000" },
+      desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone."
     },
-    "pandu": {
-
-      farm_name: "Pandu",
-      price_24_hours: 10000,
-      farm_image: { c1: pf1, c2: pf2, c3: pf3, },
+    "tyb": {
+      farm_name: "TYB",
+      price_24_hours: 1000,
+      farm_image: { c1: ty1, c2: ty2, c3: ty3, },
       weekdays: { oneday: "10000", twoday: "20000" },
-      weekends: { oneday: "10000", twoday: "20000" },
-    },
+      weekends: { oneday: "12000", twoday: "24000" },
+      desc:"TYP Farmhouse, nestled in the tranquil heart of the forest, provides a dreamlike retreat from the chaos of city life. Our farmhouse is crafted to offer the ideal mix of relaxation and enjoyment, promising an unforgettable stay for you and your loved ones. TYP Farmhouse features a stunning garden, a refreshing swimming pool, a fully equipped kitchen with all necessary dishes and utensils, and a barbecue area for delightful meals. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy a range of games like chess, carrom, shuttle, and cricket, ensuring fun for everyone."
+    }
   }
 
   return (

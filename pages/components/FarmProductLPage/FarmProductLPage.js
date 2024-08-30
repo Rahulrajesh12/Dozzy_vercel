@@ -30,13 +30,11 @@ import srvf1 from '../../images/sravan/1.webp'
 import srvf2 from '../../images/sravan/2.webp'
 import srvf3 from '../../images/sravan/3.webp'
 
-import pf1 from '../../images/pandu/1.webp'
-import pf2 from '../../images/pandu/2.webp'
-import pf3 from '../../images/pandu/3.webp'
-
 import ty1 from '../../images/tyb/1.webp'
 import ty2 from '../../images/tyb/2.webp'
 import ty3 from '../../images/tyb/3.webp'
+ 
+import Head from "next/head";
 
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -53,13 +51,6 @@ const FarmProductLPage = () => {
         setAutoPlay(false);
     }, []);
     const filteredData = [
-        {
-            farm_name: "Cheritan",
-            price_24_hours: 5900,
-            farm_image: { c1: cfarm1, c2: cfarm2, c3: cfarm3, },
-            weekdays: { oneday: "5900", twoday: "6800" },
-            weekends: { oneday: "7900", twoday: "10800" },
-        },
         {
             farm_name: "Saketh Vanam",
             price_24_hours: 13000,
@@ -105,6 +96,14 @@ const FarmProductLPage = () => {
     ];
     return (
         <div>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <title>Zero Deposit & unlimited guests - Dozzy farmhouse rentals</title>
+                <meta name="description" content="Enjoy the great outdoors with no deposit, unlimited guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta property="og:title" content="Zero Deposit & unlimited guests - Dozzy farmhouse rentals" />
+                <meta property="og:description" content="Enjoy the great outdoors with no deposit, unlimited guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+            </Head>
             <div className="text-sm pl-4 py-4 md:px-20 lg:py-16">
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">
                     Farm Houses In Hyderbad
