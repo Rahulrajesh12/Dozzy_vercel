@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
        <Head>
-       <link rel="icon" href="/dozzyfav.png" />
+       <link rel="icon" href="/dozzyofc.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />

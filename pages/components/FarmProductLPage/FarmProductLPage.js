@@ -152,7 +152,7 @@ const FarmProductLPage = () => {
                                 <div className="px-2 flex flex-col gap-4 p-1">
                                     <div className="flex items-baseline justify-between px-2">
                                         <div>
-                                            <Link href={`//${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Link href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                                 <p className="text-gray-900 font-medium text-sm lg:text-md opacity-75 font-Montserrat">Dozzy Farm House</p>
                                             </Link>
                                             <Link href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
