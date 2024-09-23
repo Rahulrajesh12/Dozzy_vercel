@@ -21,7 +21,7 @@ module.exports = {
       'display': ['Oswald'],
       'body': ['"Open Sans"'],
       'poppins':["Poppins", 'sans-serif'],
-      'Montserrat':["Montserrat",'sans-serif'],
+      
     },
     extend: {
       animation: {

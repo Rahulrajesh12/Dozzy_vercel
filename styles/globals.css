@@ -1,6 +1,6 @@
 
 body {
-  font-family: "ui-sans-serif", "system-ui";
+  font-family: "Poppins", sans-serif;
 }
 
 @tailwind base;
@@ -48,12 +48,6 @@ body {
       height: 520px;
   }
   }
-.roboto-text {
-  font-family: "Roboto", sans-serif;
-}
-.mont-text {
-  font-family: "Montserrat", sans-serif;
-}
 .grotesk-text {
   font-family: "Space Grotesk", sans-serif;
 }

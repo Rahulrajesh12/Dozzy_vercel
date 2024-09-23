@@ -26,13 +26,57 @@ import zfarm1 from "../../images/zoozoo/1.webp"
 import zfarm2 from "../../images/zoozoo/2.webp"
 import zfarm3 from "../../images/zoozoo/3.webp"
 
-import srvf1 from '../../images/sravan/1.webp'
-import srvf2 from '../../images/sravan/2.webp'
-import srvf3 from '../../images/sravan/3.webp'
-
 import ty1 from '../../images/tyb/1.webp'
 import ty2 from '../../images/tyb/2.webp'
 import ty3 from '../../images/tyb/3.webp'
+
+import a1 from '../../images/a1/1.webp'
+import a2 from '../../images/a1/2.webp'
+import a3 from '../../images/a1/3.webp'
+
+import alsafa1 from '../../images/alsafa/1.webp'
+import alsafa2 from '../../images/alsafa/2.webp'
+import alsafa3 from '../../images/alsafa/3.webp'
+
+import courtyard1 from '../../images/courtyard/1.webp'
+import courtyard2 from '../../images/courtyard/2.webp'
+import courtyard3 from '../../images/courtyard/3.webp'
+
+import holiday1 from '../../images/holiday/1.webp'
+import holiday2 from '../../images/holiday/2.webp'
+import holiday3 from '../../images/holiday/3.webp'
+
+import nbr1 from '../../images/nbr/1.webp'
+import nbr2 from '../../images/nbr/2.webp'
+import nbr3 from '../../images/nbr/3.webp'
+
+import pleasant1 from '../../images/pleasant/1.webp'
+import pleasant2 from '../../images/pleasant/2.webp'
+import pleasant3 from '../../images/pleasant/3.webp'
+
+import serinity1 from '../../images/serinity/1.webp'
+import serinity2 from '../../images/serinity/2.webp'
+import serinity3 from '../../images/serinity/3.webp'
+
+import sp1 from '../../images/sp/1.webp'
+import sp2 from '../../images/sp/2.webp'
+import sp3 from '../../images/sp/3.webp'
+
+import taksh1 from '../../images/taksh/1.webp'
+import taksh2 from '../../images/taksh/2.webp'
+import taksh3 from '../../images/taksh/3.webp'
+
+import starbh1 from '../../images/starbh/1.webp'
+import starbh2 from '../../images/starbh/2.webp'
+import starbh3 from '../../images/starbh/3.webp'
+
+import starling1 from '../../images/starling/1.webp'
+import starling2 from '../../images/starling/2.webp'
+import starling3 from '../../images/starling/3.webp'
+
+import rajes1 from '../../images/rajes/1.webp'
+import rajes2 from '../../images/rajes/2.webp'
+import rajes3 from '../../images/rajes/3.webp'
  
 import Head from "next/head";
 
@@ -55,54 +99,125 @@ const FarmProductLPage = () => {
             farm_name: "Saketh Vanam",
             price_24_hours: 13000,
             farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, },
-            weekdays: { oneday: "13000", twoday: "25000" },
-            weekends: { oneday: "18000", twoday: "35000" },
+            weekdays: { oneday: "10000", twoday: "25000" },
+            weekends: { oneday: "12000", twoday: "35000" },
         },
         {
             farm_name: "Srinivasa",
             price_24_hours: 13000,
             farm_image: { c1: srfarm1, c2: srfarm2, c3: srfarm3, },
-            weekdays: { oneday: "13000", twoday: "25000" },
-            weekends: { oneday: "18000", twoday: "35000" },
+            weekdays: { oneday: "15000", twoday: "25000" },
+            weekends: { oneday: "17000", twoday: "35000" },
         },
         {
             farm_name: "Zoo Zoo",
             price_24_hours: 8000,
             farm_image: { c1: zfarm1, c2: zfarm2, c3: zfarm3, },
             weekdays: { oneday: "8000", twoday: "15000" },
-            weekends: { oneday: "13000", twoday: "25000" },
+            weekends: { oneday: "10000", twoday: "25000" },
         },
         {
             farm_name: "Shan",
             price_24_hours: 10000,
             farm_image: { c1: shfarm1, c2: shfarm2, c3: shfarm3, },
             weekdays: { oneday: "10000", twoday: "19000" },
-            weekends: { oneday: "15000", twoday: "29000" },
+            weekends: { oneday: "12000", twoday: "29000" },
         },
-        {
-            farm_name: "Sravan",
-            price_24_hours: 17000,
-            farm_image: { c1: srvf1, c2: srvf2, c3: srvf3, },
-            weekdays: { oneday: "17000", twoday: "34000" },
-            weekends: { oneday: "17000", twoday: "34000" },
-        },
+        // {
+        //     farm_name: "Sravan",
+        //     price_24_hours: 17000,
+        //     farm_image: { c1: srvf1, c2: srvf2, c3: srvf3, },
+        //     weekdays: { oneday: "17000", twoday: "34000" },
+        //     weekends: { oneday: "17000", twoday: "34000" },
+        // },
         {
             farm_name: "TYB",
-            price_24_hours: 1000,
             farm_image: { c1: ty1, c2: ty2, c3: ty3, },
             weekdays: { oneday: "10000", twoday: "20000" },
             weekends: { oneday: "12000", twoday: "24000" },
+        },
+        {
+            farm_name: "AL Haadi",
+            farm_image: { c1: a1, c2: a2, c3: a3, },
+            weekdays: { oneday: "15000", twoday: "20000" },
+            weekends: { oneday: "17000", twoday: "24000" },
+        },
+        {
+            farm_name: "Alsafa",
+            farm_image: { c1: alsafa1, c2: alsafa2, c3: alsafa3, },
+            weekdays: { oneday: "13000", twoday: "20000" },
+            weekends: { oneday: "15000", twoday: "24000" },
+        },
+        {
+            farm_name: "CourtYard",
+            farm_image: { c1: courtyard1, c2: courtyard2, c3: courtyard3, },
+            weekdays: { oneday: "10000", twoday: "20000" },
+            weekends: { oneday: "12000", twoday: "24000" },
+        },
+        {
+            farm_name: "Holiday",
+            farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, },
+            weekdays: { oneday: "8000", twoday: "20000" },
+            weekends: { oneday: "10000", twoday: "24000" },
+        },
+        {
+            farm_name: "NBR",
+            farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
+            weekdays: { oneday: "8000", twoday: "20000" },
+            weekends: { oneday: "10000", twoday: "24000" },
+        },
+        {
+            farm_name: "Pleasant View",
+            farm_image: { c1: pleasant1, c2: pleasant2, c3: pleasant3, },
+            weekdays: { oneday: "10000", twoday: "20000" },
+            weekends: { oneday: "12000", twoday: "24000" },
+        },
+        {
+            farm_name: "Serenity",
+            farm_image: { c1: serinity1, c2: serinity2, c3: serinity3, },
+            weekdays: { oneday: "8000", twoday: "20000" },
+            weekends: { oneday: "9000", twoday: "24000" },
+        },
+        {
+            farm_name: "SP Farmhouse",
+            farm_image: { c1: sp1, c2: sp2, c3: sp3, },
+            weekdays: { oneday: "12000", twoday: "24000" },
+            weekends: { oneday: "15000", twoday: "3000" },
+        },
+        {
+            farm_name: "Takshvi",
+            farm_image: { c1: taksh1, c2: taksh2, c3: taksh3, },
+            weekdays: { oneday: "10000", twoday: "20000" },
+            weekends: { oneday: "12000", twoday: "24000" },
+        },
+        {
+            farm_name: "Star Lingam",
+            farm_image: { c1: starling1, c2: starling2, c3: starling3, },
+            weekdays: { oneday: "15000", twoday: "20000" },
+            weekends: { oneday: "17000", twoday: "24000" },
+        },
+        {
+            farm_name: "Star Bhima",
+            farm_image: { c1: starbh1, c2: starbh2, c3: starbh3, },
+            weekdays: { oneday: "15000", twoday: "20000" },
+            weekends: { oneday: "17000", twoday: "24000" },
+        },
+        {
+            farm_name: "Rajeswari",
+            farm_image: { c1: rajes1, c2: rajes2, c3: rajes3, },
+            weekdays: { oneday: "15000", twoday: "20000" },
+            weekends: { oneday: "17000", twoday: "24000" },
         },
     ];
     return (
         <div>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <title>Zero Deposit & unlimited guests - Dozzy farmhouse rentals</title>
-                <meta name="description" content="Enjoy the great outdoors with no deposit, unlimited guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
+                <title>Zero Deposit & Unlimited Guests - Dozzy farmhouse rentals</title>
+                <meta name="description" content="Enjoy the great outdoors with no deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:title" content="Zero Deposit & unlimited guests - Dozzy farmhouse rentals" />
-                <meta property="og:description" content="Enjoy the great outdoors with no deposit, unlimited guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+                <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy farmhouse rentals" />
+                <meta property="og:description" content="Enjoy the great outdoors with no deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
             </Head>
             <div className="text-sm pl-4 py-4 md:px-20 lg:py-16">
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">

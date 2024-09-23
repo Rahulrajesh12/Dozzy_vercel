@@ -11,8 +11,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'd10uth61hedy2t.cloudfront.net',
-        hostname: 's3.ap-south-2.amazonaws.com',
+        hostname: 'ldcars.blr1.cdn.digitaloceanspaces.com',
+        
       },
     ],
   },

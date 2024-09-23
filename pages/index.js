@@ -13,11 +13,11 @@ export default function Home() {
     <div className="text-black font-poppins">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Zero Deposit & unlimited guests - Dozzy farmhouse rentals</title>
-        <meta name="description" content="Enjoy the great outdoors with no deposit, unlimited guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
+        <title>Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
+        <meta name="description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Zero Deposit & unlimited guests - Dozzy farmhouse rentals" />
-        <meta property="og:description" content="Enjoy the great outdoors with no deposit, unlimited guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+        <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
+        <meta property="og:description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
       </Head>
       <HomeBanner />
       <FarmStarts />
