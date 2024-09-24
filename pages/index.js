@@ -18,6 +18,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                         window.dataLayer = window.dataLayer || [];
+                         function gtag(){dataLayer.push(arguments);}
+                         gtag('js', new Date());
+                         gtag('config', 'G-04YJBDK2VX');
+                        `,
+          }}
+        />
       </Head>
       <HomeBanner />
       <FarmStarts />

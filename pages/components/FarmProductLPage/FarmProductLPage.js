@@ -6,9 +6,6 @@ import { useRouter } from "next/router";
 import { BsStarFill } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
-import cfarm1 from "../../images/cheritan/1.webp"
-import cfarm2 from "../../images/cheritan/2.webp"
-import cfarm3 from "../../images/cheritan/4.webp"
 
 import skfarm1 from "../../images/saketh/1.webp"
 import skfarm2 from "../../images/saketh/2.webp"
@@ -77,7 +74,7 @@ import starling3 from '../../images/starling/3.webp'
 import rajes1 from '../../images/rajes/1.webp'
 import rajes2 from '../../images/rajes/2.webp'
 import rajes3 from '../../images/rajes/3.webp'
- 
+
 import Head from "next/head";
 
 import { Carousel } from "react-responsive-carousel";
@@ -211,14 +208,6 @@ const FarmProductLPage = () => {
     ];
     return (
         <div>
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <title>Zero Deposit & Unlimited Guests - Dozzy farmhouse rentals</title>
-                <meta name="description" content="Enjoy the great outdoors with no deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy farmhouse rentals" />
-                <meta property="og:description" content="Enjoy the great outdoors with no deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
-            </Head>
             <div className="text-sm pl-4 py-4 md:px-20 lg:py-16">
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">
                     Farm Houses In Hyderbad
