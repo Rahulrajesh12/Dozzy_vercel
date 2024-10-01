@@ -5,6 +5,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import phone from '../../images/onePlus10t.webp'
 import gplay from '../../images/ppp.png'
 import appstore from '../../images/ooo.svg'
+import LinkCall from '../LinkCall';
 const Footer = () => {
     return (
         <div className='... bg-[url("/mld.jpg")] lg:bg-center  bg-cover z-0'>
@@ -29,7 +30,7 @@ const Footer = () => {
                         <ul className='lg:pt-7 lg:pl-20 flex flex-col-reverse lg:flex-row'>
                             <li>
                                 <p className='flex gap-2 pt-1 items-center lg:pt-6'>
-                                    <Link href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
+                                    <Link onClick={(e) => LinkCall(e,"https://play.google.com/store/apps/details?id=com.dozzy_customer")} href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
                                         <Image
                                             src={gplay}
                                             alt='google play'
@@ -38,7 +39,7 @@ const Footer = () => {
                                             className='w-12 h-4 lg:w-24 lg:h-8 rounded-sm'
                                         />
                                     </Link>
-                                    <Link href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
+                                    <Link onClick={(e) => LinkCall(e,"https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530")} href={'https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530'}>
                                         <Image
                                             src={appstore}
                                             alt='apple store'

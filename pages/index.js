@@ -1,5 +1,3 @@
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
 import Head from "next/head";
 import dynamic from 'next/dynamic';
 
@@ -33,15 +31,23 @@ export default function Home() {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-16698821101');
-    `,
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16698821101');
+            `,
           }}
         />
 
       </Head>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NFJZZ34X"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        />
+      </noscript>
       <HomeBanner />
       <FarmStarts />
       <FarmProductLPage />
