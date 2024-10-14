@@ -19,12 +19,12 @@ const HomeBanner = () => {
                     <h2 className='text-lg font-bold lg:font-bold flex flex-col lg:gap-2 lg:text-6xl'><span>Farmhouses</span> <span>In Hyderabad</span></h2>
                     <div className='flex gap-2 text-white lg:pt-6 pb-16'>
                         <button className='bg-green-500 rounded-lg py-1 px-2 lg:px-5 w-20 lg:w-40'>
-                            <Link onClick={(e) => LinkCall(e,"https://api.whatsapp.com/send?phone=+9111911162&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")} href="https://api.whatsapp.com/send?phone=+9111911162&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking." target='_blank'>
+                            <Link onClick={(e) => LinkCall(e,"https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")} href="https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking." target='_blank'>
                                 <p className=' flex gap-1 items-center text-[10px] lg:text-lg'><span><FaWhatsapp className='lg:size-6' size={10} /></span> <span>Whatsapp</span></p>
                             </Link>
                         </button>
                         <button className='bg-blue-500 rounded-lg py-1 px-2 lg:px-5 w-20 lg:w-40'>
-                            <Link onClick={(e) => LinkCall(e,"tel:9111911162")} href="tel:9111911162" target='_blank'>
+                            <Link onClick={(e) => LinkCall(e,"tel:9666655973")} href="tel:9666655973" target='_blank'>
                                 <p className='flex gap-1 items-center text-[10px] lg:text-lg'><span><BiPhoneCall className='lg:size-6' size={10} /></span> <span>Call US</span></p>
                             </Link>
                         </button>

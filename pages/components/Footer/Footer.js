@@ -30,7 +30,7 @@ const Footer = () => {
                         <ul className='lg:pt-7 lg:pl-20 flex flex-col-reverse lg:flex-row'>
                             <li>
                                 <p className='flex gap-2 pt-1 items-center lg:pt-6'>
-                                    <Link onClick={(e) => LinkCall(e,"https://play.google.com/store/apps/details?id=com.dozzy_customer")} href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
+                                    <Link onClick={(e) => LinkCall(e, "https://play.google.com/store/apps/details?id=com.dozzy_customer")} href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
                                         <Image
                                             src={gplay}
                                             alt='google play'
@@ -39,7 +39,7 @@ const Footer = () => {
                                             className='w-12 h-4 lg:w-24 lg:h-8 rounded-sm'
                                         />
                                     </Link>
-                                    <Link onClick={(e) => LinkCall(e,"https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530")} href={'https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530'}>
+                                    <Link onClick={(e) => LinkCall(e, "https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530")} href={'https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530'}>
                                         <Image
                                             src={appstore}
                                             alt='apple store'
@@ -55,16 +55,14 @@ const Footer = () => {
                             <li>
                                 <div className='xl:pl-32 lg:pl-12 lg:pr-1 xl:pr-16 py-2 lg:text-lg'>
                                     <div className='flex flex-col gap-2 lg:flex-row lg:gap-4'>
-                                        <p className='lg:pb-2'><span>Contact Us</span><span><Link className='lg:text-3xl font-bold text-base flex items-center gap-1 lg:gap-2 lg:pt-2' href="tel:9111911162" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>9111-9111-62<span></span></Link></span></p>
+                                        <p className='lg:pb-2'><span>Contact Us</span><span><Link className='lg:text-3xl font-bold text-base flex items-center gap-1 lg:gap-2 lg:pt-2' href="tel:9666655973" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>9666-655-973<span></span></Link></span></p>
                                         <p className='lg:pb-2'>
-                                        <Link className='hover:text-blue-400' href={'/privacy-policy'}>Privacy Policy</Link></p></div>
+                                            <Link className='hover:text-blue-400' href={'/privacy-policy'}>Privacy Policy</Link></p></div>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     )

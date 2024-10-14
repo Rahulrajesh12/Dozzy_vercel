@@ -9,7 +9,8 @@ const Header = () => {
       <div>
         <div className=' py-2 text-black'>
           <p className='lg:pb- lg:text-3xl text-sm  text-[#556EE6]'>For Booking help</p>
-          <Link onClick={(e) => LinkCall(e,"tel:9111911162")} className='lg:text-3xl lg:pt-2 pt-1 font-bold text-sm flex items-center gap-1 lg:gap-2' href="tel:9111911162" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>9111-9111-62<span></span></Link>
+          <Link onClick={(e) => LinkCall(e,"tel:9666655973")} className='lg:text-3xl lg:pt-2 pt-1 font-bold text-sm flex items-center gap-1 lg:gap-2' href="tel:9666655973" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>96666-559-73<span></span></Link>
+          
         </div>
       </div>
     </div>

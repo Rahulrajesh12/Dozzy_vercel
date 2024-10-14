@@ -285,8 +285,8 @@ const FarmProductLPage = () => {
                                             <li className="bg-green-500 w-full p-2 rounded-bl-md text-center text-white border-[1px] border-black">
                                                 {" "}
                                                 <Link
-                                                    onClick={(e) => LinkCall(e,"https://api.whatsapp.com/send?phone=+9111911162&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")}
-                                                    href="https://api.whatsapp.com/send?phone=+9111911162&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking."
+                                                    onClick={(e) => LinkCall(e,"https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")}
+                                                    href="https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking."
                                                     target="_blank"
                                                 >
                                                     <p className=" flex gap-1 text-sm justify-center">
@@ -299,7 +299,7 @@ const FarmProductLPage = () => {
                                             </li>
                                             <li className="bg-blue-500 w-full p-2 rounded-br-md text-white border-[1px] border-black">
                                                 {" "}
-                                                <Link onClick={(e) => LinkCall(e,"tel:9111911162")} href="tel:9111911162" target="_blank">
+                                                <Link onClick={(e) => LinkCall(e,"tel:9666655973")} href="tel:9666655973" target="_blank">
                                                     <p className=" flex gap-1 text-sm justify-center">
                                                         <span>
                                                             <BiPhoneCall size={20} />
