@@ -81,7 +81,7 @@ import Head from "next/head";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const FarmProductLPage = () => {
+const FarmProductLPage = ({ count }) => {
     const router = useRouter();
     const [autoPlay, setAutoPlay] = useState(false);
 
@@ -209,7 +209,7 @@ const FarmProductLPage = () => {
     ];
     return (
         <div>
-            <div className="text-sm pl-4 py-4 md:px-20 lg:py-16">
+            <div className="text-sm pl-4 py-4 md:px-20 lg:py-16 text-black">
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">
                     Farm Houses In Hyderbad
                 </p>
@@ -219,7 +219,8 @@ const FarmProductLPage = () => {
             </div>
             <div>
                 <div className="flex flex-wrap gap-x-8 gap-y-8 lg:items-start justify-center lg:pl-12 items-center">
-                    {filteredData?.map((item, index) => (
+                    {/* {filteredData?.slice(0, visibleItems).map((item, index) => ( */}
+                    {filteredData?.slice(0, count ? filteredData?.length : 6).map((item, index) => (
                         <React.Fragment key={index}>
                             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:w-[400px] w-[97%] md:w-80 h-full">
                                 <div
@@ -235,13 +236,13 @@ const FarmProductLPage = () => {
                                         showArrows={true}
                                         transitionTime={1000}
                                     >
-                                        <div onClick={(e) => LinkCall(e,`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                             <Image src={item.farm_image.c1}></Image>
                                         </div>
-                                        <div onClick={(e) => LinkCall(e,`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                             <Image src={item.farm_image.c2}></Image>
                                         </div>
-                                        <div onClick={(e) => LinkCall(e,`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                             <Image src={item.farm_image.c3}></Image>
                                         </div>
                                     </Carousel>
@@ -251,10 +252,10 @@ const FarmProductLPage = () => {
                                 <div className="px-2 flex flex-col gap-4 p-1">
                                     <div className="flex items-baseline justify-between px-2">
                                         <div>
-                                            <Link onClick={(e) => LinkCall(e,`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Link onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                                 <p className="text-gray-900 font-medium text-sm lg:text-md opacity-75 font-Montserrat">Dozzy Farm House</p>
                                             </Link>
-                                            <Link onClick={(e) => LinkCall(e,`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Link onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                                 <p className=" text-[#556EE6] font-semibold text-2xl hover:text-red-600 w-fit">
                                                     {item.farm_name}
                                                 </p>
@@ -285,7 +286,7 @@ const FarmProductLPage = () => {
                                             <li className="bg-green-500 w-full p-2 rounded-bl-md text-center text-white border-[1px] border-black">
                                                 {" "}
                                                 <Link
-                                                    onClick={(e) => LinkCall(e,"https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")}
+                                                    onClick={(e) => LinkCall(e, "https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")}
                                                     href="https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking."
                                                     target="_blank"
                                                 >
@@ -299,7 +300,7 @@ const FarmProductLPage = () => {
                                             </li>
                                             <li className="bg-blue-500 w-full p-2 rounded-br-md text-white border-[1px] border-black">
                                                 {" "}
-                                                <Link onClick={(e) => LinkCall(e,"tel:9666655973")} href="tel:9666655973" target="_blank">
+                                                <Link onClick={(e) => LinkCall(e, "tel:9666655973")} href="tel:9666655973" target="_blank">
                                                     <p className=" flex gap-1 text-sm justify-center">
                                                         <span>
                                                             <BiPhoneCall size={20} />
@@ -315,6 +316,11 @@ const FarmProductLPage = () => {
                         </React.Fragment>
                     ))}
                 </div>
+            </div>
+            <div className={`${count?.length?'hidden':'block'} text-center px-6 pb-10 pt-8`}>
+                <button className="bg-[#4508a6] text-xl font-bold text-white w-full lg:w-96 py-4 rounded-full">
+                    <Link href={`/explore-all-farmhouses`}>View all farm houses</Link>
+                </button>
             </div>
         </div>
     );
