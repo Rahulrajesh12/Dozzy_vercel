@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import LinkCall from "../LinkCall";
@@ -76,12 +76,18 @@ import rajes1 from '../../images/rajes/1.webp'
 import rajes2 from '../../images/rajes/2.webp'
 import rajes3 from '../../images/rajes/3.webp'
 
-import Head from "next/head";
-
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const FarmProductLPage = ({ count }) => {
+    const [mobileC,setMobileC] = useState(false)
+    useEffect(()=>{
+
+        if(window.innerWidth<700)
+        {
+            setMobileC(true);
+        }
+    },[])
     const router = useRouter();
     const [autoPlay, setAutoPlay] = useState(false);
 
@@ -219,8 +225,7 @@ const FarmProductLPage = ({ count }) => {
             </div>
             <div>
                 <div className="flex flex-wrap gap-x-8 gap-y-8 lg:items-start justify-center lg:pl-12 items-center">
-                    {/* {filteredData?.slice(0, visibleItems).map((item, index) => ( */}
-                    {filteredData?.slice(0, count ? filteredData?.length : 6).map((item, index) => (
+                    {filteredData?.slice(0, count ? filteredData?.length : mobileC?4:6).map((item, index) => (
                         <React.Fragment key={index}>
                             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:w-[400px] w-[97%] md:w-80 h-full">
                                 <div
@@ -246,9 +251,7 @@ const FarmProductLPage = ({ count }) => {
                                             <Image src={item.farm_image.c3}></Image>
                                         </div>
                                     </Carousel>
-
                                 </div>
-
                                 <div className="px-2 flex flex-col gap-4 p-1">
                                     <div className="flex items-baseline justify-between px-2">
                                         <div>
@@ -263,10 +266,9 @@ const FarmProductLPage = ({ count }) => {
                                         </div>
                                         <div className="flex gap-2 items-center">
                                             <BsStarFill className="text-[#FFD700]" />
-                                            <p>4.4</p>
+                                            <p className="text-black">4.4</p>
                                         </div>
                                     </div>
-
                                     <div className="font-normal text-sm">
                                         <div className="flex items-baseline justify-between px-2">
                                             <p className="text-black">Mon-Thu</p>
@@ -277,7 +279,6 @@ const FarmProductLPage = ({ count }) => {
                                             <p className="text-[#556EE6]">₹ {item.weekends.oneday} /Day</p>
                                         </div>
                                     </div>
-
                                     <div className="text-black flex justify-center font-semibold">
                                         For Booking
                                     </div>
@@ -317,9 +318,12 @@ const FarmProductLPage = ({ count }) => {
                     ))}
                 </div>
             </div>
-            <div className={`${count?.length?'hidden':'block'} text-center px-6 pb-10 pt-8`}>
+            <div className={`${count?.length ? 'hidden' : 'block'} text-center px-6 pb-10 pt-8`}>
                 <button className="bg-[#4508a6] text-xl font-bold text-white w-full lg:w-96 py-4 rounded-full">
-                    <Link href={`/explore-all-farmhouses`}>View all farm houses</Link>
+                    <Link
+                        onClick={(e) => LinkCall(e, "/explore-all-farmhouses-in-hyderabad")}
+                        href="/explore-all-farmhouses-in-hyderabad"
+                    >View all farm houses</Link>
                 </button>
             </div>
         </div>
