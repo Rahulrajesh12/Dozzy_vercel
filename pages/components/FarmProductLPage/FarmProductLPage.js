@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import { BsStarFill } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
-import { IoBedSharp } from "react-icons/io5";
+import { GiBed } from "react-icons/gi";
 
 import skfarm1 from "../../images/saketh/1.webp"
 import skfarm2 from "../../images/saketh/2.webp"
@@ -303,8 +303,8 @@ const FarmProductLPage = ({ count }) => {
                                                 <p className="text-black">{item?.rating}</p>
                                             </div>
                                             <div className="flex gap-2 items-center">
-                                                <IoBedSharp size={20} className="text-red-500" />
-                                                <p className="text-black">{item?.no_bed} bhk</p>
+                                                <GiBed size={30} className="text-[#935732]" />
+                                                <p className="text-black">{item?.no_bed} BHK</p>
                                             </div>
 
                                         </div>

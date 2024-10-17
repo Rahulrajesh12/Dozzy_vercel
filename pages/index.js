@@ -6,7 +6,7 @@ const FarmStarts = dynamic(() => import('./components/FarmStarts/FarmStarts'));
 const FarmProductLPage = dynamic(() => import('./components/FarmProductLPage/FarmProductLPage'));
 const CareGuests = dynamic(() => import('./components/CareGuests/CareGuests'));
 
-export default function Home() {
+export default function Home({canonicalUrl}) {
   return (
     <div className="text-black font-poppins">
       <Head>
@@ -16,6 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+        <link rel="canonical" href={canonicalUrl} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -54,4 +55,20 @@ export default function Home() {
       <CareGuests />
     </div>
   );
+}
+export async function getServerSideProps({req}) {
+  // const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=Hyderabad');
+  // const items = await response.json();
+  // const cars = items?.data?.results;
+  const host = req.headers.host;
+  const canonicalUrl = host.includes('.in')
+    ? 'https://www.dozzy.in'
+    : 'https://www.dozzy.com';
+
+  return {
+    props: {
+      // cars,
+      canonicalUrl,
+    },
+  };
 }

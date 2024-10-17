@@ -92,12 +92,13 @@ import starbh3 from './images/starbh/3.webp'
 import starling1 from './images/starling/1.webp'
 import starling2 from './images/starling/2.webp'
 import starling3 from './images/starling/3.webp'
+import { GiBed } from "react-icons/gi";
 
 import rajes1 from './images/rajes/1.webp'
 import rajes2 from './images/rajes/2.webp'
 import rajes3 from './images/rajes/3.webp'
 import LinkCall from './components/LinkCall';
-const CarDetails = () => {
+const CarDetails = ({canonicalUrl}) => {
 
   const router = useRouter();
   const [caritem, setCarItem] = useState('')
@@ -111,7 +112,8 @@ const CarDetails = () => {
       farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, },
       weekdays: { oneday: "10000", twoday: "25000" },
       weekends: { oneday: "12000", twoday: "35000" },
-      desc: "Traditionally Farmhouses are simply homes built on agricultural lands to house and protect who owned or worked the land. The term Farmhouse isn't necessarily connected to a particular style identified by a fixed set of features, but a setting for a way of life. This is most likely why its appeal seems to be timeless."
+      desc: "Traditionally Farmhouses are simply homes built on agricultural lands to house and protect who owned or worked the land. The term Farmhouse isn't necessarily connected to a particular style identified by a fixed set of features, but a setting for a way of life. This is most likely why its appeal seems to be timeless.",
+      no_beds:"3"
     },
     "srinivasa": {
       farm_name: 'Srinivasa',
@@ -119,7 +121,8 @@ const CarDetails = () => {
       farm_image: { c1: srfarm1, c2: srfarm2, c3: srfarm3, },
       weekdays: { oneday: "15000", twoday: "25000" },
       weekends: { oneday: "17000", twoday: "35000" },
-      desc: "SRINIVASA Farmhouse, nestled amidst the natural beauty, provides a serene escape from the city's hustle and bustle. Tailored for both relaxation and fun, our farmhouse guarantees a memorable experience for you and your loved ones. It features a refreshing swimming pool/baby pool, 12 acres of mango trees, a banyan tree, a fish pond, a fully equipped kitchen with bowls and plates, and a barbecue setup for delightful meals. For entertainment, there's a Bluetooth music system, a 100-inch big projector, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube. Game enthusiasts can indulge in cricket, shuttle, carroms, and chess, promising endless enjoyment for everyone. "
+      desc: "SRINIVASA Farmhouse, nestled amidst the natural beauty, provides a serene escape from the city's hustle and bustle. Tailored for both relaxation and fun, our farmhouse guarantees a memorable experience for you and your loved ones. It features a refreshing swimming pool/baby pool, 12 acres of mango trees, a banyan tree, a fish pond, a fully equipped kitchen with bowls and plates, and a barbecue setup for delightful meals. For entertainment, there's a Bluetooth music system, a 100-inch big projector, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube. Game enthusiasts can indulge in cricket, shuttle, carroms, and chess, promising endless enjoyment for everyone. ",
+      no_beds:"5"
     },
     "zoo zoo": {
       farm_name: 'Zoo Zoo',
@@ -127,7 +130,8 @@ const CarDetails = () => {
       farm_image: { c1: zfarm1, c2: zfarm2, c3: zfarm3, },
       weekdays: { oneday: "8000", twoday: "10000" },
       weekends: { oneday: "10000", twoday: "25000" },
-      desc: "The tranquil haven that Zoo Zoo Farmhouse provides from the bustle of the city is located deep inside the natural world. You and your loved ones are guaranteed a pleasant stay at our farmhouse, which is designed to offer the ideal balance of leisure and enjoyment.The Zoo Zoo Farmhouse has unique features such a cool pool, comfortable sit-out areas, a fully stocked kitchen with dishes and bowls, and a grill for delicious dinners. With a 55-inch TV, WiFi, Bluetooth audio system, Aha, ZEE5, YouTube, Netflix, and Prime, there are plenty of entertainment alternatives. Chess, carroms, shuttle, and cricket are available for those who enjoy playing games, so everyone will have a great time."
+      desc: "The tranquil haven that Zoo Zoo Farmhouse provides from the bustle of the city is located deep inside the natural world. You and your loved ones are guaranteed a pleasant stay at our farmhouse, which is designed to offer the ideal balance of leisure and enjoyment.The Zoo Zoo Farmhouse has unique features such a cool pool, comfortable sit-out areas, a fully stocked kitchen with dishes and bowls, and a grill for delicious dinners. With a 55-inch TV, WiFi, Bluetooth audio system, Aha, ZEE5, YouTube, Netflix, and Prime, there are plenty of entertainment alternatives. Chess, carroms, shuttle, and cricket are available for those who enjoy playing games, so everyone will have a great time.",
+      no_beds:"2"
     },
     "shan": {
       farm_name: 'Shan',
@@ -135,7 +139,8 @@ const CarDetails = () => {
       farm_image: { c1: shfarm1, c2: shfarm2, c3: shfarm3, },
       weekdays: { oneday: "10000", twoday: "19000" },
       weekends: { oneday: "12000", twoday: "29000" },
-      desc: "SHAN Farmhouse provides a tranquil getaway from the bustle of the city because it is tucked away in a beautiful natural setting. Our farmhouse is designed to provide you and your loved ones with an unforgettable experience, combining leisure and enjoyment. It has unique features including a cool pool, five acres of mango trees, a fully functional kitchen with dishes and bowls, and a grill for delicious dinners. A 100-inch large projector, Bluetooth audio system, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube are available for amusement. Gamers can play chess, carroms, shuttle, cricket, and shuttle, all of which guarantee hours of fun for all players. "
+      desc: "SHAN Farmhouse provides a tranquil getaway from the bustle of the city because it is tucked away in a beautiful natural setting. Our farmhouse is designed to provide you and your loved ones with an unforgettable experience, combining leisure and enjoyment. It has unique features including a cool pool, five acres of mango trees, a fully functional kitchen with dishes and bowls, and a grill for delicious dinners. A 100-inch large projector, Bluetooth audio system, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube are available for amusement. Gamers can play chess, carroms, shuttle, cricket, and shuttle, all of which guarantee hours of fun for all players. ",
+      no_beds:"3"
     },
     // "sravan": {
     //   farm_name: "Sravan",
@@ -145,21 +150,22 @@ const CarDetails = () => {
     //   weekends: { oneday: "17000", twoday: "34000" },
     //   desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone."
     // },
-    "tyb": {
-      farm_name: "TYB",
-      price_24_hours: 1000,
-      farm_image: { c1: ty1, c2: ty2, c3: ty3, },
-      weekdays: { oneday: "10000", twoday: "20000" },
-      weekends: { oneday: "12000", twoday: "24000" },
-      desc: "TYP Farmhouse, nestled in the tranquil heart of the forest, provides a dreamlike retreat from the chaos of city life. Our farmhouse is crafted to offer the ideal mix of relaxation and enjoyment, promising an unforgettable stay for you and your loved ones. TYP Farmhouse features a stunning garden, a refreshing swimming pool, a fully equipped kitchen with all necessary dishes and utensils, and a barbecue area for delightful meals. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy a range of games like chess, carrom, shuttle, and cricket, ensuring fun for everyone."
-    },
+    // "tyb": {
+    //   farm_name: "TYB",
+    //   price_24_hours: 1000,
+    //   farm_image: { c1: ty1, c2: ty2, c3: ty3, },
+    //   weekdays: { oneday: "10000", twoday: "20000" },
+    //   weekends: { oneday: "12000", twoday: "24000" },
+    //   desc: "TYP Farmhouse, nestled in the tranquil heart of the forest, provides a dreamlike retreat from the chaos of city life. Our farmhouse is crafted to offer the ideal mix of relaxation and enjoyment, promising an unforgettable stay for you and your loved ones. TYP Farmhouse features a stunning garden, a refreshing swimming pool, a fully equipped kitchen with all necessary dishes and utensils, and a barbecue area for delightful meals. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy a range of games like chess, carrom, shuttle, and cricket, ensuring fun for everyone."
+    // },
     "al haadi": {
       farm_name: "Al Haadi",
       farm_image: { c1: a1, c2: a2, c3: a3, },
       weekdays: { oneday: "15000", twoday: "20000" },
       weekends: { oneday: "17000", twoday: "24000" },
       desc: "Al Haddi FarmHouse, set in the calm of the forest, is the perfect retreat from the fast-paced city life. Our farmhouse is thoughtfully designed to create a harmonious blend of relaxation and fun, guaranteeing a memorable stay for you and your loved ones. Enjoy the lush garden, the inviting swimming pool, and a fully equipped kitchen that allows you to whip up your favorite meals.",
-      desc1: "Take advantage of the beautiful surroundings to connect with nature and relish the fresh, green atmosphere. With self-cooking facilities at your disposal, you can enjoy meals made to your liking while embracing the tranquility of the outdoors. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth sound system, and access to popular streaming services. Plus, enjoy engaging games like chess, carrom, shuttle, and cricket for endless fun."
+      desc1: "Take advantage of the beautiful surroundings to connect with nature and relish the fresh, green atmosphere. With self-cooking facilities at your disposal, you can enjoy meals made to your liking while embracing the tranquility of the outdoors. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth sound system, and access to popular streaming services. Plus, enjoy engaging games like chess, carrom, shuttle, and cricket for endless fun.",
+      no_beds:"4"
     },
     "alsafa": {
       farm_name: "Alsafa",
@@ -167,7 +173,8 @@ const CarDetails = () => {
       weekdays: { oneday: "13000", twoday: "20000" },
       weekends: { oneday: "15000", twoday: "24000" },
       desc: "Alsafa FarmHouse, tucked away in the peaceful heart of the forest, provides an idyllic escape from the fast-paced city life. Surrounded by lush greenery, our farmhouse allows you to fully immerse yourself in nature, enjoying the tranquil atmosphere that enhances your stay. Crafted for the perfect mix of relaxation and enjoyment, Alsafa FarmHouse ensures an unforgettable experience for you and your loved ones.",
-      desc1: "Key features include a vibrant garden, a sparkling swimming pool, a fully equipped kitchen complete with dishes and bowls, and a barbecue area for delightful meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy fun games like chess, carrom, shuttle, and cricket, making it a perfect retreat for everyone. Embrace the beauty of nature at Alsafa FarmHouse and create cherished memories amidst the greenery."
+      desc1: "Key features include a vibrant garden, a sparkling swimming pool, a fully equipped kitchen complete with dishes and bowls, and a barbecue area for delightful meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy fun games like chess, carrom, shuttle, and cricket, making it a perfect retreat for everyone. Embrace the beauty of nature at Alsafa FarmHouse and create cherished memories amidst the greenery.",
+      no_beds:"2"
     },
     "courtyard": {
       farm_name: "CourtYard",
@@ -175,7 +182,8 @@ const CarDetails = () => {
       weekdays: { oneday: "10000", twoday: "20000" },
       weekends: { oneday: "12000", twoday: "24000" },
       desc: "Courtyard FarmHouse, tucked away in the peaceful heart of the forest, provides an idyllic escape from the fast-paced city life. Our farmhouse is crafted to offer the perfect mix of relaxation and enjoyment, ensuring an unforgettable experience for you and your loved ones. Key features include a lush garden, a sparkling swimming pool, a fully equipped kitchen complete with dishes and bowls, and a barbecue area for delightful meals. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth sound system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy fun games like chess, carrom, shuttle, and cricket, making it a perfect stay for everyone.",
-      desc1: ""
+      desc1: "",
+      no_beds:"2"
     },
     "holiday": {
       farm_name: "holiday",
@@ -183,7 +191,8 @@ const CarDetails = () => {
       weekdays: { oneday: "8000", twoday: "20000" },
       weekends: { oneday: "10000", twoday: "24000" },
       desc: "Holiday FarmHouse, set in the serene forest, invites you to unwind and enjoy quality time away from the fast-paced city. Our farmhouse ensures a comfortable stay with its well-maintained garden, a refreshing pool, and a fully stocked kitchen complete with dishes and a barbecue area. Stay entertained with a 43-inch TV, WiFi, Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Guests can also engage in various games, including chess, carrom, shuttle, and cricket, for a truly enjoyable experience.",
-      desc1: ""
+      desc1: "",
+      no_beds:"2"
     },
     "nbr": {
       farm_name: "NBR",
@@ -191,7 +200,8 @@ const CarDetails = () => {
       weekdays: { oneday: "8000", twoday: "20000" },
       weekends: { oneday: "10000", twoday: "24000" },
       desc: "NBR FarmHouse, nestled in the tranquil heart of the forest, offers an idyllic retreat from the hustle and bustle of city life. Designed to provide the perfect blend of relaxation and enjoyment, our farmhouse ensures an unforgettable experience for you and your loved ones. Key features include a lush garden, a sparkling swimming pool, and a fully equipped kitchen complete with dishes and bowls, allowing you to enjoy self-cooking and savor your own culinary creations in the midst of nature.",
-      desc1: "Immerse yourself in the beauty of the surrounding greenery and truly enjoy the atmosphere, where nature thrives. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, engage in fun games such as chess, carrom, shuttle, and cricket, ensuring there's something for everyone. Experience a holiday filled with delicious homemade food, nature, and exciting adventures at NBR FarmHouse."
+      desc1: "Immerse yourself in the beauty of the surrounding greenery and truly enjoy the atmosphere, where nature thrives. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, engage in fun games such as chess, carrom, shuttle, and cricket, ensuring there's something for everyone. Experience a holiday filled with delicious homemade food, nature, and exciting adventures at NBR FarmHouse.",
+      no_beds:"1"
     },
     "pleasant view": {
       farm_name: "Pleasant",
@@ -199,7 +209,8 @@ const CarDetails = () => {
       weekdays: { oneday: "10000", twoday: "20000" },
       weekends: { oneday: "12000", twoday: "24000" },
       desc: "Set in the quiet heart of the forest, Pleasantview FarmHouse offers a peaceful escape from the demands of everyday city living. Our farmhouse is designed to give you the ideal mix of leisure and entertainment, making it a wonderful getaway for families or friends. Enjoy a lovely garden, a refreshing swimming pool, a fully functional kitchen with all necessary dishes and bowls, and a barbecue area to savor outdoor meals. We provide entertainment with a 43-inch TV, WiFi, Bluetooth audio system, and access to popular streaming services such as Netflix, Prime, Hotstar, Aha, and ZEE5. Games like chess, carrom, shuttle, and cricket are also available to keep the fun going throughout your stay.",
-      desc1: ""
+      desc1: "",
+      no_beds:"4"
     },
     "serenity": {
       farm_name: "Serenity",
@@ -207,7 +218,8 @@ const CarDetails = () => {
       weekdays: { oneday: "8000", twoday: "20000" },
       weekends: { oneday: "9000", twoday: "24000" },
       desc: "Serenity FarmHouse, tucked away in the peaceful heart of the forest, offers an idyllic escape from the fast-paced city life. Crafted to provide the perfect blend of relaxation and enjoyment, our farmhouse ensures an unforgettable experience for you and your loved ones. Key features include a lush garden, a sparkling swimming pool, and a fully equipped kitchen with dishes and bowls, allowing you to enjoy self-cooking and savor your favorite meals.",
-      desc1: "Immerse yourself in the beauty of nature, surrounded by greenery that enhances the serene atmosphere. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy fun games like chess, carrom, shuttle, and cricket, making it a perfect stay for everyone. Indulge in your culinary adventures and relish your holiday with your own food amidst nature’s tranquility."
+      desc1: "Immerse yourself in the beauty of nature, surrounded by greenery that enhances the serene atmosphere. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy fun games like chess, carrom, shuttle, and cricket, making it a perfect stay for everyone. Indulge in your culinary adventures and relish your holiday with your own food amidst nature’s tranquility.",
+      no_beds:"3"
     },
     "sp farmhouse": {
       farm_name: "SP Farmhouse",
@@ -215,7 +227,8 @@ const CarDetails = () => {
       weekdays: { oneday: "12000", twoday: "24000" },
       weekends: { oneday: "15000", twoday: "3000" },
       desc: "SP Farm House, located in a peaceful forest setting, provides the perfect escape from city life. With a focus on relaxation and fun, our farmhouse promises an enjoyable stay. Key features include a charming garden, a relaxing swimming pool, a fully equipped kitchen with all the essentials, and a barbecue area for outdoor dining. Entertainment options abound with a 43-inch TV, WiFi, a Bluetooth sound system, and access to popular streaming platforms like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, indoor and outdoor games such as chess, carrom, shuttle, and cricket ensure fun for everyone.",
-      desc1: ""
+      desc1: "",
+      no_beds:"2"
     },
     "takshvi": {
       farm_name: "Takshvi",
@@ -223,7 +236,8 @@ const CarDetails = () => {
       weekdays: { oneday: "10000", twoday: "20000" },
       weekends: { oneday: "12000", twoday: "24000" },
       desc: "Takshvi FarmHouse, tucked away in the peaceful heart of the forest, offers an idyllic escape from the fast-paced city life. Our farmhouse is designed to provide the perfect mix of relaxation and enjoyment, ensuring an unforgettable experience for you and your loved ones. Key features include a lush garden, a sparkling swimming pool, and a fully equipped kitchen stocked with dishes and bowls, allowing you to indulge in self-cooking and savor your own meals surrounded by nature.",
-      desc1: "Immerse yourself in the beautiful atmosphere and greenery, where you can truly appreciate the tranquility of the outdoors. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy fun games such as chess, carrom, shuttle, and cricket, making it a perfect stay for everyone. Embrace your holiday with delicious homemade food and thrilling adventures in nature."
+      desc1: "Immerse yourself in the beautiful atmosphere and greenery, where you can truly appreciate the tranquility of the outdoors. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, enjoy fun games such as chess, carrom, shuttle, and cricket, making it a perfect stay for everyone. Embrace your holiday with delicious homemade food and thrilling adventures in nature.",
+      no_beds:"2"
     },
     "star lingam": {
       farm_name: "Star Lingam",
@@ -231,7 +245,8 @@ const CarDetails = () => {
       weekdays: { oneday: "15000", twoday: "20000" },
       weekends: { oneday: "17000", twoday: "24000" },
       desc: "Star Lingam FarmHouse, nestled in the tranquil heart of the forest, offers a serene escape from the fast-paced city life. Designed for the perfect blend of relaxation and enjoyment, our farmhouse guarantees an unforgettable experience for you and your loved ones. Key features include a lush garden, a sparkling swimming pool, and a fully equipped kitchen complete with dishes and bowls, allowing you to enjoy self-cooking facilities and create your own culinary delights.",
-      desc1: "Embrace the beauty of nature as you immerse yourself in the greenery surrounding the farmhouse. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth sound system, and access to popular streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, engage in enjoyable games like chess, carrom, shuttle, and cricket, ensuring fun for everyone. Enjoy your holiday filled with nature, delicious home-cooked meals, and thrilling adventures"
+      desc1: "Embrace the beauty of nature as you immerse yourself in the greenery surrounding the farmhouse. For entertainment, we provide a 43-inch TV, WiFi, a Bluetooth sound system, and access to popular streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, engage in enjoyable games like chess, carrom, shuttle, and cricket, ensuring fun for everyone. Enjoy your holiday filled with nature, delicious home-cooked meals, and thrilling adventures",
+      no_beds:"1"
     },
     "star bhima": {
       farm_name: "Star Bhima",
@@ -239,7 +254,8 @@ const CarDetails = () => {
       weekdays: { oneday: "15000", twoday: "20000" },
       weekends: { oneday: "17000", twoday: "24000" },
       desc: "Star Bhima FarmHouse, located in the peaceful embrace of the forest, is your ideal getaway from the city's chaos. Our farmhouse is thoughtfully designed to provide a harmonious blend of relaxation and enjoyment, promising a memorable stay for you and your family. Enjoy features such as a lush garden, a sparkling swimming pool, and a fully equipped kitchen that makes self-cooking a delight, allowing you to create meals using fresh ingredients.",
-      desc1: "Revel in the beautiful surroundings, where the atmosphere is filled with the sounds of nature and the scent of greenery. For your entertainment, we provide a 43-inch TV, WiFi, a Bluetooth audio system, and access to popular streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. You can also enjoy fun-filled activities such as chess, carrom, shuttle, and cricket, making it a perfect getaway for all. Enjoy a holiday of culinary delights and nature adventures at Star Bhima FarmHouse."
+      desc1: "Revel in the beautiful surroundings, where the atmosphere is filled with the sounds of nature and the scent of greenery. For your entertainment, we provide a 43-inch TV, WiFi, a Bluetooth audio system, and access to popular streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. You can also enjoy fun-filled activities such as chess, carrom, shuttle, and cricket, making it a perfect getaway for all. Enjoy a holiday of culinary delights and nature adventures at Star Bhima FarmHouse.",
+      no_beds:"5"
     },
     "rajeswari": {
       farm_name: "Rajeswari",
@@ -247,7 +263,8 @@ const CarDetails = () => {
       weekdays: { oneday: "15000", twoday: "20000" },
       weekends: { oneday: "17000", twoday: "24000" },
       desc: "Rajeswari FarmHouse, located in the peaceful embrace of the forest, is your ideal getaway from the city's chaos. Our farmhouse is thoughtfully designed to provide a harmonious blend of relaxation and enjoyment, promising a memorable stay for you and your family. Enjoy features such as a lush garden, a sparkling swimming pool, and a fully equipped kitchen that makes self-cooking a delight, allowing you to create meals using fresh ingredients.",
-      desc1: "Revel in the beautiful surroundings, where the atmosphere is filled with the sounds of nature and the scent of greenery. For your entertainment, we provide a 43-inch TV, WiFi, a Bluetooth audio system, and access to popular streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. You can also enjoy fun-filled activities such as chess, carrom, shuttle, and cricket, making it a perfect getaway for all. Enjoy a holiday of culinary delights and nature adventures at Rajeswari FarmHouse."
+      desc1: "Revel in the beautiful surroundings, where the atmosphere is filled with the sounds of nature and the scent of greenery. For your entertainment, we provide a 43-inch TV, WiFi, a Bluetooth audio system, and access to popular streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. You can also enjoy fun-filled activities such as chess, carrom, shuttle, and cricket, making it a perfect getaway for all. Enjoy a holiday of culinary delights and nature adventures at Rajeswari FarmHouse.",
+      no_beds:"5"
     },
   }
 
@@ -261,6 +278,7 @@ const CarDetails = () => {
         <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
+        <link rel="canonical" href={`${canonicalUrl}/${farmproduct}`} />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -301,7 +319,7 @@ const CarDetails = () => {
               showIndicators={false}
               infiniteLoop={true}
               autoPlay={true}
-              interval={5000}
+              interval={3000}
               stopOnHover={true}
               className=""
             >
@@ -312,9 +330,10 @@ const CarDetails = () => {
           </div>
           <div className='flex flex-col lg:gap-14 gap-4 lg:pt-10 pt-2'>
             <div>
-              <h2 className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[mdfyFarmProduct?.toLowerCase()]?.farm_name} Farm House <p className='text-blue-600 pt-3'>₹ {customData[mdfyFarmProduct?.toLowerCase()]?.weekdays.oneday}/day</p>
+              <div className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[mdfyFarmProduct?.toLowerCase()]?.farm_name} Farm House ({customData[mdfyFarmProduct?.toLowerCase()]?.no_beds} BHK) <p className='text-blue-600 pt-3'>₹ {customData[mdfyFarmProduct?.toLowerCase()]?.weekdays.oneday}/day</p>
                 <p className='text-blue-600 opacity-70 text-xs pl-1'>₹ {customData[mdfyFarmProduct?.toLowerCase()]?.weekends.oneday}/day <span className='text-black'>(Fri-Sun)</span></p>
-              </h2>
+              </div>
+
             </div>
             <div className="grid grid-cols-2 gap-4 lg:flex lg:flex-col  text-xs font-semibold lg:text-base xs: lg:w-full">
               <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
@@ -329,13 +348,13 @@ const CarDetails = () => {
             <div className=''>
               <h2 className='font-semibold text-xl'>Contact Us By</h2>
               <div className='flex justify-start gap-4 lg:gap-5 xl:gap-8 xl:pt-4 pb-2 pt-2 text-white'>
-                <button  className='bg-green-500 rounded-md p-2 lg:p-3'>
-                  <Link onClick={(e) => LinkCall(e,"https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")} href="https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.">
+                <button className='bg-green-500 rounded-md p-2 lg:p-3'>
+                  <Link onClick={(e) => LinkCall(e, "https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.")} href="https://api.whatsapp.com/send?phone=+9666655973&text=Hi%0AI%20am%20looking%20for%20a%20farmhouse%20booking.">
                     <p className=' flex items-center gap-1 text-sm'><span><FaWhatsapp className='xl:size-6' /></span> <span>Whatsapp</span></p>
                   </Link>
                 </button>
                 <button className='bg-blue-500 rounded-md p-2 lg:p-3 lg:px-7'>
-                  <Link onClick={(e) => LinkCall(e,"tel:9666655973")}  href="tel:9666655973" target='_blank'>
+                  <Link onClick={(e) => LinkCall(e, "tel:9666655973")} href="tel:9666655973" target='_blank'>
                     <p className=' flex items-center gap-1 text-sm'><span><BiPhoneCall className='xl:size-6' /></span> <span>Call Us</span></p>
                   </Link>
                 </button>
@@ -426,3 +445,19 @@ const CarDetails = () => {
 
 export default CarDetails;
 
+export async function getServerSideProps({req}) {
+  // const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=Hyderabad');
+  // const items = await response.json();
+  // const cars = items?.data?.results;
+  const host = req.headers.host;
+  const canonicalUrl = host.includes('.in')
+    ? 'https://www.dozzy.in'
+    : 'https://www.dozzy.com';
+
+  return {
+    props: {
+      // cars,
+      canonicalUrl,
+    },
+  };
+}

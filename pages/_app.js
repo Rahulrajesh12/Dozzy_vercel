@@ -6,11 +6,6 @@ import Layout from './components/Layout/Layout';
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-       <Head>
-       <link rel="icon" href="/dozzyofc.png" />
-       <link rel="canonical" href="https://www.dozzy.com/"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <Component {...pageProps} />
     </Layout>
   );
