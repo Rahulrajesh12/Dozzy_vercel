@@ -40,7 +40,7 @@ const CareGuests = () => {
                     Zero Deposit
                   </p>
                   <p className="text-[10px] md:text-xs lg:text-xl">
-                    We don't Collect Any Secutity Deposit
+                    We don't Collect Any Security Deposit
                   </p>
                 </div>
               </div>

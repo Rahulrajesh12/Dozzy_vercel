@@ -10,7 +10,7 @@ const FarmStarts = () => {
         <div className='py-6 px-4 md:px-20'>
             <p className='pb-4 font-semibold text-xl lg:text-3xl pt-4 lg:pt-14 md:pb-7 font-opensans'>Farmhouses Starts At 10,000/Day</p>
             <div className='flex'>
-                <div >
+                <div>
                     <Image
                         src={grpfarm}
                         alt='farmhouse'

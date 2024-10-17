@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { BsStarFill } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
+import { IoBedSharp } from "react-icons/io5";
 
 import skfarm1 from "../../images/saketh/1.webp"
 import skfarm2 from "../../images/saketh/2.webp"
@@ -80,14 +81,13 @@ import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const FarmProductLPage = ({ count }) => {
-    const [mobileC,setMobileC] = useState(false)
-    useEffect(()=>{
+    const [mobileC, setMobileC] = useState(false)
+    useEffect(() => {
 
-        if(window.innerWidth<700)
-        {
+        if (window.innerWidth < 700) {
             setMobileC(true);
         }
-    },[])
+    }, [])
     const router = useRouter();
     const [autoPlay, setAutoPlay] = useState(false);
 
@@ -105,6 +105,8 @@ const FarmProductLPage = ({ count }) => {
             farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, },
             weekdays: { oneday: "10000", twoday: "25000" },
             weekends: { oneday: "12000", twoday: "35000" },
+            rating: "4.4",
+            no_bed:"3",
         },
         {
             farm_name: "Srinivasa",
@@ -112,6 +114,8 @@ const FarmProductLPage = ({ count }) => {
             farm_image: { c1: srfarm1, c2: srfarm2, c3: srfarm3, },
             weekdays: { oneday: "15000", twoday: "25000" },
             weekends: { oneday: "17000", twoday: "35000" },
+            rating: "4.2",
+            no_bed:"5",
         },
         {
             farm_name: "Zoo Zoo",
@@ -119,6 +123,8 @@ const FarmProductLPage = ({ count }) => {
             farm_image: { c1: zfarm1, c2: zfarm2, c3: zfarm3, },
             weekdays: { oneday: "8000", twoday: "15000" },
             weekends: { oneday: "10000", twoday: "25000" },
+            rating: "4.3",
+            no_bed:"2",
         },
         {
             farm_name: "Shan",
@@ -126,6 +132,8 @@ const FarmProductLPage = ({ count }) => {
             farm_image: { c1: shfarm1, c2: shfarm2, c3: shfarm3, },
             weekdays: { oneday: "10000", twoday: "19000" },
             weekends: { oneday: "12000", twoday: "29000" },
+            rating: "4.3",
+            no_bed:"3",
         },
         // {
         //     farm_name: "Sravan",
@@ -134,83 +142,108 @@ const FarmProductLPage = ({ count }) => {
         //     weekdays: { oneday: "17000", twoday: "34000" },
         //     weekends: { oneday: "17000", twoday: "34000" },
         // },
-        {
-            farm_name: "TYB",
-            farm_image: { c1: ty1, c2: ty2, c3: ty3, },
-            weekdays: { oneday: "10000", twoday: "20000" },
-            weekends: { oneday: "12000", twoday: "24000" },
-        },
+        // {
+        //     farm_name: "TYB",
+        //     farm_image: { c1: ty1, c2: ty2, c3: ty3, },
+        //     weekdays: { oneday: "10000", twoday: "20000" },
+        //     weekends: { oneday: "12000", twoday: "24000" },
+        //     rating: "4.5",
+        // },
         {
             farm_name: "AL Haadi",
             farm_image: { c1: a1, c2: a2, c3: a3, },
             weekdays: { oneday: "15000", twoday: "20000" },
             weekends: { oneday: "17000", twoday: "24000" },
+            rating: "4",
+            no_bed:"4",
         },
         {
             farm_name: "Alsafa",
             farm_image: { c1: alsafa1, c2: alsafa2, c3: alsafa3, },
             weekdays: { oneday: "13000", twoday: "20000" },
             weekends: { oneday: "15000", twoday: "24000" },
+            rating: "4.4",
+            no_bed:"2",
         },
         {
             farm_name: "CourtYard",
             farm_image: { c1: courtyard1, c2: courtyard2, c3: courtyard3, },
             weekdays: { oneday: "10000", twoday: "20000" },
             weekends: { oneday: "12000", twoday: "24000" },
+            rating: "4.2",
+            no_bed:"2",
         },
         {
             farm_name: "Holiday",
             farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, },
             weekdays: { oneday: "8000", twoday: "20000" },
             weekends: { oneday: "10000", twoday: "24000" },
+            rating: "4.3",
+            no_bed:"2",
         },
         {
             farm_name: "NBR",
             farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
             weekdays: { oneday: "8000", twoday: "20000" },
             weekends: { oneday: "10000", twoday: "24000" },
+            rating: "4",
+            no_bed:"1",
         },
         {
             farm_name: "Pleasant View",
             farm_image: { c1: pleasant1, c2: pleasant2, c3: pleasant3, },
             weekdays: { oneday: "10000", twoday: "20000" },
             weekends: { oneday: "12000", twoday: "24000" },
+            rating: "4.3",
+            no_bed:"4",
         },
         {
             farm_name: "Serenity",
             farm_image: { c1: serinity1, c2: serinity2, c3: serinity3, },
             weekdays: { oneday: "8000", twoday: "20000" },
             weekends: { oneday: "9000", twoday: "24000" },
+            rating: "4.1",
+            no_bed:"3",
         },
         {
             farm_name: "SP Farmhouse",
             farm_image: { c1: sp1, c2: sp2, c3: sp3, },
             weekdays: { oneday: "12000", twoday: "24000" },
             weekends: { oneday: "15000", twoday: "3000" },
+            rating: "4.2",
+            no_bed:"2",
         },
         {
             farm_name: "Takshvi",
             farm_image: { c1: taksh1, c2: taksh2, c3: taksh3, },
             weekdays: { oneday: "10000", twoday: "20000" },
             weekends: { oneday: "12000", twoday: "24000" },
+            rating: "4.5",
+            no_bed:"2",
         },
         {
             farm_name: "Star Lingam",
             farm_image: { c1: starling1, c2: starling2, c3: starling3, },
             weekdays: { oneday: "15000", twoday: "20000" },
             weekends: { oneday: "17000", twoday: "24000" },
+            rating: "4",
+            no_bed:"1",
         },
         {
             farm_name: "Star Bhima",
             farm_image: { c1: starbh1, c2: starbh2, c3: starbh3, },
             weekdays: { oneday: "15000", twoday: "20000" },
             weekends: { oneday: "17000", twoday: "24000" },
+            rating: "4.1",
+            no_bed:"5",
         },
         {
             farm_name: "Rajeswari",
             farm_image: { c1: rajes1, c2: rajes2, c3: rajes3, },
             weekdays: { oneday: "15000", twoday: "20000" },
             weekends: { oneday: "17000", twoday: "24000" },
+            rating: "4.5",
+            no_bed:"5",
         },
     ];
     return (
@@ -225,7 +258,7 @@ const FarmProductLPage = ({ count }) => {
             </div>
             <div>
                 <div className="flex flex-wrap gap-x-8 gap-y-8 lg:items-start justify-center lg:pl-12 items-center">
-                    {filteredData?.slice(0, count ? filteredData?.length : mobileC?4:6).map((item, index) => (
+                    {filteredData?.slice(0, count ? filteredData?.length : mobileC ? 4 : 6).map((item, index) => (
                         <React.Fragment key={index}>
                             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:w-[400px] w-[97%] md:w-80 h-full">
                                 <div
@@ -264,9 +297,16 @@ const FarmProductLPage = ({ count }) => {
                                                 </p>
                                             </Link>
                                         </div>
-                                        <div className="flex gap-2 items-center">
-                                            <BsStarFill className="text-[#FFD700]" />
-                                            <p className="text-black">4.4</p>
+                                        <div className="flex flex-col gap-2 items-center">
+                                            <div className="flex gap-2 items-center">
+                                                <BsStarFill className="text-[#FFD700]" />
+                                                <p className="text-black">{item?.rating}</p>
+                                            </div>
+                                            <div className="flex gap-2 items-center">
+                                                <IoBedSharp size={20} className="text-red-500" />
+                                                <p className="text-black">{item?.no_bed} bhk</p>
+                                            </div>
+
                                         </div>
                                     </div>
                                     <div className="font-normal text-sm">
