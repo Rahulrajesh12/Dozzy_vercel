@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import { BsStarFill } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
-import { GiBed } from "react-icons/gi";
+import { IoBedSharp } from "react-icons/io5";
 
 import skfarm1 from "../../images/saketh/1.webp"
 import skfarm2 from "../../images/saketh/2.webp"
@@ -108,15 +108,15 @@ const FarmProductLPage = ({ count }) => {
             rating: "4.4",
             no_bed:"3",
         },
-        {
-            farm_name: "Srinivasa",
-            price_24_hours: 13000,
-            farm_image: { c1: srfarm1, c2: srfarm2, c3: srfarm3, },
-            weekdays: { oneday: "15000", twoday: "25000" },
-            weekends: { oneday: "17000", twoday: "35000" },
-            rating: "4.2",
-            no_bed:"5",
-        },
+        // {
+        //     farm_name: "Srinivasa",
+        //     price_24_hours: 13000,
+        //     farm_image: { c1: srfarm1, c2: srfarm2, c3: srfarm3, },
+        //     weekdays: { oneday: "15000", twoday: "25000" },
+        //     weekends: { oneday: "17000", twoday: "35000" },
+        //     rating: "4.2",
+        //     no_bed:"5",
+        // },
         {
             farm_name: "Zoo Zoo",
             price_24_hours: 8000,
@@ -126,15 +126,15 @@ const FarmProductLPage = ({ count }) => {
             rating: "4.3",
             no_bed:"2",
         },
-        {
-            farm_name: "Shan",
-            price_24_hours: 10000,
-            farm_image: { c1: shfarm1, c2: shfarm2, c3: shfarm3, },
-            weekdays: { oneday: "10000", twoday: "19000" },
-            weekends: { oneday: "12000", twoday: "29000" },
-            rating: "4.3",
-            no_bed:"3",
-        },
+        // {
+        //     farm_name: "Shan",
+        //     price_24_hours: 10000,
+        //     farm_image: { c1: shfarm1, c2: shfarm2, c3: shfarm3, },
+        //     weekdays: { oneday: "10000", twoday: "19000" },
+        //     weekends: { oneday: "12000", twoday: "29000" },
+        //     rating: "4.3",
+        //     no_bed:"3",
+        // },
         // {
         //     farm_name: "Sravan",
         //     price_24_hours: 17000,
@@ -149,14 +149,14 @@ const FarmProductLPage = ({ count }) => {
         //     weekends: { oneday: "12000", twoday: "24000" },
         //     rating: "4.5",
         // },
-        {
-            farm_name: "AL Haadi",
-            farm_image: { c1: a1, c2: a2, c3: a3, },
-            weekdays: { oneday: "15000", twoday: "20000" },
-            weekends: { oneday: "17000", twoday: "24000" },
-            rating: "4",
-            no_bed:"4",
-        },
+        // {
+        //     farm_name: "AL Haadi",
+        //     farm_image: { c1: a1, c2: a2, c3: a3, },
+        //     weekdays: { oneday: "15000", twoday: "20000" },
+        //     weekends: { oneday: "17000", twoday: "24000" },
+        //     rating: "4",
+        //     no_bed:"4",
+        // },
         {
             farm_name: "Alsafa",
             farm_image: { c1: alsafa1, c2: alsafa2, c3: alsafa3, },
@@ -165,14 +165,14 @@ const FarmProductLPage = ({ count }) => {
             rating: "4.4",
             no_bed:"2",
         },
-        {
-            farm_name: "CourtYard",
-            farm_image: { c1: courtyard1, c2: courtyard2, c3: courtyard3, },
-            weekdays: { oneday: "10000", twoday: "20000" },
-            weekends: { oneday: "12000", twoday: "24000" },
-            rating: "4.2",
-            no_bed:"2",
-        },
+        // {
+        //     farm_name: "CourtYard",
+        //     farm_image: { c1: courtyard1, c2: courtyard2, c3: courtyard3, },
+        //     weekdays: { oneday: "10000", twoday: "20000" },
+        //     weekends: { oneday: "12000", twoday: "24000" },
+        //     rating: "4.2",
+        //     no_bed:"2",
+        // },
         {
             farm_name: "Holiday",
             farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, },
@@ -189,22 +189,22 @@ const FarmProductLPage = ({ count }) => {
             rating: "4",
             no_bed:"1",
         },
-        {
-            farm_name: "Pleasant View",
-            farm_image: { c1: pleasant1, c2: pleasant2, c3: pleasant3, },
-            weekdays: { oneday: "10000", twoday: "20000" },
-            weekends: { oneday: "12000", twoday: "24000" },
-            rating: "4.3",
-            no_bed:"4",
-        },
-        {
-            farm_name: "Serenity",
-            farm_image: { c1: serinity1, c2: serinity2, c3: serinity3, },
-            weekdays: { oneday: "8000", twoday: "20000" },
-            weekends: { oneday: "9000", twoday: "24000" },
-            rating: "4.1",
-            no_bed:"3",
-        },
+        // {
+        //     farm_name: "Pleasant View",
+        //     farm_image: { c1: pleasant1, c2: pleasant2, c3: pleasant3, },
+        //     weekdays: { oneday: "10000", twoday: "20000" },
+        //     weekends: { oneday: "12000", twoday: "24000" },
+        //     rating: "4.3",
+        //     no_bed:"4",
+        // },
+        // {
+        //     farm_name: "Serenity",
+        //     farm_image: { c1: serinity1, c2: serinity2, c3: serinity3, },
+        //     weekdays: { oneday: "8000", twoday: "20000" },
+        //     weekends: { oneday: "9000", twoday: "24000" },
+        //     rating: "4.1",
+        //     no_bed:"3",
+        // },
         {
             farm_name: "SP Farmhouse",
             farm_image: { c1: sp1, c2: sp2, c3: sp3, },
@@ -221,30 +221,30 @@ const FarmProductLPage = ({ count }) => {
             rating: "4.5",
             no_bed:"2",
         },
-        {
-            farm_name: "Star Lingam",
-            farm_image: { c1: starling1, c2: starling2, c3: starling3, },
-            weekdays: { oneday: "15000", twoday: "20000" },
-            weekends: { oneday: "17000", twoday: "24000" },
-            rating: "4",
-            no_bed:"1",
-        },
-        {
-            farm_name: "Star Bhima",
-            farm_image: { c1: starbh1, c2: starbh2, c3: starbh3, },
-            weekdays: { oneday: "15000", twoday: "20000" },
-            weekends: { oneday: "17000", twoday: "24000" },
-            rating: "4.1",
-            no_bed:"5",
-        },
-        {
-            farm_name: "Rajeswari",
-            farm_image: { c1: rajes1, c2: rajes2, c3: rajes3, },
-            weekdays: { oneday: "15000", twoday: "20000" },
-            weekends: { oneday: "17000", twoday: "24000" },
-            rating: "4.5",
-            no_bed:"5",
-        },
+        // {
+        //     farm_name: "Star Lingam",
+        //     farm_image: { c1: starling1, c2: starling2, c3: starling3, },
+        //     weekdays: { oneday: "15000", twoday: "20000" },
+        //     weekends: { oneday: "17000", twoday: "24000" },
+        //     rating: "4",
+        //     no_bed:"1",
+        // },
+        // {
+        //     farm_name: "Star Bhima",
+        //     farm_image: { c1: starbh1, c2: starbh2, c3: starbh3, },
+        //     weekdays: { oneday: "15000", twoday: "20000" },
+        //     weekends: { oneday: "17000", twoday: "24000" },
+        //     rating: "4.1",
+        //     no_bed:"5",
+        // },
+        // {
+        //     farm_name: "Rajeswari",
+        //     farm_image: { c1: rajes1, c2: rajes2, c3: rajes3, },
+        //     weekdays: { oneday: "15000", twoday: "20000" },
+        //     weekends: { oneday: "17000", twoday: "24000" },
+        //     rating: "4.5",
+        //     no_bed:"5",
+        // },
     ];
     return (
         <div>
@@ -303,7 +303,7 @@ const FarmProductLPage = ({ count }) => {
                                                 <p className="text-black">{item?.rating}</p>
                                             </div>
                                             <div className="flex gap-2 items-center">
-                                                <GiBed size={30} className="text-[#935732]" />
+                                 <IoBedSharp size={20} className="text-[#935732]" />
                                                 <p className="text-black">{item?.no_bed} BHK</p>
                                             </div>
 

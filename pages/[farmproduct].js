@@ -92,7 +92,6 @@ import starbh3 from './images/starbh/3.webp'
 import starling1 from './images/starling/1.webp'
 import starling2 from './images/starling/2.webp'
 import starling3 from './images/starling/3.webp'
-import { GiBed } from "react-icons/gi";
 
 import rajes1 from './images/rajes/1.webp'
 import rajes2 from './images/rajes/2.webp'
