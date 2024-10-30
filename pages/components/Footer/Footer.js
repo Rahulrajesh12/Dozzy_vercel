@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='flex items-center text-white lg:pt-24 lg:pl-40 py-4 px-2'>
                 <Image
                     src={phone}
-                    alt='dozzy farmhouse phone'
+                    alt='from houses near hyderabad'
                     width={1000}
                     height={1000}
                     className='w-24 lg:w-56 lg'
@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className='absolute inset-0 bg-black opacity-60 rounded-md z-0'></div>
                     <div className='relative z-10 p-1'>
                         <p className='text-sm lg:text-4xl lg:pb-8 lg:pt-8 lg:pl-20 text-white'>Your All-In-One App Dozzy</p>
-                        <ul className='text-[10px] flex flex-col lg:flex-row lg:text-lg text-white lg:pl-20'>
+                        <ul classNam e='text-[10px] flex flex-col lg:flex-row lg:text-lg text-white lg:pl-20'>
                             <li className='lg:w-2/4'>
                                 <p>Head Office:</p>
                                 <p className='lg:w-[80%]'>Dozzy Private limited 5th Floor, Sigma Tech Park Whitefield, Bangalore</p>

@@ -106,6 +106,7 @@ const FarmProductLPage = ({ count }) => {
             weekdays: { oneday: "10000", twoday: "25000" },
             weekends: { oneday: "12000", twoday: "35000" },
             rating: "4.4",
+            alt:"Luxury Farmhouses in Shamshabad ",
             no_bed:"3",
         },
         // {
@@ -123,6 +124,7 @@ const FarmProductLPage = ({ count }) => {
             farm_image: { c1: zfarm1, c2: zfarm2, c3: zfarm3, },
             weekdays: { oneday: "8000", twoday: "15000" },
             weekends: { oneday: "10000", twoday: "25000" },
+            alt:"Luxury Farmhouses in  Moinabad",
             rating: "4.3",
             no_bed:"2",
         },
@@ -163,6 +165,7 @@ const FarmProductLPage = ({ count }) => {
             weekdays: { oneday: "13000", twoday: "20000" },
             weekends: { oneday: "15000", twoday: "24000" },
             rating: "4.4",
+            alt:"Luxury Farmhouses in Hyderabad",
             no_bed:"2",
         },
         // {
@@ -179,6 +182,7 @@ const FarmProductLPage = ({ count }) => {
             weekdays: { oneday: "8000", twoday: "20000" },
             weekends: { oneday: "10000", twoday: "24000" },
             rating: "4.3",
+            alt:"Luxury Farmhouses in  Moinabad",
             no_bed:"2",
         },
         {
@@ -187,6 +191,7 @@ const FarmProductLPage = ({ count }) => {
             weekdays: { oneday: "8000", twoday: "20000" },
             weekends: { oneday: "10000", twoday: "24000" },
             rating: "4",
+            alt:"Farm houses in Hyderabad ",
             no_bed:"1",
         },
         // {
@@ -210,6 +215,7 @@ const FarmProductLPage = ({ count }) => {
             farm_image: { c1: sp1, c2: sp2, c3: sp3, },
             weekdays: { oneday: "12000", twoday: "24000" },
             weekends: { oneday: "15000", twoday: "3000" },
+            alt:"Luxury Farmhouses in  Moinabad",
             rating: "4.2",
             no_bed:"2",
         },
@@ -219,6 +225,7 @@ const FarmProductLPage = ({ count }) => {
             weekdays: { oneday: "10000", twoday: "20000" },
             weekends: { oneday: "12000", twoday: "24000" },
             rating: "4.5",
+            alt:"Farm houses in Ghatkesar ",
             no_bed:"2",
         },
         // {
@@ -275,13 +282,13 @@ const FarmProductLPage = ({ count }) => {
                                         transitionTime={1000}
                                     >
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image src={item.farm_image.c1}></Image>
+                                            <Image alt={item?.alt}  src={item.farm_image.c1} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image src={item.farm_image.c2}></Image>
+                                            <Image src={item.farm_image.c2} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image src={item.farm_image.c3}></Image>
+                                            <Image src={item.farm_image.c3} ></Image>
                                         </div>
                                     </Carousel>
                                 </div>

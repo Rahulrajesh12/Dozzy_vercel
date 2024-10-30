@@ -35,7 +35,7 @@ const HomeBanner = () => {
                     <Image
                         priority
                         src={bgsvg}
-                        alt="women with luggage"
+                        alt="from houses near hyderabad "
                         className='lg:w-[701px] lg:h-[684px] max lg:relative lg:bottom-10 lg:right-28'
                         // layout='responsive'
                         height={1000}
@@ -47,7 +47,7 @@ const HomeBanner = () => {
                 <Image
                     priority
                     src={bgfarm}
-                    alt="farm house"
+                    alt="from houses near hyderabad"
                     className=' w-screen lg:h-[700px] object-cover'
                     height={1000}
                     width={1000}

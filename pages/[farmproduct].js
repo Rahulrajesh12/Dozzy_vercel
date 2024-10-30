@@ -271,11 +271,11 @@ const CarDetails = ({canonicalUrl}) => {
     <div className='bg-white text-black mont-text'>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
-        <meta name="description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
+        <title>No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
+        <meta name="description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
-        <meta property="og:description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+        <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
+        <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
         <link rel="canonical" href={`${canonicalUrl}/${farmproduct}`} />
         <script
@@ -322,9 +322,9 @@ const CarDetails = ({canonicalUrl}) => {
               stopOnHover={true}
               className=""
             >
-              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt={"1"} />}
-              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt={"2"} />}
-              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt={"3"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt={"farm house in hyderabad"} />}
             </Carousel>
           </div>
           <div className='flex flex-col lg:gap-14 gap-4 lg:pt-10 pt-2'>
@@ -337,7 +337,7 @@ const CarDetails = ({canonicalUrl}) => {
             <div className="grid grid-cols-2 gap-4 lg:flex lg:flex-col  text-xs font-semibold lg:text-base xs: lg:w-full">
               <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
                 <HiCurrencyRupee className="bg-[#556ee6] rounded-md p-1 text-white text-xs" size={30} />
-                <p className="ml-1">Zero Deposit</p>
+                <p className="ml-1">No Deposit</p>
               </div>
               <div className="flex items-center gap-1 p-2 bg-[#ffffff] border-[1px] border-black rounded-md">
                 <FaPeopleLine className="bg-[#556ee6] text-white rounded px-[4px]" size={30} />

@@ -37,7 +37,7 @@ const CareGuests = () => {
                 <HiCurrencyRupee className="bg-[#556EE6] text-white p-1 w-12 h-10 rounded lg:w-16 lg:h-14" />
                 <div className="text-left">
                   <p className="font-semibold md:text-base text-[12px]  lg:text-2xl text-[#556ee6] underline">
-                    Zero Deposit
+                    No Deposit
                   </p>
                   <p className="text-[10px] md:text-xs lg:text-xl">
                     We don't Collect Any Security Deposit
@@ -78,7 +78,7 @@ const CareGuests = () => {
             <div className="w-[60%] h-24 lg:w-[50%] lg:h-80 rounded-lg relative">
               <Image
                 src={steps}
-                alt="steps"
+                alt="farm house in hyderabad"
                 // width={170}
                 // height={100}
                 fill

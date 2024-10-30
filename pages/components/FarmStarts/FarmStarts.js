@@ -13,7 +13,7 @@ const FarmStarts = () => {
                 <div>
                     <Image
                         src={grpfarm}
-                        alt='farmhouse'
+                        alt='farm house in hyderabad '
                         // className='object-cover '
                         className='lg:w-[666px] w-[333px] h-auto'
                         height={1000}
