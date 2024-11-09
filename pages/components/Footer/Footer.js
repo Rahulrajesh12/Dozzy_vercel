@@ -23,11 +23,11 @@ const Footer = () => {
                         <p className='text-sm lg:text-4xl lg:pb-8 lg:pt-8 lg:pl-20 text-white'>Your All-In-One App Dozzy</p>
                         <ul classNam e='text-[10px] flex flex-col lg:flex-row lg:text-lg text-white lg:pl-20'>
                             <li className='lg:w-2/4'>
-                                <p>Head Office:</p>
-                                <p className='lg:w-[80%]'>Dozzy Private limited 5th Floor, Sigma Tech Park Whitefield, Bangalore</p>
+                                {/* <p>Head Office:</p>
+                                <p className='lg:w-[80%]'>Dozzy Private limited 5th Floor, Sigma Tech Park Whitefield, Bangalore</p> */}
                             </li>
                         </ul>
-                        <ul className='lg:pt-7 lg:pl-20 flex flex-col-reverse lg:flex-row'>
+                        <ul className=' lg:pl-20 flex flex-col-reverse lg:flex-row'>
                             <li>
                                 <p className='flex gap-2 pt-1 items-center lg:pt-6'>
                                     <Link onClick={(e) => LinkCall(e, "https://play.google.com/store/apps/details?id=com.dozzy_customer")} href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
