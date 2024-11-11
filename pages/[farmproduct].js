@@ -358,10 +358,10 @@ const CarDetails = ({canonicalUrl}) => {
   return (
     <div className='bg-white text-black mont-text'>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
         <title>No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
         <meta name="description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
-        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 " />
         <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
