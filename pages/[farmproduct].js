@@ -358,10 +358,10 @@ const CarDetails = ({canonicalUrl}) => {
   return (
     <div className='bg-white text-black mont-text'>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
         <meta name="description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
-        <meta name="viewport" content="width=device-width, initial-scale=1 " />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
@@ -398,7 +398,7 @@ const CarDetails = ({canonicalUrl}) => {
           />
         </noscript>
         <div className='flex flex-col md:flex-row md:mt-2 lg:mt-2 lg:gap-16  p-2 border-2 border-[#556EE6] rounded-md'>
-          <div className="crsldetails rounded-lg xl:w-[45%] lg:w-[70%]">
+          <div className="crsldetails rounded-lg xl:w-[100%] lg:w-[100%]">
             <Carousel
               showThumbs={false}
               showArrows={true}
