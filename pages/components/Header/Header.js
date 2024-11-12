@@ -4,7 +4,10 @@ import React from 'react'
 import Link from 'next/link';
 import { FiPhoneCall } from "react-icons/fi";
 import LinkCall from '../LinkCall';
+import { useRouter } from 'next/router';
+
 const Header = () => {
+const router = useRouter();
 
  const handleLogoClick = (e) => {
     if (router.pathname === '/') {
