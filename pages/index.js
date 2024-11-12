@@ -10,15 +10,7 @@ const CareGuests = dynamic(() => import('./components/CareGuests/CareGuests'));
 
 export default function Home({canonicalUrl}) {
 
-  const router = useRouter();  // Initialize useRouter hook
-
-  // Handle logo click to reload the page
-  const handleClick = (e) => {
-    if (router.pathname === '/') {
-      e.preventDefault();
-      router.reload();
-    }
-  };
+ 
 
   return (
     <div className="text-black font-poppins">
@@ -63,13 +55,12 @@ export default function Home({canonicalUrl}) {
         />
 
       </noscript>
-      <div onClick={handleClick} style={{ cursor: 'pointer' }}>
       <HomeBanner />
       <FarmStarts />
       <FarmProductLPage />
       <CareGuests />
       </div>
-    </div>
+    
 
 
   );

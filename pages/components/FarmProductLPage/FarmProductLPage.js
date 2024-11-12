@@ -123,6 +123,23 @@ const FarmProductLPage = ({ count }) => {
         setAutoPlay(false);
     }, []);
 
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate a loading delay or async operation
+        const loadData = async () => {
+            // Set loading to true to show the loader
+            setLoading(true);
+
+            // Simulate loading delay
+            await new Promise((resolve) => setTimeout(resolve, 500)); // 3 seconds
+
+            // After data is loaded, set loading to false to hide the loader
+            setLoading(false);
+        };
+
+        loadData();
+    }, []);
 
 
  
@@ -475,12 +492,12 @@ const FarmProductLPage = ({ count }) => {
                 </button>
               
             </div>
-            {/* {loading && <div className="text-center py-4">
+            {loading && <div className="text-center py-4">
                     <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
                         <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
                     </div>
                 </div>}
-             */}
+            
         </div>
     );
 
