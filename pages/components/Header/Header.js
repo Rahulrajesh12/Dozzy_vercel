@@ -1,10 +1,12 @@
+
+
 import React from 'react'
 import Link from 'next/link';
 import { FiPhoneCall } from "react-icons/fi";
 import LinkCall from '../LinkCall';
 const Header = () => {
 
-  const handleLogoClick = (e) => {
+ const handleLogoClick = (e) => {
     if (router.pathname === '/') {
       e.preventDefault();
       router.reload();
@@ -13,7 +15,7 @@ const Header = () => {
 
   return (
     <div className='font-bold text-lg px-5 md:px-12 lg:px-20 py-4 flex justify-between items-center'>
-      <Link href={'/'} onClick={handleLogoClick}> <h2 className='text-3xl lg:text-5xl text-[#556EE6]'>Dozzy</h2></Link>
+      <Link href={'/'}><h2 className='text-3xl lg:text-5xl text-[#556EE6]'>Dozzy</h2></Link>
       <div>
         <div className=' py-2 text-black'>
           <p className='lg:pb- lg:text-3xl text-sm  text-[#556EE6]'>For Booking help</p>
