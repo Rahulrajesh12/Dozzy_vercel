@@ -1,5 +1,7 @@
 import Head from "next/head";
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';  // Import useRouter
+
 
 const HomeBanner = dynamic(() => import('./components/HomeBanner.js/HomeBanner'));
 const FarmStarts = dynamic(() => import('./components/FarmStarts/FarmStarts'));
@@ -7,13 +9,24 @@ const FarmProductLPage = dynamic(() => import('./components/FarmProductLPage/Far
 const CareGuests = dynamic(() => import('./components/CareGuests/CareGuests'));
 
 export default function Home({canonicalUrl}) {
+
+  const router = useRouter();  // Initialize useRouter hook
+
+  // Handle logo click to reload the page
+  const handleClick = (e) => {
+    if (router.pathname === '/') {
+      e.preventDefault();
+      router.reload();
+    }
+  };
+
   return (
     <div className="text-black font-poppins">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
         <meta name="description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
-        <meta name="viewport" content="width=device-width, initial-scale=1, " />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <link rel="canonical" href={canonicalUrl} />
@@ -48,12 +61,17 @@ export default function Home({canonicalUrl}) {
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
         />
+
       </noscript>
+      <div onClick={handleClick} style={{ cursor: 'pointer' }}>
       <HomeBanner />
       <FarmStarts />
       <FarmProductLPage />
       <CareGuests />
+      </div>
     </div>
+
+
   );
 }
 export async function getServerSideProps({req}) {
