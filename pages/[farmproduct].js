@@ -127,7 +127,7 @@ const CarDetails = ({canonicalUrl}) => {
     // Set an interval to reset the key every 5 seconds (or your preferred time)
     const interval = setInterval(() => {
       setCarouselKey((prev) => prev + 1);
-    }, 5000); // 5000 ms = 5 seconds
+    }, 1000); // 5000 ms = 5 seconds
 
     // Clear interval on component unmount to avoid memory leaks
     return () => clearInterval(interval);
