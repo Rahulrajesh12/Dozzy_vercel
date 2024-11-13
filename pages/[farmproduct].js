@@ -113,6 +113,8 @@ import bgy1 from "./images/bgyf/1.webp"
 import bgy2 from "./images/bgyf/2.webp"
 import bgy3 from "./images/bgyf/3.webp"
 
+import dynamic from 'next/dynamic';
+
 
 
 
@@ -125,13 +127,12 @@ const CarDetails = ({canonicalUrl}) => {
   const [caritem, setCarItem] = useState('')
   const { farmproduct } = router.query;
   const mdfyFarmProduct = farmproduct?.toLowerCase().replace(/-/g, " ");
-  const [carouselKey, setCarouselKey] = useState(0);
 
+  const Carousel = dynamic(() => import('react-responsive-carousel').then(mod => mod.Carousel), { ssr: false });
   useEffect(() => {
+    // Manually trigger a refresh or update if needed
     setCarouselKey((prev) => prev + 1);
   }, [mdfyFarmProduct]);
-  
-  
   
 
 
@@ -406,9 +407,8 @@ const CarDetails = ({canonicalUrl}) => {
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        <div className='flex flex-col md:flex-row md:mt-2 lg:mt-2 lg:gap-16  p-2 border-2 border-[#556EE6] rounded-md'>
+        {/* <div className='flex flex-col md:flex-row md:mt-2 lg:mt-2 lg:gap-16  p-2 border-2 border-[#556EE6] rounded-md'>
           <div className="crsldetails rounded-lg xl:w-[100%] lg:w-[100%]">
-          <div key={carouselKey}>
             <Carousel
               showThumbs={false}
               showArrows={true}
@@ -420,12 +420,10 @@ const CarDetails = ({canonicalUrl}) => {
               stopOnHover={true}
               className=""
             >
-              {<Image key="c1" className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt="farm house in hyderabad" />}
-              {<Image key="c2" className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt="farm house in hyderabad" />}
-              {<Image key="c3" className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt="farm house in hyderabad" />}
-
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt={"farm house in hyderabad"} />}
             </Carousel>
-            </div>
           </div>
           <div className='flex flex-col lg:gap-14 gap-4 lg:pt-10 pt-2'>
             <div>
@@ -460,7 +458,40 @@ const CarDetails = ({canonicalUrl}) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+          
+          <Carousel
+  showThumbs={false}
+  showArrows={true}
+  showStatus={false}
+  showIndicators={false}
+  infiniteLoop={true}
+  autoPlay={true}
+  interval={3000}
+  stopOnHover={true}
+  className=""
+>
+  <Image
+    key={`${mdfyFarmProduct}-c1`}
+    className="rounded-md"
+    src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1}
+    alt="farm house in hyderabad"
+  />
+  <Image
+    key={`${mdfyFarmProduct}-c2`}
+    className="rounded-md"
+    src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2}
+    alt="farm house in hyderabad"
+  />
+  <Image
+    key={`${mdfyFarmProduct}-c3`}
+    className="rounded-md"
+    src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3}
+    alt="farm house in hyderabad"
+  />
+</Carousel>
+
+
         <div className='overview pt-10 px-5 lg:px-0'>
           <h2 className='font-bold text-2xl lg:text-3xl border-l-4 pl-2 border-red-900 mb-4  '>Our Amenities</h2>
           <ul className='my-2 flex-wrap pb-4 grid grid-cols-2 gap-y-3 md:flex lg:w-[83%] xl:w-[60%] justify-center lg:justify-normal'>
