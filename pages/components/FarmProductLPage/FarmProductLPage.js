@@ -9,6 +9,8 @@ import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoBedSharp } from "react-icons/io5";
 
+
+
 import skfarm1 from "../../images/saketh/1.webp"
 import skfarm2 from "../../images/saketh/2.webp"
 import skfarm3 from "../../images/saketh/3.webp"
@@ -98,13 +100,11 @@ import bom2 from "../../images/bamboo/2.webp"
 import bom3 from "../../images/bamboo/3.webp"
 
 
-
-
-
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const FarmProductLPage = ({ count }) => {
+
     const [mobileC, setMobileC] = useState(false)
     useEffect(() => {
 
@@ -122,7 +122,44 @@ const FarmProductLPage = ({ count }) => {
     const handleMouseLeave = useCallback(() => {
         setAutoPlay(false);
     }, []);
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate a loading delay or async operation
+        const loadData = async () => {
+            // Set loading to true to show the loader
+            setLoading(true);
+
+            // Simulate loading delay
+            await new Promise((resolve) => setTimeout(resolve, 500)); // 3 seconds
+
+            // After data is loaded, set loading to false to hide the loader
+            setLoading(false);
+        };
+
+        loadData();
+    }, []);
+
+ 
+    useEffect(() => {
+        // Refresh the page on route change
+        const handleRouteChange = () => {
+          window.location.reload();
+        };
+    
+        router.events.on('routeChangeComplete', handleRouteChange);
+    
+        // Cleanup the event listener when the component is unmounted
+        return () => {
+          router.events.off('routeChangeComplete', handleRouteChange);
+        };
+      }, [router]);   
+ 
+
     const filteredData = [
+
+        
       
         // {
         //     farm_name: "Srinivasa",
@@ -345,6 +382,8 @@ const FarmProductLPage = ({ count }) => {
     ];
     return (
         <div>
+                 
+           
             <div className="text-sm pl-4 py-4 md:px-20 lg:py-16 text-black">
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">
                     Farm Houses In Hyderbad
@@ -455,16 +494,26 @@ const FarmProductLPage = ({ count }) => {
                     ))}
                 </div>
             </div>
+             
             <div className={`${count?.length ? 'hidden' : 'block'} text-center px-6 pb-10 pt-8`}>
-                <button className="bg-[#4508a6] text-xl font-bold text-white w-full lg:w-96 py-4 rounded-full">
+              
+                <button className="bg-[#4508a6] spinner-border text-xl font-bold text-white w-full lg:w-96 py-4 rounded-full">
                     <Link
                         onClick={(e) => LinkCall(e, "/explore-all-farmhouses-in-hyderabad")}
                         href="/explore-all-farmhouses-in-hyderabad"
                     >View all farm houses</Link>
                 </button>
+              
             </div>
+            {loading && <div className="text-center py-4">
+                    <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
+                        <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
+                    </div>
+                </div>}
+            
         </div>
     );
+
 };
 
 export default FarmProductLPage;
