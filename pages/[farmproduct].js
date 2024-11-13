@@ -125,6 +125,15 @@ const CarDetails = ({canonicalUrl}) => {
   const [caritem, setCarItem] = useState('')
   const { farmproduct } = router.query;
   const mdfyFarmProduct = farmproduct?.toLowerCase().replace(/-/g, " ");
+  const [carouselKey, setCarouselKey] = useState(0);
+
+  useEffect(() => {
+    setCarouselKey((prev) => prev + 1);
+  }, [mdfyFarmProduct]);
+  
+  
+  
+
 
   const customData = {
 
@@ -399,6 +408,7 @@ const CarDetails = ({canonicalUrl}) => {
         </noscript>
         <div className='flex flex-col md:flex-row md:mt-2 lg:mt-2 lg:gap-16  p-2 border-2 border-[#556EE6] rounded-md'>
           <div className="crsldetails rounded-lg xl:w-[100%] lg:w-[100%]">
+          <div key={carouselKey}>
             <Carousel
               showThumbs={false}
               showArrows={true}
@@ -410,10 +420,12 @@ const CarDetails = ({canonicalUrl}) => {
               stopOnHover={true}
               className=""
             >
-              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt={"farm house in hyderabad"} />}
-              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt={"farm house in hyderabad"} />}
-              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt={"farm house in hyderabad"} />}
+              {<Image key="c1" className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt="farm house in hyderabad" />}
+              {<Image key="c2" className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt="farm house in hyderabad" />}
+              {<Image key="c3" className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt="farm house in hyderabad" />}
+
             </Carousel>
+            </div>
           </div>
           <div className='flex flex-col lg:gap-14 gap-4 lg:pt-10 pt-2'>
             <div>
