@@ -7,6 +7,9 @@ import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import Head from 'next/head';
 import LinkCall from '../LinkCall';
+
+
+
 const HomeBanner = () => {
     return (
         <div>

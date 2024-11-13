@@ -9,6 +9,8 @@ import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoBedSharp } from "react-icons/io5";
 
+
+
 import skfarm1 from "../../images/saketh/1.webp"
 import skfarm2 from "../../images/saketh/2.webp"
 import skfarm3 from "../../images/saketh/3.webp"
@@ -98,13 +100,11 @@ import bom2 from "../../images/bamboo/2.webp"
 import bom3 from "../../images/bamboo/3.webp"
 
 
-
-
-
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const FarmProductLPage = ({ count }) => {
+
     const [mobileC, setMobileC] = useState(false)
     useEffect(() => {
 
@@ -141,7 +141,20 @@ const FarmProductLPage = ({ count }) => {
         loadData();
     }, []);
 
-
+ 
+    useEffect(() => {
+        // Refresh the page on route change
+        const handleRouteChange = () => {
+          window.location.reload();
+        };
+    
+        router.events.on('routeChangeComplete', handleRouteChange);
+    
+        // Cleanup the event listener when the component is unmounted
+        return () => {
+          router.events.off('routeChangeComplete', handleRouteChange);
+        };
+      }, [router]);   
  
 
     const filteredData = [
