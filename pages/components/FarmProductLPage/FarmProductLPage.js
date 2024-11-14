@@ -446,13 +446,13 @@ const FarmProductLPage = ({ count }) => {
                                         </div>
                                     </div>
                                     <div className="font-normal text-sm">
-                                        <div className="flex items-baseline justify-between px-2">
+                                        {/* <div className="flex items-baseline justify-between px-2">
                                             <p className="text-black">Mon-Thu</p>
                                             <p className="text-[#556EE6]">₹ {item.weekdays.oneday} /Day</p>
-                                        </div>
+                                        </div> */}
                                         <div className="flex items-baseline justify-between px-2">
-                                            <p className="text-black">Fri-Sun</p>
-                                            <p className="text-[#556EE6]">₹ {item.weekends.oneday} /Day</p>
+                                            <p className="text-black font-bold">Prices Pre Day (24hr)</p>
+                                            <p className="text-[#556EE6] p-1 font-bold  text-xl lg:text-lg capitalize">₹ {item.weekends.oneday} /Day</p>
                                         </div>
                                     </div>
                                     <div className="text-black flex justify-center font-semibold">

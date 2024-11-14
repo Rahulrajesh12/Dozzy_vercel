@@ -418,7 +418,7 @@ const CarDetails = ({canonicalUrl}) => {
           <div className='flex flex-col lg:gap-14 gap-4 lg:pt-10 pt-2'>
             <div>
               <div className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[mdfyFarmProduct?.toLowerCase()]?.farm_name} Farm House ({customData[mdfyFarmProduct?.toLowerCase()]?.no_beds} BHK) <p className='text-blue-600 pt-3'>₹ {customData[mdfyFarmProduct?.toLowerCase()]?.weekdays.oneday}/day</p>
-                <p className='text-blue-600 opacity-70 text-xs pl-1'>₹{customData[mdfyFarmProduct?.toLowerCase()]?.weekends.oneday}/day <span className='text-black'>(Fri-Sun)</span></p>
+                {/* <p className='text-blue-600 opacity-70 text-xs pl-1'>₹{customData[mdfyFarmProduct?.toLowerCase()]?.weekends.oneday}/day <span className='text-black'>(Fri-Sun)</span></p> */}
               </div>
 
             </div>
