@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react'; 
 import customData from './components/kk.json';
 import { PiCarFill } from "react-icons/pi";
 import { BiPhoneCall } from "react-icons/bi";
@@ -8,7 +8,6 @@ import Link from 'next/link';
 import { FaWhatsapp } from "react-icons/fa";
 import Head from 'next/head';
 import { FaPeopleLine } from "react-icons/fa6";
-
 import { HiCurrencyRupee } from "react-icons/hi2";
 import { FaSwimmingPool } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
@@ -125,6 +124,22 @@ const CarDetails = ({canonicalUrl}) => {
   const [caritem, setCarItem] = useState('')
   const { farmproduct } = router.query;
   const mdfyFarmProduct = farmproduct?.toLowerCase().replace(/-/g, " ");
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay or async operation
+    const loadData = async () => {
+        // Set loading to true to show the loader
+        setLoading(true);
+        // Simulate delay (e.g., with a timeout or actual async operation)
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Set loading to false after data has loaded
+        setLoading(false);
+    };
+    loadData();
+}, []); // Add dependencies if needed
+ 
 
   const customData = {
 
@@ -418,7 +433,7 @@ const CarDetails = ({canonicalUrl}) => {
           <div className='flex flex-col lg:gap-14 gap-4 lg:pt-10 pt-2'>
             <div>
               <div className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[mdfyFarmProduct?.toLowerCase()]?.farm_name} Farm House ({customData[mdfyFarmProduct?.toLowerCase()]?.no_beds} BHK) <p className='text-blue-600 pt-3'>₹ {customData[mdfyFarmProduct?.toLowerCase()]?.weekdays.oneday}/day</p>
-                <p className='text-blue-600 opacity-70 text-xs pl-1'>₹{customData[mdfyFarmProduct?.toLowerCase()]?.weekends.oneday}/day <span className='text-black'>(Fri-Sun)</span></p>
+                {/* <p className='text-blue-600 opacity-70 text-xs pl-1'>₹{customData[mdfyFarmProduct?.toLowerCase()]?.weekends.oneday}/day <span className='text-black'>(Fri-Sun)</span></p> */}
               </div>
 
             </div>
@@ -530,6 +545,11 @@ const CarDetails = ({canonicalUrl}) => {
             {customData[mdfyFarmProduct?.toLowerCase()]?.desc2}
           </p>
         </div>
+        {loading && <div className="text-center py-4">
+                    <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
+                        <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
+                    </div>
+                </div>}
 
       </div>
     </div>
