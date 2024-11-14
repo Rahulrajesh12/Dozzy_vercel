@@ -451,7 +451,7 @@ const FarmProductLPage = ({ count }) => {
                                             <p className="text-[#556EE6]">₹ {item.weekdays.oneday} /Day</p>
                                         </div> */}
                                         <div className="flex items-baseline justify-between px-2">
-                                            <p className="text-black font-bold">Prices Pre Day (24hr)</p>
+                                            <p className="text-black font-bold">Prices Per Day (24hr)</p>
                                             <p className="text-[#556EE6] p-1 font-bold  text-xl lg:text-lg capitalize">₹ {item.weekends.oneday} /Day</p>
                                         </div>
                                     </div>
