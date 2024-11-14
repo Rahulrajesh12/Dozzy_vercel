@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react'; 
 import customData from './components/kk.json';
 import { PiCarFill } from "react-icons/pi";
 import { BiPhoneCall } from "react-icons/bi";
@@ -8,7 +8,6 @@ import Link from 'next/link';
 import { FaWhatsapp } from "react-icons/fa";
 import Head from 'next/head';
 import { FaPeopleLine } from "react-icons/fa6";
-
 import { HiCurrencyRupee } from "react-icons/hi2";
 import { FaSwimmingPool } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
@@ -112,6 +111,11 @@ import svr3 from "./images/svrp/1.webp"
 import bgy1 from "./images/bgyf/1.webp"
 import bgy2 from "./images/bgyf/2.webp"
 import bgy3 from "./images/bgyf/3.webp"
+
+
+
+
+
 import LinkCall from './components/LinkCall';
 
 const CarDetails = ({canonicalUrl}) => {
@@ -120,6 +124,22 @@ const CarDetails = ({canonicalUrl}) => {
   const [caritem, setCarItem] = useState('')
   const { farmproduct } = router.query;
   const mdfyFarmProduct = farmproduct?.toLowerCase().replace(/-/g, " ");
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay or async operation
+    const loadData = async () => {
+        // Set loading to true to show the loader
+        setLoading(true);
+        // Simulate delay (e.g., with a timeout or actual async operation)
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Set loading to false after data has loaded
+        setLoading(false);
+    };
+    loadData();
+}, []); // Add dependencies if needed
+ 
 
   const customData = {
 
@@ -393,7 +413,7 @@ const CarDetails = ({canonicalUrl}) => {
           />
         </noscript>
         <div className='flex flex-col md:flex-row md:mt-2 lg:mt-2 lg:gap-16  p-2 border-2 border-[#556EE6] rounded-md'>
-          <div className="crsldetails rounded-lg xl:w-[100%] lg:w-[100%]">
+          <div className="crsldetails rounded-lg xl:w-[45%] lg:w-[70%]">
             <Carousel
               showThumbs={false}
               showArrows={true}
@@ -525,6 +545,11 @@ const CarDetails = ({canonicalUrl}) => {
             {customData[mdfyFarmProduct?.toLowerCase()]?.desc2}
           </p>
         </div>
+        {loading && <div className="text-center py-4">
+                    <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
+                        <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
+                    </div>
+                </div>}
 
       </div>
     </div>
