@@ -1,5 +1,7 @@
 import Head from "next/head";
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';  // Import useRouter
+
 
 const HomeBanner = dynamic(() => import('./components/HomeBanner.js/HomeBanner'));
 const FarmStarts = dynamic(() => import('./components/FarmStarts/FarmStarts'));
@@ -7,6 +9,9 @@ const FarmProductLPage = dynamic(() => import('./components/FarmProductLPage/Far
 const CareGuests = dynamic(() => import('./components/CareGuests/CareGuests'));
 
 export default function Home({canonicalUrl}) {
+
+ 
+
   return (
     <div className="text-black font-poppins">
       <Head>
@@ -48,12 +53,16 @@ export default function Home({canonicalUrl}) {
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
         />
+
       </noscript>
       <HomeBanner />
       <FarmStarts />
       <FarmProductLPage />
       <CareGuests />
-    </div>
+      </div>
+    
+
+
   );
 }
 export async function getServerSideProps({req}) {

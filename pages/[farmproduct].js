@@ -112,11 +112,6 @@ import svr3 from "./images/svrp/1.webp"
 import bgy1 from "./images/bgyf/1.webp"
 import bgy2 from "./images/bgyf/2.webp"
 import bgy3 from "./images/bgyf/3.webp"
-
-
-
-
-
 import LinkCall from './components/LinkCall';
 
 const CarDetails = ({canonicalUrl}) => {
@@ -398,7 +393,7 @@ const CarDetails = ({canonicalUrl}) => {
           />
         </noscript>
         <div className='flex flex-col md:flex-row md:mt-2 lg:mt-2 lg:gap-16  p-2 border-2 border-[#556EE6] rounded-md'>
-          <div className="crsldetails rounded-lg xl:w-[45%] lg:w-[70%]">
+          <div className="crsldetails rounded-lg xl:w-[100%] lg:w-[100%]">
             <Carousel
               showThumbs={false}
               showArrows={true}
