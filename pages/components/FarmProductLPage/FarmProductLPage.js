@@ -79,6 +79,13 @@ import rajes1 from '../../images/rajes/1.webp'
 import rajes2 from '../../images/rajes/2.webp'
 import rajes3 from '../../images/rajes/3.webp'
 
+
+
+
+import  sskf1 from '../../images/sravan/1.webp'
+import sskf2 from '../../images/sravan/2.webp'
+import sskf3 from '../../images/sravan/3.webp'
+
 import  arush1 from '../../images/arush/1.webp'
 import arush2 from '../../images/arush/2.webp'
 import arush3 from '../../images/arush/3.webp'
@@ -189,13 +196,7 @@ const FarmProductLPage = ({ count }) => {
         //     rating: "4.3",
         //     no_bed:"3",
         // },
-        // {
-        //     farm_name: "Sravan",
-        //     price_24_hours: 17000,
-        //     farm_image: { c1: srvf1, c2: srvf2, c3: srvf3, },
-        //     weekdays: { oneday: "17000", twoday: "34000" },
-        //     weekends: { oneday: "17000", twoday: "34000" },
-        // },
+       
         // {
         //     farm_name: "TYB",
         //     farm_image: { c1: ty1, c2: ty2, c3: ty3, },
@@ -293,6 +294,15 @@ const FarmProductLPage = ({ count }) => {
         },  
         
         {
+            farm_name: "SSK",
+            price_24_hours: 17000,
+            farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, },
+            weekdays: { oneday: "18000", twoday: "36000" },
+            weekends: { oneday: "18000", twoday: "36000" },
+            no_bed:"2",
+        },
+
+        {
             farm_name: "BGY",
             price_24_hours: 18000,
             farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, },
@@ -318,8 +328,8 @@ const FarmProductLPage = ({ count }) => {
             farm_name: "Arush Agri",
             price_24_hours: 16000,
             farm_image: { c1: arush1, c2: arush2, c3: arush3, },
-            weekdays: { oneday: "17000", twoday: "24000" },
-            weekends: { oneday: "17000", twoday: "24000" },
+            weekdays: { oneday: "20000", twoday: "30000" },
+            weekends: { oneday: "20000", twoday: "30000" },
             rating: "4.8",
             alt:"Luxury Farmhouses in Shamshabad ",
             no_bed:"3",
@@ -339,8 +349,8 @@ const FarmProductLPage = ({ count }) => {
             farm_name: "4Ram Fusion",
             price_24_hours: 16000,
             farm_image: { c1: ram1, c2: ram2, c3: ram3, },
-            weekdays: { oneday: "16000", twoday: "24000" },
-            weekends: { oneday: "16000", twoday: "24000" },
+            weekdays: { oneday: "15000", twoday: "30000" },
+            weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.4",
             alt:"Luxury Farmhouses in Keesara ",
             no_bed:"4",
@@ -357,15 +367,15 @@ const FarmProductLPage = ({ count }) => {
             no_bed:"2",
         },
 
-        {
-            farm_name: "NBR",
-            farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
-            weekdays: { oneday: "8000", twoday: "20000" },
-            weekends: { oneday: "10000", twoday: "24000" },
-            rating: "4",
-            alt:"Farm houses in Hyderabad ",
-            no_bed:"1",
-        },
+        // {
+        //     farm_name: "NBR",
+        //     farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
+        //     weekdays: { oneday: "8000", twoday: "20000" },
+        //     weekends: { oneday: "10000", twoday: "24000" },
+        //     rating: "4",
+        //     alt:"Farm houses in Hyderabad ",
+        //     no_bed:"1",
+        // },
 
         {
             farm_name: "Holiday",
@@ -451,7 +461,7 @@ const FarmProductLPage = ({ count }) => {
                                             <p className="text-[#556EE6]">₹ {item.weekdays.oneday} /Day</p>
                                         </div> */}
                                         <div className="flex items-baseline justify-between px-2">
-                                            <p className="text-black font-bold">Prices Per Day (24hr)</p>
+                                            <p className="text-black font-bold">Prices Pre Day (24hr)</p>
                                             <p className="text-[#556EE6] p-1 font-bold  text-xl lg:text-lg capitalize">₹ {item.weekends.oneday} /Day</p>
                                         </div>
                                     </div>
