@@ -40,9 +40,9 @@ import zfarm1 from "./images/zoozoo/1.webp"
 import zfarm2 from "./images/zoozoo/2.webp"
 import zfarm3 from "./images/zoozoo/3.webp"
 
-// import srvf1 from './images/sravan/1.webp'
-// import srvf2 from './images/sravan/2.webp'
-// import srvf3 from './images/sravan/3.webp'
+import sskf1 from './images/sravan/1.webp'
+import sskf2 from './images/sravan/2.webp'
+import sskf3 from './images/sravan/3.webp'
 
 import ty1 from './images/tyb/1.webp'
 import ty2 from './images/tyb/2.webp'
@@ -170,14 +170,7 @@ const CarDetails = ({canonicalUrl}) => {
     //   desc: "SHAN Farmhouse provides a tranquil getaway from the bustle of the city because it is tucked away in a beautiful natural setting. Our farmhouse is designed to provide you and your loved ones with an unforgettable experience, combining leisure and enjoyment. It has unique features including a cool pool, five acres of mango trees, a fully functional kitchen with dishes and bowls, and a grill for delicious dinners. A 100-inch large projector, Bluetooth audio system, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube are available for amusement. Gamers can play chess, carroms, shuttle, cricket, and shuttle, all of which guarantee hours of fun for all players. ",
     //   no_beds:"3"
     // },
-    // "sravan": {
-    //   farm_name: "Sravan",
-    //   price_24_hours: 17000,
-    //   farm_image: { c1: srvf1, c2: srvf2, c3: srvf3, },
-    //   weekdays: { oneday: "17000", twoday: "34000" },
-    //   weekends: { oneday: "17000", twoday: "34000" },
-    //   desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone."
-    // },
+  
     // "tyb": {
     //   farm_name: "TYB",
     //   price_24_hours: 1000,
@@ -268,6 +261,17 @@ const CarDetails = ({canonicalUrl}) => {
     //   no_beds:"5"
     // },
 
+     // "nbr": {
+    //   farm_name: "NBR",
+    //   farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
+    //   weekdays: { oneday: "8000", twoday: "20000" },
+    //   weekends: { oneday: "10000", twoday: "24000" },
+    //   desc: "NBR FarmHouse, nestled in the tranquil heart of the forest, offers an idyllic retreat from the hustle and bustle of city life. Designed to provide the perfect blend of relaxation and enjoyment, our farmhouse ensures an unforgettable experience for you and your loved ones. Key features include a lush garden, a sparkling swimming pool, and a fully equipped kitchen complete with dishes and bowls, allowing you to enjoy self-cooking and savor your own culinary creations in the midst of nature.",
+    //   desc1: "Immerse yourself in the beauty of the surrounding greenery and truly enjoy the atmosphere, where nature thrives. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, engage in fun games such as chess, carrom, shuttle, and cricket, ensuring there's something for everyone. Experience a holiday filled with delicious homemade food, nature, and exciting adventures at NBR FarmHouse.",
+    //   no_beds:"1"
+    // },
+
+
     "saketh vanam": {
       farm_name: 'Saketh Vanam',
       price_24_hours: 18000,
@@ -299,21 +303,21 @@ const CarDetails = ({canonicalUrl}) => {
       no_beds:"2"
     },
 
-    "nbr": {
-      farm_name: "NBR",
-      farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
-      weekdays: { oneday: "8000", twoday: "20000" },
-      weekends: { oneday: "10000", twoday: "24000" },
-      desc: "NBR FarmHouse, nestled in the tranquil heart of the forest, offers an idyllic retreat from the hustle and bustle of city life. Designed to provide the perfect blend of relaxation and enjoyment, our farmhouse ensures an unforgettable experience for you and your loved ones. Key features include a lush garden, a sparkling swimming pool, and a fully equipped kitchen complete with dishes and bowls, allowing you to enjoy self-cooking and savor your own culinary creations in the midst of nature.",
-      desc1: "Immerse yourself in the beauty of the surrounding greenery and truly enjoy the atmosphere, where nature thrives. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Additionally, engage in fun games such as chess, carrom, shuttle, and cricket, ensuring there's something for everyone. Experience a holiday filled with delicious homemade food, nature, and exciting adventures at NBR FarmHouse.",
-      no_beds:"1"
+    "ssk": {
+      farm_name: "SSK",
+      price_24_hours: 17000,
+      farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, },
+      weekdays: { oneday: "18000", twoday: "36000" },
+      weekends: { oneday: "18000", twoday: "36000" },
+      desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone."
     },
 
+  
     "arush agri": {
       farm_name: "Arush Agri",
       farm_image: { c1: arush1, c2: arush2, c3: arush3, },
-      weekdays: { oneday: "17000", twoday: "24000" },
-      weekends: { oneday: "17000", twoday: "24000" },
+      weekdays: { oneday: "20000", twoday: "30000" },
+      weekends: { oneday: "20000", twoday: "30000" },
       desc:"Dozzy offers some of the best farmhouses in and around Hyderabad, providing beautiful and relaxing locations perfect for a peaceful getaway. Among our offerings is the stunning Arush Agri Farm Stays farmhouse, nestled in lush greenery for a refreshing, natural escape. This farmhouse features a wonderful swimming pool, perfect for cooling off and enjoying with friends or family.",
       desc1:"Each room in the farmhouse is designed with comfort in mind, furnished with king-size beds for a restful night’s sleep and equipped with air conditioning for a cool, relaxing environment. Additionally, rooms come with TVs and fridges, adding convenience to your stay, along with essential amenities to ensure a pleasant experience. A BBQ setup is also available for those who wish to grill and dine under the stars.",
       dec2:"Whether you're looking to unwind, host a gathering, or simply enjoy a getaway surrounded by nature, Dozzy’s farmhouses are equipped to make your stay enjoyable and memorable. Book today to experience a perfect blend of luxury and nature just outside Hyderabad." ,
@@ -323,8 +327,8 @@ const CarDetails = ({canonicalUrl}) => {
     "4ram fusion": {
       farm_name: "4Ram fusion",
       farm_image: { c1: ram1, c2: ram2, c3: ram3, },
-      weekdays: { oneday: "16000", twoday: "24000" },
-      weekends: { oneday: "16000", twoday: "24000" },
+      weekdays: { oneday: "15000", twoday: "000" },
+      weekends: { oneday: "15000", twoday: "24000" },
       desc:"Dozzy offers some of the best farmhouse options in and around Hyderabad, perfect for a relaxing and enjoyable getaway. Our 4 Ram Fusion Farm Stays are located in a beautiful green setting, providing a peaceful and scenic environment. Each farmhouse features a spacious layout with a wonderful swimming pool to cool off and unwind. Inside, all rooms are designed for maximum comfort, equipped with air conditioning and luxurious king-sized beds to ensure a restful stay. For entertainment, each room is furnished with a TV and fridge, making it easy to enjoy refreshments and stay entertained. We also offer a BBQ setup for those who want to add a flavorful experience to their gatherings.",
       desc2:"Beyond these, Dozzy’s farm houses provide a range of quality amenities designed to enhance your stay, making it ideal for both short trips and extended stays. Whether you're looking to spend quality time with friends and family, or simply need a peaceful escape, Dozzy’s farm houses promise the perfect mix of luxury and nature. Our team ensures everything is well-maintained and ready for you to enjoy a seamless experience, so you can relax and focus on making memories in this wonderful setting.", 
       no_beds:"4"
@@ -338,12 +342,9 @@ const CarDetails = ({canonicalUrl}) => {
       desc:"Dozzy offers some of the best farmhouses in and around Hyderabad, perfect for a relaxing getaway or an event with family and friends. One of our standout locations is the SVR Peacock View Farmhouse, nestled in lush greenery and designed to provide a serene experience close to nature.",
       desc1:"This beautiful farmhouse features a stunning swimming pool, ideal for both relaxation and fun. Inside, each room is equipped with air conditioning to keep you comfortable, along with king-sized beds for a restful sleep. Additionally, each room includes amenities like a television, fridge, and ample storage space.",
       desc2:"The farmhouse also includes BBQ facilities, so guests can enjoy outdoor cooking and dining, making for a memorable experience. Other amenities and conveniences have been thoughtfully included to ensure you have everything needed for a comfortable stay. With its natural surroundings, comfortable furnishings, and top-notch amenities, SVR Peacock View Farmhouse is an ideal choice for those looking to unwind, celebrate, or simply enjoy a peaceful retreat near Hyderabad.",
-     
-
-
       no_beds:"2"
     },
-
+    
       "bgy": {
       farm_name: "BGY",
       farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, },

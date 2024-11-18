@@ -1,15 +1,17 @@
 import Head from "next/head";
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';  // Import useRouter
-
 
 const HomeBanner = dynamic(() => import('./components/HomeBanner.js/HomeBanner'));
 const FarmStarts = dynamic(() => import('./components/FarmStarts/FarmStarts'));
 const FarmProductLPage = dynamic(() => import('./components/FarmProductLPage/FarmProductLPage'));
 const CareGuests = dynamic(() => import('./components/CareGuests/CareGuests'));
 
-export default function Home({canonicalUrl}) {
+export default function Home({ canonicalUrl }) {
+  const phoneNumber = '96666-559-73'; // Replace with your phone number
 
+  const handleClick = () => {
+    gtag_report_conversion(`tel:${phoneNumber}`);
+  };
  
 
   return (
@@ -33,6 +35,7 @@ export default function Home({canonicalUrl}) {
                         `,
           }}
         />
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -44,6 +47,33 @@ export default function Home({canonicalUrl}) {
             `,
           }}
         />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16698821101');
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-16698821101/AchICOTCyOsZEO2Tz5o-',
+                  'value': 1.0,
+                  'currency': 'INR',
+                  'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
+      
 
       </Head>
       <noscript>
@@ -81,3 +111,8 @@ export async function getServerSideProps({req}) {
     },
   };
 }
+
+
+
+
+
