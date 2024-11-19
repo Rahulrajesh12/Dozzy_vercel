@@ -248,6 +248,16 @@ const FarmProductLPage = ({ count }) => {
         //     no_bed:"2",
         // },
 
+              // {
+        //     farm_name: "NBR",
+        //     farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
+        //     weekdays: { oneday: "8000", twoday: "20000" },
+        //     weekends: { oneday: "10000", twoday: "24000" },
+        //     rating: "4",
+        //     alt:"Farm houses in Hyderabad ",
+        //     no_bed:"1",
+        // },
+
         // {
         //     farm_name: "Takshvi",
         //     farm_image: { c1: taksh1, c2: taksh2, c3: taksh3, },
@@ -285,10 +295,10 @@ const FarmProductLPage = ({ count }) => {
 
         {
             farm_name: "Arush Agri",
-            price_24_hours: 16000,
+            price_24_hours: 15000,
             farm_image: { c1: arush1, c2: arush2, c3: arush3, },
-            weekdays: { oneday: "20000", twoday: "30000" },
-            weekends: { oneday: "20000", twoday: "30000" },
+            weekdays: { oneday: "15000", twoday: "30000" },
+            weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.8",
             alt:"Luxury Farmhouses in Shamshabad ",
             no_bed:"3",
@@ -296,10 +306,10 @@ const FarmProductLPage = ({ count }) => {
 
         {
             farm_name: "Saketh Vanam",
-            price_24_hours: 18000,
+            price_24_hours: 15000,
             farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, },
-            weekdays: { oneday: "18000", twoday: "36000" },
-            weekends: { oneday: "18000", twoday: "36000" },
+            weekdays: { oneday: "15000", twoday: "30000" },
+            weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.5",
             alt:"Luxury Farmhouses in Shamshabad ",
             no_bed:"3",
@@ -307,28 +317,27 @@ const FarmProductLPage = ({ count }) => {
         
         {
             farm_name: "SSK",
-            price_24_hours: 17000,
+            price_24_hours: 15000,
             farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, },
-            weekdays: { oneday: "18000", twoday: "36000" },
-            weekends: { oneday: "18000", twoday: "36000" },
+            weekdays: { oneday: "15000", twoday: "30000" },
+            weekends: { oneday: "15000", twoday: "30000" },
             no_bed:"2",
         },
 
         {
             farm_name: "BGY",
-            price_24_hours: 18000,
+            price_24_hours: 16000,
             farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, },
-            weekdays: { oneday: "18000", twoday: "36000" },
-            weekends: { oneday: "18000", twoday: "36000" },
+            weekdays: { oneday: "16000", twoday: "32000" },
+            weekends: { oneday: "16000", twoday: "32000" },
             rating: "4.6",
             alt:"Luxury Farmhouses in Shamshabad ",
             no_bed:"2",
         },
-
-        
+ 
         {
             farm_name: "4Ram Fusion",
-            price_24_hours: 16000,
+            price_24_hours: 15000,
             farm_image: { c1: ram1, c2: ram2, c3: ram3, },
             weekdays: { oneday: "15000", twoday: "30000" },
             weekends: { oneday: "15000", twoday: "30000" },
@@ -337,17 +346,6 @@ const FarmProductLPage = ({ count }) => {
             no_bed:"4",
         },
         
-        {
-            farm_name: "SVR Peacock View",
-            price_24_hours: 15000,
-            farm_image: { c1: svr1, c2: svr2, c3: svr3, },
-            weekdays: { oneday: "15000", twoday: "30000" },
-            weekends: { oneday: "15000", twoday: "30000" },
-            rating: "4.4",
-            alt:"Luxury Farmhouses in ShadNagar ",
-            no_bed:"2",
-        },
-
         {
             farm_name: "Bamboo Huts",
             price_24_hours: 14000,
@@ -360,30 +358,32 @@ const FarmProductLPage = ({ count }) => {
         },
           
         {
+            farm_name: "SVR Peacock View",
+            price_24_hours: 12000,
+            farm_image: { c1: svr1, c2: svr2, c3: svr3, },
+            weekdays: { oneday: "12000", twoday: "24000" },
+            weekends: { oneday: "12000", twoday: "24000" },
+            rating: "4.4",
+            alt:"Luxury Farmhouses in ShadNagar ",
+            no_bed:"2",
+        },
+
+        {
             farm_name: "CourtYard",
+            price_24_hours: 14000,
             farm_image: { c1: courtyard1, c2: courtyard2, c3: courtyard3, },
             weekdays: { oneday: "14000", twoday: "28000" },
             weekends: { oneday: "14000", twoday: "28000" },
             rating: "4.2",
             no_bed:"2",
-        },
-
-
-        // {
-        //     farm_name: "NBR",
-        //     farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
-        //     weekdays: { oneday: "8000", twoday: "20000" },
-        //     weekends: { oneday: "10000", twoday: "24000" },
-        //     rating: "4",
-        //     alt:"Farm houses in Hyderabad ",
-        //     no_bed:"1",
-        // },
+        }, 
 
         {
             farm_name: "Holiday",
+            price_24_hours: 10000,
             farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, },
-            weekdays: { oneday: "12000", twoday: "24000" },
-            weekends: { oneday: "12000", twoday: "24000" },
+            weekdays: { oneday: "10000", twoday: "20000" },
+            weekends: { oneday: "10000", twoday: "20000" },
             rating: "4.3",
             alt:"Luxury Farmhouses in  Moinabad",
             no_bed:"2",
