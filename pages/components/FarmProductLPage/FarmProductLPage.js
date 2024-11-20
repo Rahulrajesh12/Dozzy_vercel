@@ -424,13 +424,13 @@ const FarmProductLPage = ({ count }) => {
                                         transitionTime={1000}
                                     >
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image alt={item?.alt}  src={item.farm_image.c1} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"}  src={item.farm_image.c1} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image src={item.farm_image.c2} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c2} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image src={item.farm_image.c3} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"}  src={item.farm_image.c3} ></Image>
                                         </div>
                                     </Carousel>
                                 </div>

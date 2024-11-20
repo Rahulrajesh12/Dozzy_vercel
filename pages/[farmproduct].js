@@ -105,8 +105,8 @@ import ram2 from "./images/4ram/2.webp"
 import ram3 from  "./images/4ram/3.webp"
 
 import svr1 from "./images/svrp/1.webp"
-import svr2 from "./images/svrp/1.webp"
-import svr3 from "./images/svrp/1.webp"
+import svr2 from "./images/svrp/2.webp"
+import svr3 from "./images/svrp/3.webp"
 
 import bgy1 from "./images/bgyf/1.webp"
 import bgy2 from "./images/bgyf/2.webp"
