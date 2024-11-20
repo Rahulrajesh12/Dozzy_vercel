@@ -30,7 +30,7 @@ const Footer = () => {
                         <ul className=' lg:pl-20 flex flex-col-reverse lg:flex-row'>
                             <li>
                                 <p className='flex gap-2 pt-1 items-center lg:pt-6'>
-                                    <Link onClick={(e) => LinkCall(e, "https://play.google.com/store/apps/details?id=com.dozzy_customer")} href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
+                                    {/* <Link onClick={(e) => LinkCall(e, "https://play.google.com/store/apps/details?id=com.dozzy_customer")} href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}>
                                         <Image
                                             src={gplay}
                                             alt='google play'
@@ -38,7 +38,24 @@ const Footer = () => {
                                             height={1000}
                                             className='w-12 h-4 lg:w-24 lg:h-8 rounded-sm'
                                         />
+                                    </Link> */}
+
+                                    <Link
+                                        href={'https://play.google.com/store/apps/details?id=com.dozzy_customer'}
+                                        onClick={(e) => {
+                                            LinkCall(e, "https://play.google.com/store/apps/details?id=com.dozzy_customer");
+                                        }}
+                                    >
+                                        <Image
+                                            src={gplay}
+                                            alt="google play"
+                                            width={1000}
+                                            height={1000}
+                                            className="w-12 h-4 lg:w-24 lg:h-8 rounded-sm"
+                                        />
                                     </Link>
+
+
                                     <Link onClick={(e) => LinkCall(e, "https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530")} href={'https://apps.apple.com/in/app/dozzy-farmhouse-rental/id6670319530'}>
                                         <Image
                                             src={appstore}
@@ -53,9 +70,12 @@ const Footer = () => {
                                 </p>
                             </li>
                             <li>
-                                <div className='xl:pl-32 lg:pl-12 lg:pr-1 xl:pr-16 py-2 lg:text-lg'>
+                            <div className='xl:pl-32 lg:pl-12 lg:pr-1 xl:pr-16 py-2 lg:text-lg'>
                                     <div className='flex flex-col gap-2 lg:flex-row lg:gap-4'>
-                                        <p className='lg:pb-2'><span>Contact Us</span><span><Link className='lg:text-3xl font-bold text-base flex items-center gap-1 lg:gap-2 lg:pt-2' href="tel:9666655973" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>9666-655-973<span></span></Link></span></p>
+                                        <p className='lg:pb-2'><span>Contact Us</span><span><Link className='lg:text-3xl font-bold text-base flex items-center gap-1 lg:gap-2 lg:pt-2' href="tel:9666655973" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>
+                                        <span onClick={(e) => LinkCall(e, "tel:9666655973")}>9666-655-973</span></Link>
+                                        </span>
+                                        </p>
                                         <p className='lg:pb-2'>
                                             <Link className='hover:text-blue-400' href={'/privacy-policy'}>Privacy Policy</Link></p></div>
                                 </div>
@@ -64,10 +84,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-                <div className='bg-black py-1 lg:px-20 text-center text-white lg:text-lg text-[10px]'>
-                    <p>© 2024 LDCars India Private Limited. All Rights Reserved.</p>
-                    {/* <Link href={'/blog.html'}>blogs</Link> */}
-                </div>
+            <div className='bg-black py-1 lg:px-20 text-center text-white lg:text-lg text-[10px]'>
+                <p>© 2024 LDCars India Private Limited. All Rights Reserved.</p>
+                {/* <Link href={'/blog.html'}>blogs</Link> */}
+            </div>
         </div>
     )
 }

@@ -106,11 +106,12 @@ import bom1 from "../../images/bamboo/1.webp"
 import bom2 from "../../images/bamboo/2.webp"
 import bom3 from "../../images/bamboo/3.webp"
 
+import Head from "next/head";
 
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const FarmProductLPage = ({ count }) => {
+const FarmProductLPage = ({ count,canonicalUrl }) => {
 
     const [mobileC, setMobileC] = useState(false)
     useEffect(() => {
@@ -321,6 +322,7 @@ const FarmProductLPage = ({ count }) => {
             farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, },
             weekdays: { oneday: "15000", twoday: "30000" },
             weekends: { oneday: "15000", twoday: "30000" },
+            rating: "4.6",
             no_bed:"2",
         },
 
@@ -334,6 +336,17 @@ const FarmProductLPage = ({ count }) => {
             alt:"Luxury Farmhouses in Shamshabad ",
             no_bed:"2",
         },
+
+        {
+            farm_name: "Bamboo Huts",
+            price_24_hours: 14000,
+            farm_image: { c1: bom1, c2: bom2, c3: bom3, },
+            weekdays: { oneday: "14000", twoday: "28000" },
+            weekends: { oneday: "14000", twoday: "28000" },
+            rating: "4.6",
+            alt:"Luxury Farmhouses in MOINABAD  ",
+            no_bed:"2",
+        },
  
         {
             farm_name: "4Ram Fusion",
@@ -344,17 +357,6 @@ const FarmProductLPage = ({ count }) => {
             rating: "4.4",
             alt:"Luxury Farmhouses in Keesara ",
             no_bed:"4",
-        },
-        
-        {
-            farm_name: "Bamboo Huts",
-            price_24_hours: 14000,
-            farm_image: { c1: bom1, c2: bom2, c3: bom3, },
-            weekdays: { oneday: "14000", twoday: "28000" },
-            weekends: { oneday: "14000", twoday: "28000" },
-            rating: "4.6",
-            alt:"Luxury Farmhouses in MOINABAD  ",
-            no_bed:"2",
         },
           
         {
@@ -394,9 +396,70 @@ const FarmProductLPage = ({ count }) => {
     ];
     return (
         <div>
-                 
-           
-            <div className="text-sm pl-4 py-4 md:px-20 lg:py-16 text-black">
+           <div className="text-sm pl-4 py-4 md:px-20 lg:py-16 text-black">
+
+           <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
+        <meta name="description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
+        <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+        <link rel="canonical" href={canonicalUrl} />
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                         window.dataLayer = window.dataLayer || [];
+                         function gtag(){dataLayer.push(arguments);}
+                         gtag('js', new Date());
+                         gtag('config', 'G-04YJBDK2VX');
+                        `,
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'AW-16698821101');
+                      `,
+          }}
+             />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16698821101');
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-16698821101/AchICOTCyOsZEO2Tz5o-',
+                  'value': 1.0,
+                  'currency': 'INR',
+                  'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
+
+
+
+      </Head>
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">
                     Farm Houses In Hyderbad
                 </p>
@@ -423,13 +486,13 @@ const FarmProductLPage = ({ count }) => {
                                         transitionTime={1000}
                                     >
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image alt={item?.alt}  src={item.farm_image.c1} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"}  src={item.farm_image.c1} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image src={item.farm_image.c2} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c2} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image src={item.farm_image.c3} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"}  src={item.farm_image.c3} ></Image>
                                         </div>
                                     </Carousel>
                                 </div>

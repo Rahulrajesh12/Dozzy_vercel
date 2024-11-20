@@ -105,8 +105,8 @@ import ram2 from "./images/4ram/2.webp"
 import ram3 from  "./images/4ram/3.webp"
 
 import svr1 from "./images/svrp/1.webp"
-import svr2 from "./images/svrp/1.webp"
-import svr3 from "./images/svrp/1.webp"
+import svr2 from "./images/svrp/2.webp"
+import svr3 from "./images/svrp/3.webp"
 
 import bgy1 from "./images/bgyf/1.webp"
 import bgy2 from "./images/bgyf/2.webp"
@@ -115,9 +115,6 @@ import bgy3 from "./images/bgyf/3.webp"
 import bom1 from "./images/bamboo/1.webp"
 import bom2 from "./images/bamboo/2.webp"
 import bom3 from "./images/bamboo/3.webp"
-
-
-
 
 
 
@@ -392,8 +389,9 @@ const CarDetails = ({canonicalUrl}) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+        <link rel="canonical" href={canonicalUrl} />
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
-        <link rel="canonical" href={`${canonicalUrl}/${farmproduct}`} />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -414,7 +412,36 @@ const CarDetails = ({canonicalUrl}) => {
                         gtag('config', 'AW-16698821101');
                       `,
           }}
+             />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16698821101');
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-16698821101/AchICOTCyOsZEO2Tz5o-',
+                  'value': 1.0,
+                  'currency': 'INR',
+                  'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
         />
+
+
+
       </Head>
       <div className=' lg:px-2 lg:mx-16 xl:mx-16 lg:p-4  px-2 py-2'>
         <noscript>

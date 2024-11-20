@@ -7,22 +7,15 @@ const FarmProductLPage = dynamic(() => import('./components/FarmProductLPage/Far
 const CareGuests = dynamic(() => import('./components/CareGuests/CareGuests'));
 
 export default function Home({ canonicalUrl }) {
-  const phoneNumber = '96666-559-73'; // Replace with your phone number
-
-  const handleClick = () => {
-    gtag_report_conversion(`tel:${phoneNumber}`);
-  };
- 
-
   return (
     <div className="text-black font-poppins">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
-        <meta name="description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
+        <title>Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
+        <meta name="description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
-        <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
+        <meta property="og:title" content="Zero Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
+        <meta property="og:description" content="Enjoy the great outdoors with zero deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <link rel="canonical" href={canonicalUrl} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
         <script
@@ -35,7 +28,6 @@ export default function Home({ canonicalUrl }) {
                         `,
           }}
         />
-
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -48,7 +40,7 @@ export default function Home({ canonicalUrl }) {
           }}
         />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -73,7 +65,7 @@ export default function Home({ canonicalUrl }) {
             `,
           }}
         />
-      
+
 
       </Head>
       <noscript>
@@ -83,19 +75,15 @@ export default function Home({ canonicalUrl }) {
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
         />
-
       </noscript>
       <HomeBanner />
       <FarmStarts />
       <FarmProductLPage />
       <CareGuests />
-      </div>
-    
-
-
+    </div>
   );
 }
-export async function getServerSideProps({req}) {
+export async function getServerSideProps({ req }) {
   // const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=Hyderabad');
   // const items = await response.json();
   // const cars = items?.data?.results;
@@ -111,8 +99,3 @@ export async function getServerSideProps({req}) {
     },
   };
 }
-
-
-
-
-
