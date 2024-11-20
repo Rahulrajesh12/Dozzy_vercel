@@ -1,6 +1,5 @@
 
 export default function LinkCall(event, url) {
-    console.log('Function called --------');
 
     if (event && typeof event.preventDefault === 'function') {
         event.preventDefault();

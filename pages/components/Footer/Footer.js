@@ -55,7 +55,10 @@ const Footer = () => {
                             <li>
                                 <div className='xl:pl-32 lg:pl-12 lg:pr-1 xl:pr-16 py-2 lg:text-lg'>
                                     <div className='flex flex-col gap-2 lg:flex-row lg:gap-4'>
-                                        <p className='lg:pb-2'><span>Contact Us</span><span><Link className='lg:text-3xl font-bold text-base flex items-center gap-1 lg:gap-2 lg:pt-2' href="tel:9666655973" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>9666-655-973<span></span></Link></span></p>
+                                        <p className='lg:pb-2'><span>Contact Us</span><span><Link className='lg:text-3xl font-bold text-base flex items-center gap-1 lg:gap-2 lg:pt-2' href="tel:9666655973" target='_blank'><span><FiPhoneCall className='size-3 lg:size-6' /></span>
+                                        <span onClick={(e) => LinkCall(e, "tel:9666655973")}>9666-655-973</span></Link>
+                                        </span>
+                                        </p>
                                         <p className='lg:pb-2'>
                                             <Link className='hover:text-blue-400' href={'/privacy-policy'}>Privacy Policy</Link></p></div>
                                 </div>
