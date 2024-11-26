@@ -140,7 +140,7 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             setLoading(true);
 
             // Simulate loading delay
-            await new Promise((resolve) => setTimeout(resolve, 500)); // 3 seconds
+            await new Promise((resolve) => setTimeout(resolve, 300)); // 3 seconds
 
             // After data is loaded, set loading to false to hide the loader
             setLoading(false);
@@ -293,6 +293,17 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
         //     no_bed:"5",
         // },
 
+         // {
+        //     farm_name: "SVR Peacock View",
+        //     price_24_hours: 12000,
+        //     farm_image: { c1: svr1, c2: svr2, c3: svr3, },
+        //     weekdays: { oneday: "12000", twoday: "24000" },
+        //     weekends: { oneday: "12000", twoday: "24000" },
+        //     rating: "4.4",
+        //     alt:"Luxury Farmhouses in ShadNagar ",
+        //     no_bed:"2",
+        // },
+
 
         {
             farm_name: "Arush Agri",
@@ -359,17 +370,7 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             no_bed:"4",
         },
           
-        {
-            farm_name: "SVR Peacock View",
-            price_24_hours: 12000,
-            farm_image: { c1: svr1, c2: svr2, c3: svr3, },
-            weekdays: { oneday: "12000", twoday: "24000" },
-            weekends: { oneday: "12000", twoday: "24000" },
-            rating: "4.4",
-            alt:"Luxury Farmhouses in ShadNagar ",
-            no_bed:"2",
-        },
-
+       
         {
             farm_name: "CourtYard",
             price_24_hours: 14000,

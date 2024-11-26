@@ -135,7 +135,7 @@ const CarDetails = ({canonicalUrl}) => {
         // Set loading to true to show the loader
         setLoading(true);
         // Simulate delay (e.g., with a timeout or actual async operation)
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 200));
         // Set loading to false after data has loaded
         setLoading(false);
     };
@@ -273,6 +273,19 @@ const CarDetails = ({canonicalUrl}) => {
     //   no_beds:"1"
     // },
 
+    // "svr peacock view": {
+    //   price_24_hours: 12000,
+    //   farm_name: "SVR Peacock View",
+    //   farm_image: { c1: svr1, c2: svr2, c3: svr3, },
+    //   weekdays: { oneday: "12000", twoday: "24000" },
+    //   weekends: { oneday: "12000", twoday: "24000" },
+    //   desc:"Dozzy offers some of the best farmhouses in and around Hyderabad, perfect for a relaxing getaway or an event with family and friends. One of our standout locations is the SVR Peacock View Farmhouse, nestled in lush greenery and designed to provide a serene experience close to nature.",
+    //   desc1:"This beautiful farmhouse features a stunning swimming pool, ideal for both relaxation and fun. Inside, each room is equipped with air conditioning to keep you comfortable, along with king-sized beds for a restful sleep. Additionally, each room includes amenities like a television, fridge, and ample storage space.",
+    //   desc2:"The farmhouse also includes BBQ facilities, so guests can enjoy outdoor cooking and dining, making for a memorable experience. Other amenities and conveniences have been thoughtfully included to ensure you have everything needed for a comfortable stay. With its natural surroundings, comfortable furnishings, and top-notch amenities, SVR Peacock View Farmhouse is an ideal choice for those looking to unwind, celebrate, or simply enjoy a peaceful retreat near Hyderabad.",
+    //   no_beds:"2"
+    // },
+    
+
 
     "saketh vanam": {
       farm_name: 'Saketh Vanam',
@@ -340,18 +353,7 @@ const CarDetails = ({canonicalUrl}) => {
       no_beds:"4"
     },
 
-    "svr peacock view": {
-      price_24_hours: 12000,
-      farm_name: "SVR Peacock View",
-      farm_image: { c1: svr1, c2: svr2, c3: svr3, },
-      weekdays: { oneday: "12000", twoday: "24000" },
-      weekends: { oneday: "12000", twoday: "24000" },
-      desc:"Dozzy offers some of the best farmhouses in and around Hyderabad, perfect for a relaxing getaway or an event with family and friends. One of our standout locations is the SVR Peacock View Farmhouse, nestled in lush greenery and designed to provide a serene experience close to nature.",
-      desc1:"This beautiful farmhouse features a stunning swimming pool, ideal for both relaxation and fun. Inside, each room is equipped with air conditioning to keep you comfortable, along with king-sized beds for a restful sleep. Additionally, each room includes amenities like a television, fridge, and ample storage space.",
-      desc2:"The farmhouse also includes BBQ facilities, so guests can enjoy outdoor cooking and dining, making for a memorable experience. Other amenities and conveniences have been thoughtfully included to ensure you have everything needed for a comfortable stay. With its natural surroundings, comfortable furnishings, and top-notch amenities, SVR Peacock View Farmhouse is an ideal choice for those looking to unwind, celebrate, or simply enjoy a peaceful retreat near Hyderabad.",
-      no_beds:"2"
-    },
-    
+ 
       "bgy": {
       farm_name: "BGY",
       price_24_hours: 16000,
