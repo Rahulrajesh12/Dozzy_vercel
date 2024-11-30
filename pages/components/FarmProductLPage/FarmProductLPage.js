@@ -82,17 +82,17 @@ import rajes3 from '../../images/rajes/3.webp'
 
 
 
-import  sskf1 from '../../images/sravan/1.webp'
+import sskf1 from '../../images/sravan/1.webp'
 import sskf2 from '../../images/sravan/2.webp'
 import sskf3 from '../../images/sravan/3.webp'
 
-import  arush1 from '../../images/arush/1.webp'
+import arush1 from '../../images/arush/1.webp'
 import arush2 from '../../images/arush/2.webp'
 import arush3 from '../../images/arush/3.webp'
 
-import  ram1 from '../../images/4ram/1.webp'
-import  ram2 from '../../images/4ram/2.webp'
-import  ram3 from '../../images/4ram/3.webp'
+import ram1 from '../../images/4ram/1.webp'
+import ram2 from '../../images/4ram/2.webp'
+import ram3 from '../../images/4ram/3.webp'
 
 import svr1 from "../../images/svrp/1.webp"
 import svr2 from "../../images/svrp/2.webp"
@@ -111,7 +111,7 @@ import Head from "next/head";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const FarmProductLPage = ({ count,canonicalUrl }) => {
+const FarmProductLPage = ({ count, canonicalUrl }) => {
 
     const [mobileC, setMobileC] = useState(false)
     useEffect(() => {
@@ -149,162 +149,23 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
         loadData();
     }, []);
 
- 
+
     useEffect(() => {
         // Refresh the page on route change
         const handleRouteChange = () => {
-          window.location.reload();
+            window.location.reload();
         };
-    
+
         router.events.on('routeChangeComplete', handleRouteChange);
-    
+
         // Cleanup the event listener when the component is unmounted
         return () => {
-          router.events.off('routeChangeComplete', handleRouteChange);
+            router.events.off('routeChangeComplete', handleRouteChange);
         };
-      }, [router]);   
- 
+    }, [router]);
+
 
     const filteredData = [
-
-        
-      
-        // {
-        //     farm_name: "Srinivasa",
-        //     price_24_hours: 13000,
-        //     farm_image: { c1: srfarm1, c2: srfarm2, c3: srfarm3, },
-        //     weekdays: { oneday: "15000", twoday: "25000" },
-        //     weekends: { oneday: "17000", twoday: "35000" },
-        //     rating: "4.2",
-        //     no_bed:"5",
-        // },
-        // {
-        //     farm_name: "Zoo Zoo",
-        //     price_24_hours: 8000,
-        //     farm_image: { c1: zfarm1, c2: zfarm2, c3: zfarm3, },
-        //     weekdays: { oneday: "8000", twoday: "15000" },
-        //     weekends: { oneday: "10000", twoday: "25000" },
-        //     alt:"Luxury Farmhouses in  Moinabad",
-        //     rating: "4.3",
-        //     no_bed:"2",
-        // },
-        // {
-        //     farm_name: "Shan",
-        //     price_24_hours: 10000,
-        //     farm_image: { c1: shfarm1, c2: shfarm2, c3: shfarm3, },
-        //     weekdays: { oneday: "10000", twoday: "19000" },
-        //     weekends: { oneday: "12000", twoday: "29000" },
-        //     rating: "4.3",
-        //     no_bed:"3",
-        // },
-       
-        // {
-        //     farm_name: "TYB",
-        //     farm_image: { c1: ty1, c2: ty2, c3: ty3, },
-        //     weekdays: { oneday: "10000", twoday: "20000" },
-        //     weekends: { oneday: "12000", twoday: "24000" },
-        //     rating: "4.5",
-        // },
-        // {
-        //     farm_name: "AL Haadi",
-        //     farm_image: { c1: a1, c2: a2, c3: a3, },
-        //     weekdays: { oneday: "15000", twoday: "20000" },
-        //     weekends: { oneday: "17000", twoday: "24000" },
-        //     rating: "4",
-        //     no_bed:"4",
-        // },
-        // {
-        //     farm_name: "Alsafa",
-        //     farm_image: { c1: alsafa1, c2: alsafa2, c3: alsafa3, },
-        //     weekdays: { oneday: "13000", twoday: "20000" },
-        //     weekends: { oneday: "15000", twoday: "24000" },
-        //     rating: "4.4",
-        //     alt:"Luxury Farmhouses in Hyderabad",
-        //     no_bed:"2",
-        // },
-       
-        // {
-        //     farm_name: "Pleasant View",
-        //     farm_image: { c1: pleasant1, c2: pleasant2, c3: pleasant3, },
-        //     weekdays: { oneday: "10000", twoday: "20000" },
-        //     weekends: { oneday: "12000", twoday: "24000" },
-        //     rating: "4.3",
-        //     no_bed:"4",
-        // },
-        // {
-        //     farm_name: "Serenity",
-        //     farm_image: { c1: serinity1, c2: serinity2, c3: serinity3, },
-        //     weekdays: { oneday: "8000", twoday: "20000" },
-        //     weekends: { oneday: "9000", twoday: "24000" },
-        //     rating: "4.1",
-        //     no_bed:"3",
-        // },
-        // {
-        //     farm_name: "SP Farmhouse",
-        //     farm_image: { c1: sp1, c2: sp2, c3: sp3, },
-        //     weekdays: { oneday: "12000", twoday: "24000" },
-        //     weekends: { oneday: "15000", twoday: "3000" },
-        //     alt:"Luxury Farmhouses in  Moinabad",
-        //     rating: "4.2",
-        //     no_bed:"2",
-        // },
-
-              // {
-        //     farm_name: "NBR",
-        //     farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
-        //     weekdays: { oneday: "8000", twoday: "20000" },
-        //     weekends: { oneday: "10000", twoday: "24000" },
-        //     rating: "4",
-        //     alt:"Farm houses in Hyderabad ",
-        //     no_bed:"1",
-        // },
-
-        // {
-        //     farm_name: "Takshvi",
-        //     farm_image: { c1: taksh1, c2: taksh2, c3: taksh3, },
-        //     weekdays: { oneday: "10000", twoday: "20000" },
-        //     weekends: { oneday: "12000", twoday: "24000" },
-        //     rating: "4.5",
-        //     alt:"Farm houses in Ghatkesar ",
-        //     no_bed:"2",
-        // },
-        // {
-        //     farm_name: "Star Lingam",
-        //     farm_image: { c1: starling1, c2: starling2, c3: starling3, },
-        //     weekdays: { oneday: "15000", twoday: "20000" },
-        //     weekends: { oneday: "17000", twoday: "24000" },
-        //     rating: "4",
-        //     no_bed:"1",
-        // },
-        // {
-        //     farm_name: "Star Bhima",
-        //     farm_image: { c1: starbh1, c2: starbh2, c3: starbh3, },
-        //     weekdays: { oneday: "15000", twoday: "20000" },
-        //     weekends: { oneday: "17000", twoday: "24000" },
-        //     rating: "4.1",
-        //     no_bed:"5",
-        // },
-        // {
-        //     farm_name: "Rajeswari",
-        //     farm_image: { c1: rajes1, c2: rajes2, c3: rajes3, },
-        //     weekdays: { oneday: "15000", twoday: "20000" },
-        //     weekends: { oneday: "17000", twoday: "24000" },
-        //     rating: "4.5",
-        //     no_bed:"5",
-        // },
-
-         // {
-        //     farm_name: "SVR Peacock View",
-        //     price_24_hours: 12000,
-        //     farm_image: { c1: svr1, c2: svr2, c3: svr3, },
-        //     weekdays: { oneday: "12000", twoday: "24000" },
-        //     weekends: { oneday: "12000", twoday: "24000" },
-        //     rating: "4.4",
-        //     alt:"Luxury Farmhouses in ShadNagar ",
-        //     no_bed:"2",
-        // },
-
-
         {
             farm_name: "Arush Agri",
             price_24_hours: 15000,
@@ -312,8 +173,8 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "15000", twoday: "30000" },
             weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.8",
-            alt:"Luxury Farmhouses in Shamshabad ",
-            no_bed:"3",
+            alt: "Luxury Farmhouses in Shamshabad ",
+            no_bed: "3",
         },
 
         {
@@ -323,10 +184,10 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "15000", twoday: "30000" },
             weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.5",
-            alt:"Luxury Farmhouses in Shamshabad ",
-            no_bed:"3",
-        },  
-        
+            alt: "Luxury Farmhouses in Shamshabad ",
+            no_bed: "3",
+        },
+
         {
             farm_name: "SSK",
             price_24_hours: 15000,
@@ -334,7 +195,7 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "15000", twoday: "30000" },
             weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.6",
-            no_bed:"2",
+            no_bed: "2",
         },
 
         {
@@ -344,8 +205,8 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "16000", twoday: "32000" },
             weekends: { oneday: "16000", twoday: "32000" },
             rating: "4.6",
-            alt:"Luxury Farmhouses in Shamshabad ",
-            no_bed:"2",
+            alt: "Luxury Farmhouses in Shamshabad ",
+            no_bed: "2",
         },
 
         {
@@ -355,10 +216,10 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "14000", twoday: "28000" },
             weekends: { oneday: "14000", twoday: "28000" },
             rating: "4.6",
-            alt:"Luxury Farmhouses in MOINABAD  ",
-            no_bed:"2",
+            alt: "Luxury Farmhouses in MOINABAD  ",
+            no_bed: "2",
         },
- 
+
         {
             farm_name: "4Ram Fusion",
             price_24_hours: 15000,
@@ -366,11 +227,11 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "15000", twoday: "30000" },
             weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.4",
-            alt:"Luxury Farmhouses in Keesara ",
-            no_bed:"4",
+            alt: "Luxury Farmhouses in Keesara ",
+            no_bed: "4",
         },
-          
-       
+
+
         {
             farm_name: "CourtYard",
             price_24_hours: 14000,
@@ -378,8 +239,8 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "14000", twoday: "28000" },
             weekends: { oneday: "14000", twoday: "28000" },
             rating: "4.2",
-            no_bed:"2",
-        }, 
+            no_bed: "2",
+        },
 
         {
             farm_name: "Holiday",
@@ -388,79 +249,17 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
             weekdays: { oneday: "10000", twoday: "20000" },
             weekends: { oneday: "10000", twoday: "20000" },
             rating: "4.3",
-            alt:"Luxury Farmhouses in  Moinabad",
-            no_bed:"2",
+            alt: "Luxury Farmhouses in  Moinabad",
+            no_bed: "2",
         },
-        
+
 
 
     ];
     return (
         <div>
-           <div className="text-sm pl-4 py-4 md:px-20 lg:py-16 text-black">
+            <div className="text-sm pl-4 py-4 md:px-20 lg:py-16 text-black">
 
-           <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals</title>
-        <meta name="description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
-        <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
-        <link rel="canonical" href={canonicalUrl} />
-
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                         window.dataLayer = window.dataLayer || [];
-                         function gtag(){dataLayer.push(arguments);}
-                         gtag('js', new Date());
-                         gtag('config', 'G-04YJBDK2VX');
-                        `,
-          }}
-        />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'AW-16698821101');
-                      `,
-          }}
-             />
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-16698821101');
-              function gtag_report_conversion(url) {
-                var callback = function () {
-                  if (typeof(url) != 'undefined') {
-                    window.location = url;
-                  }
-                };
-                gtag('event', 'conversion', {
-                  'send_to': 'AW-16698821101/AchICOTCyOsZEO2Tz5o-',
-                  'value': 1.0,
-                  'currency': 'INR',
-                  'event_callback': callback
-                });
-                return false;
-              }
-            `,
-          }}
-        />
-
-
-
-      </Head>
                 <p className="font-semibold md:text-xl lg:text-5xl font-poppins">
                     Farm Houses In Hyderbad
                 </p>
@@ -487,13 +286,13 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
                                         transitionTime={1000}
                                     >
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image alt={"Farm Houses In Hyderbad"}  src={item.farm_image.c1} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c1} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                             <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c2} ></Image>
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
-                                            <Image alt={"Farm Houses In Hyderbad"}  src={item.farm_image.c3} ></Image>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c3} ></Image>
                                         </div>
                                     </Carousel>
                                 </div>
@@ -515,7 +314,7 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
                                                 <p className="text-black">{item?.rating}</p>
                                             </div>
                                             <div className="flex gap-2 items-center">
-                                 <IoBedSharp size={20} className="text-[#935732]" />
+                                                <IoBedSharp size={20} className="text-[#935732]" />
                                                 <p className="text-black">{item?.no_bed} BHK</p>
                                             </div>
 
@@ -570,23 +369,23 @@ const FarmProductLPage = ({ count,canonicalUrl }) => {
                     ))}
                 </div>
             </div>
-             
+
             <div className={`${count?.length ? 'hidden' : 'block'} text-center px-6 pb-10 pt-8`}>
-              
+
                 <button className="bg-[#4508a6] spinner-border text-xl font-bold text-white w-full lg:w-96 py-4 rounded-full">
                     <Link
                         onClick={(e) => LinkCall(e, "/explore-all-farmhouses-in-hyderabad")}
                         href="/explore-all-farmhouses-in-hyderabad"
                     >View all farm houses</Link>
                 </button>
-              
+
             </div>
             {loading && <div className="text-center py-4">
-                    <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
-                        <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
-                    </div>
-                </div>}
-            
+                <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
+                    <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
+                </div>
+            </div>}
+
         </div>
     );
 

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { useState, useEffect } from 'react'; 
+import { useState, useEffect } from 'react';
 import customData from './components/kk.json';
 import { PiCarFill } from "react-icons/pi";
 import { BiPhoneCall } from "react-icons/bi";
@@ -102,7 +102,7 @@ import arush3 from "./images/arush/3.webp"
 
 import ram1 from "./images/4ram/1.webp"
 import ram2 from "./images/4ram/2.webp"
-import ram3 from  "./images/4ram/3.webp"
+import ram3 from "./images/4ram/3.webp"
 
 import svr1 from "./images/svrp/1.webp"
 import svr2 from "./images/svrp/2.webp"
@@ -120,7 +120,7 @@ import bom3 from "./images/bamboo/3.webp"
 
 import LinkCall from './components/LinkCall';
 
-const CarDetails = ({canonicalUrl}) => {
+const CarDetails = ({ canonicalUrl }) => {
 
   const router = useRouter();
   const [caritem, setCarItem] = useState('')
@@ -132,16 +132,16 @@ const CarDetails = ({canonicalUrl}) => {
   useEffect(() => {
     // Simulate a loading delay or async operation
     const loadData = async () => {
-        // Set loading to true to show the loader
-        setLoading(true);
-        // Simulate delay (e.g., with a timeout or actual async operation)
-        await new Promise(resolve => setTimeout(resolve, 200));
-        // Set loading to false after data has loaded
-        setLoading(false);
+      // Set loading to true to show the loader
+      setLoading(true);
+      // Simulate delay (e.g., with a timeout or actual async operation)
+      await new Promise(resolve => setTimeout(resolve, 200));
+      // Set loading to false after data has loaded
+      setLoading(false);
     };
     loadData();
-}, []); // Add dependencies if needed
- 
+  }, []); // Add dependencies if needed
+
 
   const customData = {
 
@@ -172,7 +172,7 @@ const CarDetails = ({canonicalUrl}) => {
     //   desc: "SHAN Farmhouse provides a tranquil getaway from the bustle of the city because it is tucked away in a beautiful natural setting. Our farmhouse is designed to provide you and your loved ones with an unforgettable experience, combining leisure and enjoyment. It has unique features including a cool pool, five acres of mango trees, a fully functional kitchen with dishes and bowls, and a grill for delicious dinners. A 100-inch large projector, Bluetooth audio system, WiFi, and access to Netflix, Prime, Hotstar, Aha, ZEE5, and YouTube are available for amusement. Gamers can play chess, carroms, shuttle, cricket, and shuttle, all of which guarantee hours of fun for all players. ",
     //   no_beds:"3"
     // },
-  
+
     // "tyb": {
     //   farm_name: "TYB",
     //   price_24_hours: 1000,
@@ -263,7 +263,7 @@ const CarDetails = ({canonicalUrl}) => {
     //   no_beds:"5"
     // },
 
-     // "nbr": {
+    // "nbr": {
     //   farm_name: "NBR",
     //   farm_image: { c1: nbr1, c2: nbr2, c3: nbr3, },
     //   weekdays: { oneday: "8000", twoday: "20000" },
@@ -284,7 +284,7 @@ const CarDetails = ({canonicalUrl}) => {
     //   desc2:"The farmhouse also includes BBQ facilities, so guests can enjoy outdoor cooking and dining, making for a memorable experience. Other amenities and conveniences have been thoughtfully included to ensure you have everything needed for a comfortable stay. With its natural surroundings, comfortable furnishings, and top-notch amenities, SVR Peacock View Farmhouse is an ideal choice for those looking to unwind, celebrate, or simply enjoy a peaceful retreat near Hyderabad.",
     //   no_beds:"2"
     // },
-    
+
 
 
     "saketh vanam": {
@@ -294,7 +294,7 @@ const CarDetails = ({canonicalUrl}) => {
       weekdays: { oneday: "15000", twoday: "30000" },
       weekends: { oneday: "15000", twoday: "30000" },
       desc: "Traditionally Farmhouses are simply homes built on agricultural lands to house and protect who owned or worked the land. The term Farmhouse isn't necessarily connected to a particular style identified by a fixed set of features, but a setting for a way of life. This is most likely why its appeal seems to be timeless.",
-      no_beds:"3"
+      no_beds: "3"
     },
 
     "courtyard": {
@@ -303,10 +303,10 @@ const CarDetails = ({canonicalUrl}) => {
       farm_image: { c1: courtyard1, c2: courtyard2, c3: courtyard3, },
       weekdays: { oneday: "12000", twoday: "24000" },
       weekends: { oneday: "12000", twoday: "24000" },
-      desc:"Dozzy offers some of the best farmhouses in and around Hyderabad, ideal for those looking to escape to a beautiful, serene location. Our Courtyard  farmhouse is nestled in lush greenery, providing a peaceful and refreshing environment. With a spacious layout and stylish interiors, the property is perfect for gatherings, relaxation, and a break from the city.",
+      desc: "Dozzy offers some of the best farmhouses in and around Hyderabad, ideal for those looking to escape to a beautiful, serene location. Our Courtyard  farmhouse is nestled in lush greenery, providing a peaceful and refreshing environment. With a spacious layout and stylish interiors, the property is perfect for gatherings, relaxation, and a break from the city.",
       desc1: "Each room in the farmhouse is equipped with essential amenities to enhance your stay. Every bedroom includes a king-size bed, air conditioning, and a television, ensuring a comfortable experience. Additionally, the rooms come with a refrigerator to keep your snacks and drinks cool. The farmhouse also features a fantastic BBQ setup, making it ideal for outdoor dining and evening gatherings with friends or family.",
-      desc2:"The property’s highlight is its wonderful swimming pool, set against the backdrop of beautiful greenery. Whether you’re looking to take a swim or simply relax by the poolside, the ambiance is designed to help you unwind. Our goal is to provide a farmhouse experience that combines comfort, convenience, and a touch of luxury.With excellent amenities, a tranquil setting, and all the comforts of home, Dozzy's farmhouse is the perfect getaway in Hyderabad. Book your stay with us and experience the best of farmhouses living in a stunning natural environment.",
-      no_beds:"2"
+      desc2: "The property’s highlight is its wonderful swimming pool, set against the backdrop of beautiful greenery. Whether you’re looking to take a swim or simply relax by the poolside, the ambiance is designed to help you unwind. Our goal is to provide a farmhouse experience that combines comfort, convenience, and a touch of luxury.With excellent amenities, a tranquil setting, and all the comforts of home, Dozzy's farmhouse is the perfect getaway in Hyderabad. Book your stay with us and experience the best of farmhouses living in a stunning natural environment.",
+      no_beds: "2"
     },
 
     "holiday": {
@@ -317,7 +317,7 @@ const CarDetails = ({canonicalUrl}) => {
       weekends: { oneday: "10000", twoday: "20000" },
       desc: "Holiday FarmHouse, set in the serene forest, invites you to unwind and enjoy quality time away from the fast-paced city. Our farmhouse ensures a comfortable stay with its well-maintained garden, a refreshing pool, and a fully stocked kitchen complete with dishes and a barbecue area. Stay entertained with a 43-inch TV, WiFi, Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Guests can also engage in various games, including chess, carrom, shuttle, and cricket, for a truly enjoyable experience.",
       desc1: "",
-      no_beds:"2"
+      no_beds: "2"
     },
 
     "ssk": {
@@ -329,17 +329,17 @@ const CarDetails = ({canonicalUrl}) => {
       desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone."
     },
 
-  
+
     "arush agri": {
       farm_name: "Arush Agri",
       price_24_hours: 15000,
       farm_image: { c1: arush1, c2: arush2, c3: arush3, },
       weekdays: { oneday: "15000", twoday: "30000" },
       weekends: { oneday: "15000", twoday: "30000" },
-      desc:"Dozzy offers some of the best farmhouses in and around Hyderabad, providing beautiful and relaxing locations perfect for a peaceful getaway. Among our offerings is the stunning Arush Agri Farm Stays farmhouse, nestled in lush greenery for a refreshing, natural escape. This farmhouse features a wonderful swimming pool, perfect for cooling off and enjoying with friends or family.",
-      desc1:"Each room in the farmhouse is designed with comfort in mind, furnished with king-size beds for a restful night’s sleep and equipped with air conditioning for a cool, relaxing environment. Additionally, rooms come with TVs and fridges, adding convenience to your stay, along with essential amenities to ensure a pleasant experience. A BBQ setup is also available for those who wish to grill and dine under the stars.",
-      dec2:"Whether you're looking to unwind, host a gathering, or simply enjoy a getaway surrounded by nature, Dozzy’s farmhouses are equipped to make your stay enjoyable and memorable. Book today to experience a perfect blend of luxury and nature just outside Hyderabad." ,
-     no_beds:"3"
+      desc: "Dozzy offers some of the best farmhouses in and around Hyderabad, providing beautiful and relaxing locations perfect for a peaceful getaway. Among our offerings is the stunning Arush Agri Farm Stays farmhouse, nestled in lush greenery for a refreshing, natural escape. This farmhouse features a wonderful swimming pool, perfect for cooling off and enjoying with friends or family.",
+      desc1: "Each room in the farmhouse is designed with comfort in mind, furnished with king-size beds for a restful night’s sleep and equipped with air conditioning for a cool, relaxing environment. Additionally, rooms come with TVs and fridges, adding convenience to your stay, along with essential amenities to ensure a pleasant experience. A BBQ setup is also available for those who wish to grill and dine under the stars.",
+      dec2: "Whether you're looking to unwind, host a gathering, or simply enjoy a getaway surrounded by nature, Dozzy’s farmhouses are equipped to make your stay enjoyable and memorable. Book today to experience a perfect blend of luxury and nature just outside Hyderabad.",
+      no_beds: "3"
     },
 
     "4ram fusion": {
@@ -348,36 +348,36 @@ const CarDetails = ({canonicalUrl}) => {
       farm_image: { c1: ram1, c2: ram2, c3: ram3, },
       weekdays: { oneday: "15000", twoday: "000" },
       weekends: { oneday: "15000", twoday: "24000" },
-      desc:"Dozzy offers some of the best farmhouse options in and around Hyderabad, perfect for a relaxing and enjoyable getaway. Our 4 Ram Fusion Farm Stays are located in a beautiful green setting, providing a peaceful and scenic environment. Each farmhouse features a spacious layout with a wonderful swimming pool to cool off and unwind. Inside, all rooms are designed for maximum comfort, equipped with air conditioning and luxurious king-sized beds to ensure a restful stay. For entertainment, each room is furnished with a TV and fridge, making it easy to enjoy refreshments and stay entertained. We also offer a BBQ setup for those who want to add a flavorful experience to their gatherings.",
-      desc2:"Beyond these, Dozzy’s farm houses provide a range of quality amenities designed to enhance your stay, making it ideal for both short trips and extended stays. Whether you're looking to spend quality time with friends and family, or simply need a peaceful escape, Dozzy’s farm houses promise the perfect mix of luxury and nature. Our team ensures everything is well-maintained and ready for you to enjoy a seamless experience, so you can relax and focus on making memories in this wonderful setting.", 
-      no_beds:"4"
+      desc: "Dozzy offers some of the best farmhouse options in and around Hyderabad, perfect for a relaxing and enjoyable getaway. Our 4 Ram Fusion Farm Stays are located in a beautiful green setting, providing a peaceful and scenic environment. Each farmhouse features a spacious layout with a wonderful swimming pool to cool off and unwind. Inside, all rooms are designed for maximum comfort, equipped with air conditioning and luxurious king-sized beds to ensure a restful stay. For entertainment, each room is furnished with a TV and fridge, making it easy to enjoy refreshments and stay entertained. We also offer a BBQ setup for those who want to add a flavorful experience to their gatherings.",
+      desc2: "Beyond these, Dozzy’s farm houses provide a range of quality amenities designed to enhance your stay, making it ideal for both short trips and extended stays. Whether you're looking to spend quality time with friends and family, or simply need a peaceful escape, Dozzy’s farm houses promise the perfect mix of luxury and nature. Our team ensures everything is well-maintained and ready for you to enjoy a seamless experience, so you can relax and focus on making memories in this wonderful setting.",
+      no_beds: "4"
     },
 
- 
-      "bgy": {
+
+    "bgy": {
       farm_name: "BGY",
       price_24_hours: 16000,
       farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, },
       weekdays: { oneday: "16000", twoday: "32000" },
       weekends: { oneday: "16000", twoday: "32000" },
-      desc:"Dozzy offers some of the best farmhouse experiences in and around Hyderabad, providing a serene escape from the city. Our beautiful BHY  farmhouse is located in a lush, green environment, perfect for unwinding with family and friends. Each room is designed with comfort in mind, featuring air conditioning, king-size beds, and premium amenities for a cozy stay.",
-      desc1:"The farmhouse includes a spacious living area equipped with a large TV, refrigerator, and other essentials, making it feel like a home away from home. Outside, you’ll find a fantastic swimming pool set amidst greenery, ideal for cooling off or lounging by the water on a sunny day. The property also features a BBQ setup, allowing you to enjoy a delicious grill night with loved ones, all while surrounded by nature.",
-      desc2:"With all the comforts of a well-maintained resort—such as AC in each room, comfortable beds, and scenic surroundings—Dozzy's farmhouse offers a complete experience that blends relaxation with luxury. Whether you’re planning a family getaway, a weekend with friends, or simply looking to spend some quiet time in nature, our farmhouse near Hyderabad is equipped to meet your needs, providing a memorable stay every time.",
-      no_beds:"2"
+      desc: "Dozzy offers some of the best farmhouse experiences in and around Hyderabad, providing a serene escape from the city. Our beautiful BHY  farmhouse is located in a lush, green environment, perfect for unwinding with family and friends. Each room is designed with comfort in mind, featuring air conditioning, king-size beds, and premium amenities for a cozy stay.",
+      desc1: "The farmhouse includes a spacious living area equipped with a large TV, refrigerator, and other essentials, making it feel like a home away from home. Outside, you’ll find a fantastic swimming pool set amidst greenery, ideal for cooling off or lounging by the water on a sunny day. The property also features a BBQ setup, allowing you to enjoy a delicious grill night with loved ones, all while surrounded by nature.",
+      desc2: "With all the comforts of a well-maintained resort—such as AC in each room, comfortable beds, and scenic surroundings—Dozzy's farmhouse offers a complete experience that blends relaxation with luxury. Whether you’re planning a family getaway, a weekend with friends, or simply looking to spend some quiet time in nature, our farmhouse near Hyderabad is equipped to meet your needs, providing a memorable stay every time.",
+      no_beds: "2"
     },
-   
+
     "bamboo huts": {
       farm_name: "Bamboo huts",
       price_24_hours: 14000,
       farm_image: { c1: bom1, c2: bom2, c3: bom3, },
       weekdays: { oneday: "14000", twoday: "28000" },
       weekends: { oneday: "14000", twoday: "28000" },
-      desc:"Dozzy offers some of the best farmhouse rentals in and around Hyderabad, perfect for anyone looking to unwind in a beautiful, tranquil setting. One of our premier properties, the Bamboo Huts Farmhouse, is nestled amidst lush greenery, offering an ideal escape from city life. This charming farmhouse combines rustic charm with modern amenities, providing everything you need for a comfortable and relaxing stay.",
-      desc1:"The Bamboo Huts Farmhouse features spacious rooms, each equipped with air conditioning to keep you comfortable year-round. Enjoy restful nights in our luxurious king-size beds, and take advantage of additional conveniences like a TV and a refrigerator in every room. Outside, you’ll find a wonderful swimming pool where you can relax, swim, and enjoy the scenic surroundings. For guests who love to cook outdoors, we also offer BBQ facilities.",
-      desc2:"With thoughtful amenities and beautiful surroundings, Dozzy’s Bamboo Huts Farmhouse is the perfect destination for family gatherings, group outings, or simply a peaceful retreat. Book today and experience the best of what Hyderabad’s farmhouses have to offer.",
-      no_beds:"2"
+      desc: "Dozzy offers some of the best farmhouse rentals in and around Hyderabad, perfect for anyone looking to unwind in a beautiful, tranquil setting. One of our premier properties, the Bamboo Huts Farmhouse, is nestled amidst lush greenery, offering an ideal escape from city life. This charming farmhouse combines rustic charm with modern amenities, providing everything you need for a comfortable and relaxing stay.",
+      desc1: "The Bamboo Huts Farmhouse features spacious rooms, each equipped with air conditioning to keep you comfortable year-round. Enjoy restful nights in our luxurious king-size beds, and take advantage of additional conveniences like a TV and a refrigerator in every room. Outside, you’ll find a wonderful swimming pool where you can relax, swim, and enjoy the scenic surroundings. For guests who love to cook outdoors, we also offer BBQ facilities.",
+      desc2: "With thoughtful amenities and beautiful surroundings, Dozzy’s Bamboo Huts Farmhouse is the perfect destination for family gatherings, group outings, or simply a peaceful retreat. Book today and experience the best of what Hyderabad’s farmhouses have to offer.",
+      no_beds: "2"
     },
-   
+
 
 
   }
@@ -392,7 +392,7 @@ const CarDetails = ({canonicalUrl}) => {
         <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <link rel="canonical" href={canonicalUrl} />
-
+        
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -414,9 +414,9 @@ const CarDetails = ({canonicalUrl}) => {
                         gtag('config', 'AW-16698821101');
                       `,
           }}
-             />
+        />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16698821101"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -441,7 +441,13 @@ const CarDetails = ({canonicalUrl}) => {
             `,
           }}
         />
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `gtag('config', 'AW-16797121033/PPdfCKqh7_AZEIn0vsk-', {
+                         'phone_conversion_number': '96666-559-73'
+                         });`,
+                          }}
+        />
 
 
       </Head>
@@ -588,10 +594,10 @@ const CarDetails = ({canonicalUrl}) => {
           </p>
         </div>
         {loading && <div className="text-center py-4">
-                    <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
-                        <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
-                    </div>
-                </div>}
+          <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-90">
+            <div className="spinner-border animate-spin border-t-4 border-blue-500 border-solid rounded-full w-16 h-16"></div>
+          </div>
+        </div>}
 
       </div>
     </div>
@@ -600,7 +606,7 @@ const CarDetails = ({canonicalUrl}) => {
 
 export default CarDetails;
 
-export async function getServerSideProps({req}) {
+export async function getServerSideProps({ req }) {
   // const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=Hyderabad');
   // const items = await response.json();
   // const cars = items?.data?.results;
