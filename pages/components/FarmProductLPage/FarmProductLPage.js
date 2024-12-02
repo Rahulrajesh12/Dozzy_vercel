@@ -106,6 +106,24 @@ import bom1 from "../../images/bamboo/1.webp"
 import bom2 from "../../images/bamboo/2.webp"
 import bom3 from "../../images/bamboo/3.webp"
 
+
+import box1 from "../../images/box/1.webp"
+import box2 from "../../images/box/2.webp"
+import box3 from "../../images/box/3.webp"
+
+import pb1 from "../../images/pb/1.webp"
+import pb2 from "../../images/pb/2.webp"
+import pb3 from "../../images/pb/3.webp"
+
+import sb1 from "../../images/sb/1.webp"
+import sb2 from "../../images/sb/2.webp"
+import sb3 from "../../images/sb/3.webp"
+
+import py1 from "../../images/py/1.webp"
+import py2 from "../../images/py/2.webp"
+import py3 from "../../images/py/3.webp"
+
+
 import Head from "next/head";
 
 import { Carousel } from "react-responsive-carousel";
@@ -166,12 +184,14 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
 
 
     const filteredData = [
+
+
         {
             farm_name: "Arush Agri",
-            price_24_hours: 15000,
+            price_24_hours: 20000,
             farm_image: { c1: arush1, c2: arush2, c3: arush3, },
-            weekdays: { oneday: "15000", twoday: "30000" },
-            weekends: { oneday: "15000", twoday: "30000" },
+            weekdays: { oneday: "20000", twoday: "40000" },
+            weekends: { oneday: "20000", twoday: "40000" },
             rating: "4.8",
             alt: "Luxury Farmhouses in Shamshabad ",
             no_bed: "3",
@@ -179,10 +199,10 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
 
         {
             farm_name: "Saketh Vanam",
-            price_24_hours: 15000,
+            price_24_hours: 17000,
             farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, },
-            weekdays: { oneday: "15000", twoday: "30000" },
-            weekends: { oneday: "15000", twoday: "30000" },
+            weekdays: { oneday: "17000", twoday: "34000" },
+            weekends: { oneday: "17000", twoday: "34000" },
             rating: "4.5",
             alt: "Luxury Farmhouses in Shamshabad ",
             no_bed: "3",
@@ -190,69 +210,81 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
 
         {
             farm_name: "SSK",
-            price_24_hours: 15000,
+            price_24_hours: 17000,
             farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, },
-            weekdays: { oneday: "15000", twoday: "30000" },
-            weekends: { oneday: "15000", twoday: "30000" },
+            weekdays: { oneday: "17000", twoday: "34000" },
+            weekends: { oneday: "17000", twoday: "34000" },
             rating: "4.6",
             no_bed: "2",
         },
 
         {
             farm_name: "BGY",
-            price_24_hours: 16000,
+            price_24_hours: 17000,
             farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, },
-            weekdays: { oneday: "16000", twoday: "32000" },
-            weekends: { oneday: "16000", twoday: "32000" },
+            weekdays: { oneday: "17000", twoday: "34000" },
+            weekends: { oneday: "17000", twoday: "34000" },
             rating: "4.6",
             alt: "Luxury Farmhouses in Shamshabad ",
             no_bed: "2",
         },
 
         {
-            farm_name: "Bamboo Huts",
-            price_24_hours: 14000,
-            farm_image: { c1: bom1, c2: bom2, c3: bom3, },
-            weekdays: { oneday: "14000", twoday: "28000" },
-            weekends: { oneday: "14000", twoday: "28000" },
-            rating: "4.6",
-            alt: "Luxury Farmhouses in MOINABAD  ",
-            no_bed: "2",
+            farm_name: "BOXED SERENITY",
+            price_24_hours: 20000,
+            farm_image: { c1: box1, c2: box2, c3: box3, },
+            weekdays: { oneday: "20000", twoday: "40000" },
+            weekends: { oneday: "20000", twoday: "40000" },
+            rating: "4.8",
+            alt: "Luxury Farmhouses in Shamshabad  ",
+            no_bed: "3",
         },
 
         {
-            farm_name: "4Ram Fusion",
+            farm_name: "SB Farmhouse",
             price_24_hours: 15000,
-            farm_image: { c1: ram1, c2: ram2, c3: ram3, },
-            weekdays: { oneday: "15000", twoday: "30000" },
-            weekends: { oneday: "15000", twoday: "30000" },
-            rating: "4.4",
-            alt: "Luxury Farmhouses in Keesara ",
+            farm_image: { c1: sb1, c2: sb2, c3: sb3, },
+            weekdays: { oneday: "15000", twoday: "30000"},
+            weekends: { oneday: "15000", twoday: "30000"},
+            rating: "4.6",
+            alt: "Luxury Farmhouses in MOINABAD  ",
             no_bed: "4",
         },
 
-
         {
-            farm_name: "CourtYard",
-            price_24_hours: 14000,
-            farm_image: { c1: courtyard1, c2: courtyard2, c3: courtyard3, },
-            weekdays: { oneday: "14000", twoday: "28000" },
-            weekends: { oneday: "14000", twoday: "28000" },
-            rating: "4.2",
+            farm_name: "PB Farmhouse",
+            price_24_hours: 15000,
+            farm_image: { c1: pb1, c2: pb2, c3: pb3, },
+            weekdays: { oneday: "15000", twoday: "30000" },
+            weekends: { oneday: "15000", twoday: "30000" },
+            rating: "4.6",
+            alt: "Luxury Farmhouses in Shamshabad  ",
             no_bed: "2",
         },
 
         {
             farm_name: "Holiday",
-            price_24_hours: 10000,
+            price_24_hours: 12000,
             farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, },
-            weekdays: { oneday: "10000", twoday: "20000" },
-            weekends: { oneday: "10000", twoday: "20000" },
+            weekdays: { oneday: "12000", twoday: "24000" },
+            weekends: { oneday: "12000", twoday: "24000" },
             rating: "4.3",
             alt: "Luxury Farmhouses in  Moinabad",
             no_bed: "2",
         },
 
+        {
+            farm_name: "PY Farmhouse",
+            price_24_hours: 12000,
+            farm_image: { c1: py1, c2: py2, c3: py3, },
+            weekdays: { oneday: "12000", twoday: "24000" },
+            weekends: { oneday: "12000", twoday: "24000" },
+            rating: "4.3",
+            alt: "Luxury Farmhouses in  Moinabad",
+            no_bed: "2",
+        },
+
+       
 
 
     ];
