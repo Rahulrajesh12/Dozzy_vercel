@@ -14,6 +14,11 @@ import { IoBedSharp } from "react-icons/io5";
 import skfarm1 from "../../images/saketh/1.webp"
 import skfarm2 from "../../images/saketh/2.webp"
 import skfarm3 from "../../images/saketh/3.webp"
+import skfarm4 from "../../images/saketh/4.webp"
+import skfarm5 from "../../images/saketh/5.webp"
+import skfarm6 from "../../images/saketh/6.webp"
+import skfarm7 from "../../images/saketh/7.webp"
+import skfarm8 from "../../images/saketh/8.webp"
 
 import shfarm1 from "../../images/shan/1.webp"
 import shfarm2 from "../../images/shan/2.webp"
@@ -46,6 +51,11 @@ import courtyard3 from '../../images/courtyard/3.webp'
 import holiday1 from '../../images/holiday/1.webp'
 import holiday2 from '../../images/holiday/2.webp'
 import holiday3 from '../../images/holiday/3.webp'
+import holiday4 from '../../images/holiday/4.webp'
+import holiday5 from '../../images/holiday/5.webp'
+import holiday6 from '../../images/holiday/6.webp'
+import holiday7 from '../../images/holiday/7.webp'
+import holiday8 from '../../images/holiday/8.webp'
 
 import nbr1 from '../../images/nbr/1.webp'
 import nbr2 from '../../images/nbr/2.webp'
@@ -79,16 +89,24 @@ import rajes1 from '../../images/rajes/1.webp'
 import rajes2 from '../../images/rajes/2.webp'
 import rajes3 from '../../images/rajes/3.webp'
 
-
-
-
 import sskf1 from '../../images/sravan/1.webp'
 import sskf2 from '../../images/sravan/2.webp'
 import sskf3 from '../../images/sravan/3.webp'
+import sskf4 from '../../images/sravan/4.webp'
+import sskf5 from '../../images/sravan/5.webp'
+import sskf6 from '../../images/sravan/6.webp'
+import sskf7 from '../../images/sravan/7.webp'
+import sskf8 from '../../images/sravan/8.webp'
+
 
 import arush1 from '../../images/arush/1.webp'
 import arush2 from '../../images/arush/2.webp'
 import arush3 from '../../images/arush/3.webp'
+import arush4 from '../../images/arush/4.webp'
+import arush5 from '../../images/arush/5.webp'
+import arush6 from '../../images/arush/6.webp'
+import arush7 from '../../images/arush/7.webp'
+import arush8 from '../../images/arush/8.webp'
 
 import ram1 from '../../images/4ram/1.webp'
 import ram2 from '../../images/4ram/2.webp'
@@ -98,9 +116,14 @@ import svr1 from "../../images/svrp/1.webp"
 import svr2 from "../../images/svrp/2.webp"
 import svr3 from "../../images/svrp/3.webp"
 
-import bgy1 from "../../images/bgyf/1.webp"
-import bgy2 from "../../images/bgyf/2.webp"
-import bgy3 from "../../images/bgyf/3.webp"
+import bgy1 from "../../images/bgy/1.webp"
+import bgy2 from "../../images/bgy/2.webp"
+import bgy3 from "../../images/bgy/3.webp"
+import bgy4 from "../../images/bgy/4.webp"
+import bgy5 from "../../images/bgy/5.webp"
+import bgy6 from "../../images/bgy/6.webp"
+import bgy7 from "../../images/bgy/7.webp"
+import bgy8 from "../../images/bgy/8.webp"
 
 import bom1 from "../../images/bamboo/1.webp"
 import bom2 from "../../images/bamboo/2.webp"
@@ -110,18 +133,40 @@ import bom3 from "../../images/bamboo/3.webp"
 import box1 from "../../images/box/1.webp"
 import box2 from "../../images/box/2.webp"
 import box3 from "../../images/box/3.webp"
+import box4 from "../../images/box/4.webp"
+import box5 from "../../images/box/5.webp"
+import box6 from "../../images/box/6.webp"
+import box7 from "../../images/box/7.webp"
+import box8 from "../../images/box/8.webp"
+
 
 import pb1 from "../../images/pb/1.webp"
 import pb2 from "../../images/pb/2.webp"
 import pb3 from "../../images/pb/3.webp"
+import pb4 from "../../images/pb/4.webp"
+import pb5 from "../../images/pb/5.webp"
+import pb6 from "../../images/pb/6.webp"
+import pb7 from "../../images/pb/7.webp"
+import pb8 from "../../images/pb/8.webp"
 
 import sb1 from "../../images/sb/1.webp"
 import sb2 from "../../images/sb/2.webp"
 import sb3 from "../../images/sb/3.webp"
+import sb4 from "../../images/sb/4.webp"
+import sb5 from "../../images/sb/5.webp"
+import sb6 from "../../images/sb/6.webp"
+import sb7 from "../../images/sb/7.webp"
+import sb8 from "../../images/sb/8.webp"
+
 
 import py1 from "../../images/py/1.webp"
 import py2 from "../../images/py/2.webp"
 import py3 from "../../images/py/3.webp"
+import py4 from "../../images/py/4.webp"
+import py5 from "../../images/py/5.webp"
+import py6 from "../../images/py/6.webp"
+import py7 from "../../images/py/7.webp"
+import py8 from "../../images/py/8.webp"
 
 
 import Head from "next/head";
@@ -189,7 +234,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "Arush Agri",
             price_24_hours: 20000,
-            farm_image: { c1: arush1, c2: arush2, c3: arush3, },
+            farm_image: { c1: arush1, c2: arush2, c3: arush3, c4: arush4, c5: arush5, c6: arush6, c7: arush7, c8: arush8, },
             weekdays: { oneday: "20000", twoday: "40000" },
             weekends: { oneday: "20000", twoday: "40000" },
             rating: "4.8",
@@ -200,7 +245,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "Saketh Vanam",
             price_24_hours: 17000,
-            farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, },
+            farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, c4: skfarm4, c5: skfarm5, c6: skfarm6, c7: skfarm7, c8: skfarm8, },
             weekdays: { oneday: "17000", twoday: "34000" },
             weekends: { oneday: "17000", twoday: "34000" },
             rating: "4.5",
@@ -211,7 +256,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "SSK",
             price_24_hours: 17000,
-            farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, },
+            farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, c4: sskf4, c5: sskf5, c6: sskf6, c7: sskf7, c8: sskf8, },
             weekdays: { oneday: "17000", twoday: "34000" },
             weekends: { oneday: "17000", twoday: "34000" },
             rating: "4.6",
@@ -221,7 +266,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "BGY",
             price_24_hours: 17000,
-            farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, },
+            farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, c4: bgy4, c5: bgy5, c6: bgy6, c7: bgy7, c8: bgy8, },
             weekdays: { oneday: "17000", twoday: "34000" },
             weekends: { oneday: "17000", twoday: "34000" },
             rating: "4.6",
@@ -232,7 +277,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "BOXED SERENITY",
             price_24_hours: 20000,
-            farm_image: { c1: box1, c2: box2, c3: box3, },
+            farm_image: { c1: box1, c2: box2, c3: box3, c4: box4, c5: box5, c6: box6, c7: box7, c8: box8, },
             weekdays: { oneday: "20000", twoday: "40000" },
             weekends: { oneday: "20000", twoday: "40000" },
             rating: "4.8",
@@ -243,9 +288,9 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "SB Farmhouse",
             price_24_hours: 15000,
-            farm_image: { c1: sb1, c2: sb2, c3: sb3, },
-            weekdays: { oneday: "15000", twoday: "30000"},
-            weekends: { oneday: "15000", twoday: "30000"},
+            farm_image: { c1: sb1, c2: sb2, c3: sb3, c4: sb4, c5: sb5, c6: sb6, c7: sb7, c8: sb8, },
+            weekdays: { oneday: "15000", twoday: "30000" },
+            weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.6",
             alt: "Luxury Farmhouses in MOINABAD  ",
             no_bed: "4",
@@ -254,7 +299,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "PB Farmhouse",
             price_24_hours: 15000,
-            farm_image: { c1: pb1, c2: pb2, c3: pb3, },
+            farm_image: { c1: pb1, c2: pb2, c3: pb3, c4: pb4, c5: pb5, c6: pb6, c7: pb7, c8: pb8, },
             weekdays: { oneday: "15000", twoday: "30000" },
             weekends: { oneday: "15000", twoday: "30000" },
             rating: "4.6",
@@ -265,7 +310,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "Holiday",
             price_24_hours: 12000,
-            farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, },
+            farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, c4: holiday4, c5: holiday5, c6: holiday6, c7: holiday7, c8: holiday8, },
             weekdays: { oneday: "12000", twoday: "24000" },
             weekends: { oneday: "12000", twoday: "24000" },
             rating: "4.3",
@@ -276,7 +321,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
         {
             farm_name: "PY Farmhouse",
             price_24_hours: 12000,
-            farm_image: { c1: py1, c2: py2, c3: py3, },
+            farm_image: { c1: py1, c2: py2, c3: py3, c4: py4, c5: py5, c6: py6, c7: py7, c8: py8, },
             weekdays: { oneday: "12000", twoday: "24000" },
             weekends: { oneday: "12000", twoday: "24000" },
             rating: "4.3",
@@ -284,7 +329,7 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
             no_bed: "2",
         },
 
-       
+
 
 
     ];
@@ -325,6 +370,21 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
                                         </div>
                                         <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
                                             <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c3} ></Image>
+                                        </div>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c4} ></Image>
+                                        </div>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c5} ></Image>
+                                        </div>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c6} ></Image>
+                                        </div>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c7} ></Image>
+                                        </div>
+                                        <div onClick={(e) => LinkCall(e, `/${item.farm_name.toLowerCase().replace(/ /g, "-")}`)} href={`/${item.farm_name.toLowerCase().replace(/ /g, "-")}`}>
+                                            <Image alt={"Farm Houses In Hyderbad"} src={item.farm_image.c8} ></Image>
                                         </div>
                                     </Carousel>
                                 </div>

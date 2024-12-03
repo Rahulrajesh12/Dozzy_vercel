@@ -20,6 +20,9 @@ import { GiBarbecue } from "react-icons/gi";
 import { IoIosBonfire } from "react-icons/io";
 import { MdOutlineSportsVolleyball } from "react-icons/md";
 
+import { FaIndianRupeeSign } from "react-icons/fa6";
+
+
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -27,6 +30,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import skfarm1 from "./images/saketh/1.webp"
 import skfarm2 from "./images/saketh/2.webp"
 import skfarm3 from "./images/saketh/3.webp"
+import skfarm4 from "./images/saketh/4.webp"
+import skfarm5 from "./images/saketh/5.webp"
+import skfarm6 from "./images/saketh/6.webp"
+import skfarm7 from "./images/saketh/7.webp"
+import skfarm8 from "./images/saketh/8.webp"
 
 import shfarm1 from "./images/shan/1.webp"
 import shfarm2 from "./images/shan/2.webp"
@@ -43,6 +51,11 @@ import zfarm3 from "./images/zoozoo/3.webp"
 import sskf1 from './images/sravan/1.webp'
 import sskf2 from './images/sravan/2.webp'
 import sskf3 from './images/sravan/3.webp'
+import sskf4 from './images/sravan/4.webp'
+import sskf5 from './images/sravan/5.webp'
+import sskf6 from './images/sravan/6.webp'
+import sskf7 from './images/sravan/7.webp'
+import sskf8 from './images/sravan/8.webp'
 
 import ty1 from './images/tyb/1.webp'
 import ty2 from './images/tyb/2.webp'
@@ -63,6 +76,11 @@ import courtyard3 from './images/courtyard/3.webp'
 import holiday1 from './images/holiday/1.webp'
 import holiday2 from './images/holiday/2.webp'
 import holiday3 from './images/holiday/3.webp'
+import holiday4 from './images/holiday/4.webp'
+import holiday5 from './images/holiday/5.webp'
+import holiday6 from './images/holiday/6.webp'
+import holiday7 from './images/holiday/7.webp'
+import holiday8 from './images/holiday/8.webp'
 
 import nbr1 from './images/nbr/1.webp'
 import nbr2 from './images/nbr/2.webp'
@@ -99,6 +117,11 @@ import rajes3 from './images/rajes/3.webp'
 import arush1 from "./images/arush/1.webp"
 import arush2 from "./images/arush/2.webp"
 import arush3 from "./images/arush/3.webp"
+import arush4 from "./images/arush/4.webp"
+import arush5 from "./images/arush/5.webp"
+import arush6 from "./images/arush/6.webp"
+import arush7 from "./images/arush/7.webp"
+import arush8 from "./images/arush/8.webp"
 
 import ram1 from "./images/4ram/1.webp"
 import ram2 from "./images/4ram/2.webp"
@@ -108,9 +131,14 @@ import svr1 from "./images/svrp/1.webp"
 import svr2 from "./images/svrp/2.webp"
 import svr3 from "./images/svrp/3.webp"
 
-import bgy1 from "./images/bgyf/1.webp"
-import bgy2 from "./images/bgyf/2.webp"
-import bgy3 from "./images/bgyf/3.webp"
+import bgy1 from "./images/bgy/1.webp"
+import bgy2 from "./images/bgy/2.webp"
+import bgy3 from "./images/bgy/3.webp"
+import bgy4 from "./images/bgy/4.webp"
+import bgy5 from "./images/bgy/5.webp"
+import bgy6 from "./images/bgy/6.webp"
+import bgy7 from "./images/bgy/7.webp"
+import bgy8 from "./images/bgy/8.webp"
 
 import bom1 from "./images/bamboo/1.webp"
 import bom2 from "./images/bamboo/2.webp"
@@ -119,19 +147,38 @@ import bom3 from "./images/bamboo/3.webp"
 import box1 from "./images/box/1.webp"
 import box2 from "./images/box/2.webp"
 import box3 from "./images/box/3.webp"
+import box4 from "./images/box/4.webp"
+import box5 from "./images/box/5.webp"
+import box6 from "./images/box/6.webp"
+import box7 from "./images/box/7.webp"
+import box8 from "./images/box/8.webp"
 
 import pb1 from "./images/pb/1.webp"
 import pb2 from "./images/pb/2.webp"
 import pb3 from "./images/pb/3.webp"
+import pb4 from "./images/pb/4.webp"
+import pb5 from "./images/pb/5.webp"
+import pb6 from "./images/pb/6.webp"
+import pb7 from "./images/pb/7.webp"
+import pb8 from "./images/pb/8.webp"
 
 import sb1 from "./images/sb/1.webp"
 import sb2 from "./images/sb/2.webp"
 import sb3 from "./images/sb/3.webp"
-
+import sb4 from "./images/sb/4.webp"
+import sb5 from "./images/sb/5.webp"
+import sb6 from "./images/sb/6.webp"
+import sb7 from "./images/sb/7.webp"
+import sb8 from "./images/sb/8.webp"
 
 import py1 from "./images/py/1.webp"
 import py2 from "./images/py/2.webp"
 import py3 from "./images/py/3.webp"
+import py4 from "./images/py/4.webp"
+import py5 from "./images/py/5.webp"
+import py6 from "./images/py/6.webp"
+import py7 from "./images/py/7.webp"
+import py8 from "./images/py/8.webp"
 
 
 import LinkCall from './components/LinkCall';
@@ -338,18 +385,18 @@ const CarDetails = ({ canonicalUrl }) => {
     "saketh vanam": {
       farm_name: 'Saketh Vanam',
       price_24_hours: 17000,
-      farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, },
+      farm_image: { c1: skfarm1, c2: skfarm2, c3: skfarm3, c4: skfarm4, c5: skfarm5, c6: skfarm6, c7: skfarm7, c8: skfarm8, },
       weekdays: { oneday: "17000", twoday: "34000" },
       weekends: { oneday: "17000", twoday: "34000" },
       desc: "Traditionally Farmhouses are simply homes built on agricultural lands to house and protect who owned or worked the land. The term Farmhouse isn't necessarily connected to a particular style identified by a fixed set of features, but a setting for a way of life. This is most likely why its appeal seems to be timeless.",
       no_beds: "3"
     },
 
-    
+
     "holiday": {
       farm_name: "holiday",
       price_24_hours: 12000,
-      farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, },
+      farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, c4: holiday4, c5: holiday6, c6: holiday7, c7: holiday5, c8: holiday8, },
       weekdays: { oneday: "12000", twoday: "24000" },
       weekends: { oneday: "12000", twoday: "24000" },
       desc: "Holiday FarmHouse, set in the serene forest, invites you to unwind and enjoy quality time away from the fast-paced city. Our farmhouse ensures a comfortable stay with its well-maintained garden, a refreshing pool, and a fully stocked kitchen complete with dishes and a barbecue area. Stay entertained with a 43-inch TV, WiFi, Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Guests can also engage in various games, including chess, carrom, shuttle, and cricket, for a truly enjoyable experience.",
@@ -360,7 +407,7 @@ const CarDetails = ({ canonicalUrl }) => {
     "ssk": {
       farm_name: "SSK",
       price_24_hours: 17000,
-      farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, },
+      farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, c4: sskf4, c5: sskf5, c6: sskf6, c7: sskf7, c8: sskf8, },
       weekdays: { oneday: "17000", twoday: "34000" },
       weekends: { oneday: "17000", twoday: "34000" },
       desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone."
@@ -370,7 +417,7 @@ const CarDetails = ({ canonicalUrl }) => {
     "arush agri": {
       farm_name: "Arush Agri",
       price_24_hours: 20000,
-      farm_image: { c1: arush1, c2: arush2, c3: arush3, },
+      farm_image: { c1: arush1, c2: arush2, c3: arush3, c4: arush4, c5: arush5, c6: arush6, c7: arush7, c8: arush8, },
       weekdays: { oneday: "20000", twoday: "40000" },
       weekends: { oneday: "20000", twoday: "40000" },
       desc: "Dozzy offers some of the best farmhouses in and around Hyderabad, providing beautiful and relaxing locations perfect for a peaceful getaway. Among our offerings is the stunning Arush Agri Farm Stays farmhouse, nestled in lush greenery for a refreshing, natural escape. This farmhouse features a wonderful swimming pool, perfect for cooling off and enjoying with friends or family.",
@@ -382,7 +429,7 @@ const CarDetails = ({ canonicalUrl }) => {
     "bgy": {
       farm_name: "BGY",
       price_24_hours: 17000,
-      farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, },
+      farm_image: { c1: bgy1, c2: bgy2, c3: bgy3, c4: bgy4, c5: bgy5, c6: bgy6, c7: bgy7, c8: bgy8, },
       weekdays: { oneday: "17000", twoday: "34000" },
       weekends: { oneday: "17000", twoday: "34000" },
       desc: "Dozzy offers some of the best farmhouse experiences in and around Hyderabad, providing a serene escape from the city. Our beautiful BHY  farmhouse is located in a lush, green environment, perfect for unwinding with family and friends. Each room is designed with comfort in mind, featuring air conditioning, king-size beds, and premium amenities for a cozy stay.",
@@ -390,51 +437,51 @@ const CarDetails = ({ canonicalUrl }) => {
       desc2: "With all the comforts of a well-maintained resort—such as AC in each room, comfortable beds, and scenic surroundings—Dozzy's farmhouse offers a complete experience that blends relaxation with luxury. Whether you’re planning a family getaway, a weekend with friends, or simply looking to spend some quiet time in nature, our farmhouse near Hyderabad is equipped to meet your needs, providing a memorable stay every time.",
       no_beds: "2"
     },
-     
-   
+
+
     "sb farmhouse": {
       farm_name: "sb farmhouse",
       price_24_hours: 15000,
-      farm_image: { c1: sb1, c2: sb2, c3: sb3,},
-      weekdays: { oneday: "15000", twoday: "30000"},
-      weekends: { oneday: "15000", twoday: "30000"},
+      farm_image: { c1: sb1, c2: sb2, c3: sb3, c4: sb4, c5: sb5, c6: sb6, c7: sb7, c8: sb8, },
+      weekdays: { oneday: "15000", twoday: "30000" },
+      weekends: { oneday: "15000", twoday: "30000" },
       desc: "Dozzy offers some of the best farmhouse experiences in and around Hyderabad, providing a serene escape from the city. Our beautiful BHY  farmhouse is located in a lush, green environment, perfect for unwinding with family and friends. Each room is designed with comfort in mind, featuring air conditioning, king-size beds, and premium amenities for a cozy stay.",
-      desc1:" The rooms in the farmhouse are very well designed, featuring King size beds, air conditioning, TV, Fridges and many more amenities like BBQ setup for outdoor cooking and dining under the starts.",
+      desc1: " The rooms in the farmhouse are very well designed, featuring King size beds, air conditioning, TV, Fridges and many more amenities like BBQ setup for outdoor cooking and dining under the starts.",
       no_beds: "4"
     },
-     
+
     "boxed serenity": {
       farm_name: "boxed serenity",
       price_24_hours: 20000,
-      farm_image: { c1: box1, c2: box2, c3: box3, },
+      farm_image: { c1: box1, c2: box2, c3: box3, c4: box4, c5: box5, c6: box6, c7: box7, c8: box8, },
       weekdays: { oneday: "20000", twoday: "40000" },
       weekends: { oneday: "20000", twoday: "40000" },
-      desc:"Looking for a farmhouse in Hyderabad ? Explore Boxed Serenity farmhouse in Shamshabad, Hyderabad with Dozzy farmhouses. The farmhouse is surrounded by greenery and a swimming pool which is perfect for a family and friends vacation or a quick escape. The rooms are well designed for comfort with king-size beds, AC, TV, Fridges and many more amenities. There is also a BBQ setup and Bonfire pit where you can set up for a fun outdoor dining experience under the stars, which makes your visit memorable.",
+      desc: "Looking for a farmhouse in Hyderabad ? Explore Boxed Serenity farmhouse in Shamshabad, Hyderabad with Dozzy farmhouses. The farmhouse is surrounded by greenery and a swimming pool which is perfect for a family and friends vacation or a quick escape. The rooms are well designed for comfort with king-size beds, AC, TV, Fridges and many more amenities. There is also a BBQ setup and Bonfire pit where you can set up for a fun outdoor dining experience under the stars, which makes your visit memorable.",
       no_beds: "3"
     },
-  
+
     "pb farmhouse": {
       farm_name: "pb farmhouse",
       price_24_hours: 15000,
-      farm_image: { c1: pb1, c2: pb2, c3: pb3, },
+      farm_image: { c1: pb1, c2: pb2, c3: pb3, c4: pb4, c5: pb5, c6: pb6, c7: pb7, c8: pb8, },
       weekdays: { oneday: "15000", twoday: "30000" },
       weekends: { oneday: "15000", twoday: "30000" },
       desc: "Explore PB farmhouse in Shamshabad, Hyderabad with Dozzy farmhouses. The farm stay is surrounded by greenery and a swimming pool which is perfect for a vacation or a quick escape. The rooms are well designed for comfort with king-size beds, AC, TV, Fridges and more amenities.",
-      desc1:"There is also a BBQ setup and Bonfire pit where you can set up for a fun outdoor dining experience under the stars, which makes your trip memorable.",
+      desc1: "There is also a BBQ setup and Bonfire pit where you can set up for a fun outdoor dining experience under the stars, which makes your trip memorable.",
       no_beds: "2"
     },
-     
-    
+
+
     "py farmhouse": {
       farm_name: "py farmhouse",
       price_24_hours: 12000,
-      farm_image: { c1: py1, c2: py3, c3: py2, },
+      farm_image: { c1: py1, c2: py2, c3: py3, c4: py4, c5: py5, c6: py6, c7: py7, c8: py8, },
       weekdays: { oneday: "12000", twoday: "24000" },
       weekends: { oneday: "12000", twoday: "24000" },
       desc: "PY Farmhouse, A farmhouse by Dozzy Farmhouse is Located in Shamshabad, surrounded by greenery and featuring a refreshing swimming pool. It is a perfect place for both family and friends vacation or weekend getaway. The farmhouse offers luxury comfortable rooms with king-size beds, AC, TV, fridges and many more amenities.Enjoy an outdoor BBQ and bonfire pit for a fun and memorable experience under the stars.",
       no_beds: "2"
     },
-     
+
 
 
 
@@ -451,7 +498,7 @@ const CarDetails = ({ canonicalUrl }) => {
         <meta property="og:title" content="No Deposit & Unlimited Guests - Dozzy Farmhouse Rentals" />
         <meta property="og:description" content="Enjoy the great outdoors with No Deposit, Unlimited Guests, and luxurious farmhouse rentals. Perfect for relaxation, parties, and weddings. Book now and enjoy your privacy in nature's luxury. " />
         <link rel="canonical" href={canonicalUrl} />
-        
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-04YJBDK2VX"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -548,6 +595,11 @@ const CarDetails = ({ canonicalUrl }) => {
               {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c1} alt={"farm house in hyderabad"} />}
               {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c2} alt={"farm house in hyderabad"} />}
               {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c3} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c4} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c5} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c6} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c7} alt={"farm house in hyderabad"} />}
+              {<Image className='rounded-md' src={customData[mdfyFarmProduct?.toLowerCase()]?.farm_image.c8} alt={"farm house in hyderabad"} />}
             </Carousel>
           </div>
           <div className='flex flex-col lg:gap-14 gap-4 lg:pt-10 pt-2'>
@@ -643,17 +695,35 @@ const CarDetails = ({ canonicalUrl }) => {
               <li className='list-disc'><p>Any Damage Customer has to Pay</p></li>
               <li className='list-disc'><p>Drugs/Hookah Not Allowed </p></li>
             </ul>
-            <p className='font-bold text-2xl lg:text-3xl border-l-4 pl-2 border-red-900 md:my-6 my-2 '>Additional Charges</p>
-            <ul className='p-4 text-sm font-normaltext-[14px] lg:text-lg leading-6 font-poppins capitalize'>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>Self Cooking Access  </span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>barbecue Setup </span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>bonfire Setup</span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>Cleaning charges </span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>extra per person </span><span> 500</span></p> </li>
-            </ul>
+            <div className='flex items-center lg:py-5 py-3 '>
+              <p className='font-bold text-sm lg:text-lg border-l-4 pl-2 border-red-900 '>Additional Charges</p>
+              <p className='font-bold text-sm lg:text-lg pl-[70px] mxs:pl-[123px] msm:pl-44 lg:pl-7 md:pl-[520px] border-red-900'>  <FaIndianRupeeSign className="text-black" /></p>
+            </div>
+          </div>
+          <div className="w-full  text-black border border-black lg:w-[265px] font-semibold lg:text-[14px] text-xs ">
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2  ">
+              <span className=" border-black px-2 ">Self Cooking Access</span>
+              <span className=" border-black px-2  lg:px-[10px] border-r-2"></span>
+              <span className=" border-black px-3  lg:px-4  ">500</span>
+            </div>
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2  ">
+              <span className=" border-black px-2 ">Barbecue Setup</span>
+              <span className=" border-black px-[21px] lg:px-[24.5px]  border-r-2"></span>
+              <span className=" border-black px-3 lg:px-4   ">500</span>
+            </div>
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2  ">
+              <span className=" border-black px-2 w-18 ">Cleaning Charges</span>
+              <span className=" border-black px-[14px] lg:px-[16.5px] border-r-2"></span>
+              <span className=" border-black px-3 lg:px-4  ">500</span>
+            </div>
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2   ">
+              <span className=" border-black px-2 ">Extra Per Person</span>
+              <span className=" border-black px-[20.5px] lg:px-[24px] border-r-2"></span>
+              <span className=" border-black px-3 lg:px-4   ">500</span>
+            </div>
           </div>
         </div>
-        <div className='px-5 lg:px-0'>
+        <div className='px-5 lg:px-0 pt-2'>
           <h2 className='font-bold text-2xl lg:text-3xl border-l-4 pl-2 border-red-900 md:my-6 my-2' >Description</h2>
           <p className='font-normal p-1 text-[14px] lg:text-lg leading-6 font-poppins pb-8 lg:w-[50%]'>
             {customData[mdfyFarmProduct?.toLowerCase()]?.desc}
