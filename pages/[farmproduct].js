@@ -445,8 +445,7 @@ const CarDetails = ({ canonicalUrl }) => {
       farm_image: { c1: sb1, c2: sb2, c3: sb3, c4: sb4, c5: sb5, c6: sb6, c7: sb7, c8: sb8, },
       weekdays: { oneday: "15000", twoday: "30000" },
       weekends: { oneday: "15000", twoday: "30000" },
-      desc: "Dozzy offers some of the best farmhouse experiences in and around Hyderabad, providing a serene escape from the city. Our beautiful BHY  farmhouse is located in a lush, green environment, perfect for unwinding with family and friends. Each room is designed with comfort in mind, featuring air conditioning, king-size beds, and premium amenities for a cozy stay.",
-      desc1: " The rooms in the farmhouse are very well designed, featuring King size beds, air conditioning, TV, Fridges and many more amenities like BBQ setup for outdoor cooking and dining under the starts.",
+      desc:"Explore PB farmhouse in Shamshabad, Hyderabad with Dozzy farmhouses. The farm stay is surrounded by greenery and a swimming pool which is perfect for a vacation or a quick escape. The rooms are well designed for comfort with king-size beds, AC, TV, Fridges and more amenities. There is also a BBQ setup and Bonfire pit where you can set up for a fun outdoor dining experience under the stars, which makes your trip memorable.",
       no_beds: "4"
     },
 
