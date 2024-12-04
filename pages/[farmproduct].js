@@ -445,7 +445,7 @@ const CarDetails = ({ canonicalUrl }) => {
       farm_image: { c1: sb1, c2: sb2, c3: sb3, c4: sb4, c5: sb5, c6: sb6, c7: sb7, c8: sb8, },
       weekdays: { oneday: "15000", twoday: "30000" },
       weekends: { oneday: "15000", twoday: "30000" },
-      desc:"Explore PB farmhouse in Shamshabad, Hyderabad with Dozzy farmhouses. The farm stay is surrounded by greenery and a swimming pool which is perfect for a vacation or a quick escape. The rooms are well designed for comfort with king-size beds, AC, TV, Fridges and more amenities. There is also a BBQ setup and Bonfire pit where you can set up for a fun outdoor dining experience under the stars, which makes your trip memorable.",
+      desc:"Looking for a perfect getaway in Hyderabad?  Dozzy offers the best farmhouse in Moinabad for anyone looking for a vacation or a small break at SB Farmstay.  The Farmhouse is surrounded by the greenery and features a swimming pool, perfect for family or friends. The rooms in the farmhouse are very well designed, featuring King size beds, air conditioning, TV, Fridges and many more amenities like BBQ setup for outdoor cooking and dining under the starts.",
       no_beds: "4"
     },
 
