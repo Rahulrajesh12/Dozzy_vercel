@@ -395,10 +395,10 @@ const CarDetails = ({ canonicalUrl }) => {
 
     "holiday": {
       farm_name: "holiday",
-      price_24_hours: 12000,
+      price_24_hours: 10000,
       farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, c4: holiday4, c5: holiday6, c6: holiday7, c7: holiday5, c8: holiday8, },
-      weekdays: { oneday: "12000", twoday: "24000" },
-      weekends: { oneday: "12000", twoday: "24000" },
+      weekdays: { oneday: "10000", twoday: "20000" },
+      weekends: { oneday: "10000", twoday: "20000" },
       desc: "Holiday FarmHouse, set in the serene forest, invites you to unwind and enjoy quality time away from the fast-paced city. Our farmhouse ensures a comfortable stay with its well-maintained garden, a refreshing pool, and a fully stocked kitchen complete with dishes and a barbecue area. Stay entertained with a 43-inch TV, WiFi, Bluetooth sound system, and access to streaming services like Netflix, Prime, Hotstar, Aha, and ZEE5. Guests can also engage in various games, including chess, carrom, shuttle, and cricket, for a truly enjoyable experience.",
       desc1: "",
       no_beds: "2"

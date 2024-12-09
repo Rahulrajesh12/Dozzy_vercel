@@ -309,10 +309,10 @@ const FarmProductLPage = ({ count, canonicalUrl }) => {
 
         {
             farm_name: "Holiday",
-            price_24_hours: 12000,
+            price_24_hours: 10000,
             farm_image: { c1: holiday1, c2: holiday2, c3: holiday3, c4: holiday4, c5: holiday5, c6: holiday6, c7: holiday7, c8: holiday8, },
-            weekdays: { oneday: "12000", twoday: "24000" },
-            weekends: { oneday: "12000", twoday: "24000" },
+            weekdays: { oneday: "10000", twoday: "20000" },
+            weekends: { oneday: "10000", twoday: "20000" },
             rating: "4.3",
             alt: "Luxury Farmhouses in  Moinabad",
             no_bed: "2",
