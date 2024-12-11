@@ -747,18 +747,18 @@ const CarDetails = ({ canonicalUrl }) => {
 
 export default CarDetails;
 
-export async function getServerSideProps({ req }) {
-  // const response = await fetch('https://api.longdrivecarz.in/site/cars-info?location=Hyderabad');
-  // const items = await response.json();
-  // const cars = items?.data?.results;
+export async function getServerSideProps({ query,req }) {
+  const { farmproduct } = query;
+  // const mdfyFarmProduct = farmproduct?.toLowerCase().replace(/-/g, " ");
   const host = req.headers.host;
+
+  // Construct the canonical URL based on the domain
   const canonicalUrl = host.includes('.in')
-    ? 'https://www.dozzy.in'
-    : 'https://www.dozzy.com';
+    ? `https://www.dozzy.in/${farmproduct}`
+    : `https://www.dozzy.com/${farmproduct}`;
 
   return {
     props: {
-      // cars,
       canonicalUrl,
     },
   };
