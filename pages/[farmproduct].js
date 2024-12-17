@@ -410,7 +410,8 @@ const CarDetails = ({ canonicalUrl }) => {
       farm_image: { c1: sskf1, c2: sskf2, c3: sskf3, c4: sskf4, c5: sskf5, c6: sskf6, c7: sskf7, c8: sskf8, },
       weekdays: { oneday: "17000", twoday: "34000" },
       weekends: { oneday: "17000", twoday: "34000" },
-      desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone."
+      desc: "Sravan Farm House, nestled in the serene heart of the forest, offers a dreamlike escape from the hustle and bustle of city life. Our farmhouse is designed to provide the perfect blend of leisure and enjoyment, ensuring a memorable stay for you and your loved ones. Key features of Sravan Farm House include a beautiful garden, a refreshing swimming pool, a fully equipped kitchen with dishes and bowls, and a barbecue area for delicious meals. For entertainment, we offer a 43-inch TV, WiFi, a Bluetooth audio system, and access to Netflix, Prime, Hotstar, Aha, and ZEE5. Enjoy a variety of games such as chess, carrom, shuttle, and cricket, ensuring fun for everyone.",
+      no_beds: "2"
     },
 
 
@@ -695,7 +696,7 @@ const CarDetails = ({ canonicalUrl }) => {
               <li className='list-disc'><p>Any Damage Customer has to Pay</p></li>
               <li className='list-disc'><p>Drugs/Hookah Not Allowed </p></li>
             </ul>
-            <div className='flex items-center lg:py-5 py-3 text-center '>
+            <div className='flex items-center lg:py-5 py-3'>
               <p className='font-bold text-sm lg:text-lg border-l-4 pl-2 border-red-900 '>Additional Charges</p>
               <p className='font-bold text-sm lg:text-lg pl-[70px] mxs:pl-[123px] msm:pl-44 lg:pl-7 md:pl-[520px] border-red-900'>  <FaIndianRupeeSign className="text-black" /></p>
             </div>
