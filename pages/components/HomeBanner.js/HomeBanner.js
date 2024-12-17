@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import bgsvg from '../../images/traveller.svg'
+import bgsvg from '../../images/traveller.webp'
 import bgfarm from '../../../public/kk.webp'
 import { BiPhoneCall } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
