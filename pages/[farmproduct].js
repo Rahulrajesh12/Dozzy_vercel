@@ -563,14 +563,32 @@ const CarDetails = ({canonicalUrl}) => {
               <li className='list-disc'><p>Any Damage Customer has to Pay</p></li>
               <li className='list-disc'><p>Drugs/Hookah Not Allowed </p></li>
             </ul>
-            <p className='font-bold text-2xl lg:text-3xl border-l-4 pl-2 border-red-900 md:my-6 my-2 '>Additional Charges</p>
-            <ul className='p-4 text-sm font-normaltext-[14px] lg:text-lg leading-6 font-poppins capitalize'>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>Self Cooking Access  </span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>barbecue Setup </span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>bonfire Setup</span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>Cleaning charges </span><span> 500</span></p> </li>
-              <li className='list-decimal md:w-72'><p className='flex justify-between'><span>extra per person </span><span> 500</span></p> </li>
-            </ul>
+            <div className='flex items-center lg:py-5 py-3 '>
+              <p className='font-bold text-sm lg:text-lg border-l-4 pl-2 border-red-900 '>Additional Charges</p>
+              <p className='font-bold text-sm lg:text-lg pl-[70px] mxs:pl-[123px] msm:pl-44 lg:pl-7 md:pl-[520px] text-center border-red-900'>  <FaIndianRupeeSign className="text-black" /></p>
+            </div>
+          </div>
+          <div className="w-full  text-black border border-black lg:w-[265px] font-semibold lg:text-[14px] text-xs ">
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2  ">
+              <span className=" border-black px-2 ">Self Cooking Access</span>
+              <span className=" border-black px-2  lg:px-[10px] border-r-2"></span>
+              <span className=" border-black px-3  lg:px-4  ">500</span>
+            </div>
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2  ">
+              <span className=" border-black px-2 ">Barbecue Setup</span>
+              <span className=" border-black px-[21px] lg:px-[24.5px]  border-r-2"></span>
+              <span className=" border-black px-3 lg:px-4   ">500</span>
+            </div>
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2  ">
+              <span className=" border-black px-2 w-18 ">Cleaning Charges</span>
+              <span className=" border-black px-[14px] lg:px-[16.5px] border-r-2"></span>
+              <span className=" border-black px-3 lg:px-4  ">500</span>
+            </div>
+            <div className="flex justify-between border-b border-black p-[10px] lg:p-2   ">
+              <span className=" border-black px-2 ">Extra Per Person</span>
+              <span className=" border-black px-[20.5px] lg:px-[24px] border-r-2"></span>
+              <span className=" border-black px-3 lg:px-4   ">500</span>
+            </div>
           </div>
         </div>
         <div className='px-5 lg:px-0'>
