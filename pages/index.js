@@ -7,7 +7,6 @@ const FarmProductLPage = dynamic(() => import('./components/FarmProductLPage/Far
 const CareGuests = dynamic(() => import('./components/CareGuests/CareGuests'));
 
 export default function Home({ canonicalUrl }) {
-export default function Home({ canonicalUrl }) {
   return (
     <div className="text-black font-poppins">
       <Head>
