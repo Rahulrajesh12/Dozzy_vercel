@@ -605,6 +605,7 @@ const CarDetails = ({ canonicalUrl }) => {
             <div>
               <div className='p-1 font-bold  text-xl lg:text-3xl lg: capitalize'>{customData[mdfyFarmProduct?.toLowerCase()]?.farm_name} Farm House ({customData[mdfyFarmProduct?.toLowerCase()]?.no_beds} BHK) <p className='text-blue-600 pt-3'>₹ {customData[mdfyFarmProduct?.toLowerCase()]?.weekdays.oneday}/day</p>
                 {/* <p className='text-blue-600 opacity-70 text-xs pl-1'>₹{customData[mdfyFarmProduct?.toLowerCase()]?.weekends.oneday}/day <span className='text-black'>(Fri-Sun)</span></p> */}
+                {/* <p className='text-blue-600 opacity-70 text-xs pl-1'>₹{customData[mdfyFarmProduct?.toLowerCase()]?.weekends.oneday}/day <span className='text-black'>(Fri-Sun)</span></p> */}
               </div>
 
             </div>
@@ -694,7 +695,7 @@ const CarDetails = ({ canonicalUrl }) => {
               <li className='list-disc'><p>Any Damage Customer has to Pay</p></li>
               <li className='list-disc'><p>Drugs/Hookah Not Allowed </p></li>
             </ul>
-            <div className='flex items-center lg:py-5 py-3 '>
+            <div className='flex items-center lg:py-5 py-3 text-center '>
               <p className='font-bold text-sm lg:text-lg border-l-4 pl-2 border-red-900 '>Additional Charges</p>
               <p className='font-bold text-sm lg:text-lg pl-[70px] mxs:pl-[123px] msm:pl-44 lg:pl-7 md:pl-[520px] border-red-900'>  <FaIndianRupeeSign className="text-black" /></p>
             </div>

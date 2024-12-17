@@ -7,11 +7,14 @@ import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import Head from 'next/head';
 import LinkCall from '../LinkCall';
+
+
+
 const HomeBanner = () => {
     return (
         <div>
             <Head>
-                <link rel='preload' href='/kk.webp'></link>
+            <link rel="preload" href="/kk.webp" as="image" />
             </Head>
             <div className='flex justify-between'>
                 <div className='pl-5 pt-6 md:pl-12 lg:pl-20 lg:pt-44  flex flex-col gap-3 lg:gap-8 '>
